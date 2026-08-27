@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gravel Cost Calculator – Estimate Your Total Price | GravelCalc</title>
-<meta name="description" content="Free gravel cost calculator. Enter your area, depth and price per ton or yard to get a total project cost estimate in seconds.">
+<title>Gravel Cost Calculator – Price Per Yard, Ton &amp; Bag | GravelCalc</title>
+<meta name="description" content="Free gravel cost calculator. See price per yard, ton and bag by material, plus delivery costs — enter your area and depth for a total project estimate.">
 <link rel="canonical" href="https://gravelcalc.com/gravel-cost-calculator">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,6 +53,16 @@
       "@type": "Question",
       "name": "Does gravel delivery cost extra?",
       "acceptedAnswer": { "@type": "Answer", "text": "Yes — most suppliers charge a separate delivery fee, often $50–$150 depending on distance and load size. Ask for an all-in quote before ordering." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a dump truck load of gravel cost?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A typical dump truck holds 10–15 tons. At $25–$65 per ton, a full load runs roughly $250–$975 for material alone, before delivery fees." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is pea gravel more expensive than crushed stone?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, usually. Pea gravel is washed and screened for a decorative finish, which costs more to process than plain crushed stone or road base — expect to pay $5–$20 more per ton for pea gravel." }
     }
   ]
 }
@@ -184,13 +194,45 @@
     </section>
 
     <section class="block tight">
-      <h2 class="section-title">How this is calculated</h2>
+      <h2 class="section-title">How This Is Calculated</h2>
       <p>The calculator finds your volume in cubic yards, converts to tons using an average gravel density, then multiplies by your price per ton (or per cubic yard) for a total.</p>
       <div class="formula-box">
         cubic yards = (length × width × depth) ÷ 27<br>
         tons = cubic yards × 1.4<br>
         total cost = tons × price per ton  (or cubic yards × price per yard)
       </div>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Gravel Prices by Material</h2>
+      <p>Price varies more by material than almost anything else — decorative, screened gravel costs more than plain structural stone, and price climbs further in areas farther from a quarry. These ranges are typical for delivered bulk orders in the US:</p>
+      <div class="table-wrap">
+        <table class="guide-table">
+          <thead><tr><th>Material</th><th>Price per ton</th><th>Price per cubic yard</th></tr></thead>
+          <tbody>
+            <tr><td>Crushed stone / road base</td><td>$25–$45</td><td>$35–$60</td></tr>
+            <tr><td>Pea gravel</td><td>$30–$65</td><td>$40–$85</td></tr>
+            <tr><td>River rock</td><td>$35–$70</td><td>$45–$90</td></tr>
+            <tr><td>Decorative / colored gravel</td><td>$40–$75</td><td>$50–$100</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="help-text">Plain crushed stone and road base are the cheapest since they're used in the highest volume and need the least processing. Washed, screened, or colored decorative gravel costs more for the extra handling.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Cost Per Yard vs. Ton vs. Bag</h2>
+      <p>Suppliers quote gravel three different ways, and it's easy to compare the wrong two numbers. <strong>Per ton</strong> is the standard unit for bulk dump-truck delivery — most quarries and landscape suppliers price this way because gravel is weighed on the way out. <strong>Per cubic yard</strong> is a volume measure, more common for smaller loads or when a supplier delivers by the yard rather than the ton; since gravel averages about 1.4–1.5 tons per cubic yard, you can convert between the two using that factor, or just switch the toggle above. <strong>Per bag</strong> is a retail unit — hardware stores sell 0.5 cubic foot bags, priced per bag rather than by weight, which is convenient for small jobs but the most expensive way to buy gravel per cubic foot (see the comparison below).</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Delivery Costs by Distance</h2>
+      <p>Most suppliers bundle a base delivery fee — commonly $50–$150 — that covers a set radius from the quarry or yard, often 10–15 miles. Beyond that radius, expect an added per-mile charge, typically $2–$5 a mile, on top of the base fee. Some suppliers also set a minimum order (often 2–5 tons) before they'll dispatch a truck at all, so a small job can end up paying for material you don't need just to clear the minimum. Always ask for an all-in delivered price rather than comparing material cost alone — a cheaper per-ton price from a farther supplier can lose to a nearby one once delivery is added.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Bulk vs. Bags Cost Comparison</h2>
+      <p>Bagged gravel looks cheap per bag but is almost always the most expensive way to buy in volume. A typical 0.5 cubic foot bag runs $4–$6 at a hardware store — that works out to roughly $8–$12 per cubic foot, or $220–$320 per cubic yard once you scale it up (27 cubic feet in a yard). Compare that to $35–$100 per cubic yard delivered in bulk, and bags cost 2–4x more for the same material. Bags make sense for a small top-up or a project under a couple hundred pounds; anything larger than a garden bed is almost always cheaper ordered loose by the ton.</p>
     </section>
 
     <section class="block tight">
@@ -201,11 +243,19 @@
       </details>
       <details class="faq-item">
         <summary><h3>Is it cheaper to buy gravel by the ton or by the yard?</h3></summary>
-        <p class="faq-answer">Most suppliers price bulk delivery by the ton. Buying by the cubic yard can be simpler for small loads. Use the toggle above to compare both.</p>
+        <p class="faq-answer">Most suppliers price by the ton for bulk delivery. Buying by the cubic yard can be simpler for small loads. Use the toggle above to compare both.</p>
       </details>
       <details class="faq-item">
         <summary><h3>Does gravel delivery cost extra?</h3></summary>
         <p class="faq-answer">Yes — most suppliers charge a separate delivery fee, often $50–$150 depending on distance and load size. Always ask for an all-in quote before ordering.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>How much does a dump truck load of gravel cost?</h3></summary>
+        <p class="faq-answer">A typical dump truck holds 10–15 tons. At $25–$65 per ton, a full load runs roughly $250–$975 for material alone, before delivery fees. Ask your supplier for their truck capacity and an all-in delivered price.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>Is pea gravel more expensive than crushed stone?</h3></summary>
+        <p class="faq-answer">Yes, usually. Pea gravel is washed and screened for a decorative finish, which costs more to process than plain crushed stone or road base — expect to pay $5–$20 more per ton for pea gravel than for structural crushed stone.</p>
       </details>
     </section>
 
