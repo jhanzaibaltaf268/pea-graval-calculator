@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Much Gravel Do I Need? A Simple Guide | GravelCalc</title>
+<meta name="description" content="Free guide to figuring out how much gravel you need, with worked examples for patios, walkways, driveways and garden beds — plus a quick calculator.">
+<link rel="canonical" href="https://gravelcalc.com/how-much-gravel-do-i-need">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much gravel do I need for my project?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Measure your area in square feet, decide on a depth (2–4 inches for most projects), then multiply area by depth in feet and divide by 27 to get cubic yards. Use the pea gravel calculator to do this automatically." }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I order extra gravel?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — order 5–10% more than your calculated amount to account for uneven ground, compaction, and spillage during spreading." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a base layer under gravel?",
+      "acceptedAnswer": { "@type": "Answer", "text": "For walkways and patios, a compacted base of crushed stone plus landscape fabric under your decorative gravel prevents sinking and weed growth. For driveways, a proper base layer is essential." }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://gravelcalc.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Gravel Calculator", "item": "https://gravelcalc.com/" },
+    { "@type": "ListItem", "position": 3, "name": "How Much Gravel Do I Need", "item": "https://gravelcalc.com/how-much-gravel-do-i-need" }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="/"><span class="logo-mark">G</span>GravelCalc</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <nav class="main-nav">
+      <a href="/">Home</a>
+      <a href="/pea-gravel-calculator">Pea Gravel</a>
+      <a href="/gravel-driveway-calculator">Driveway</a>
+      <a href="/gravel-cost-calculator">Cost</a>
+      <a href="/cubic-yards-calculator">Cubic Yards</a>
+      <a href="/river-rock-calculator">River Rock</a>
+      <a href="/square-feet-to-cubic-yards">Sq Ft → CY</a>
+      <div class="has-dropdown">
+        <a href="/how-much-gravel-do-i-need" aria-current="page">Guides</a>
+        <div class="dropdown">
+          <a href="/how-much-gravel-do-i-need">How Much Do I Need</a>
+          <a href="/types-of-gravel">Types of Gravel</a>
+          <a href="/gravel-depth-guide">Gravel Depth Guide</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+
+    <p class="breadcrumbs">
+      <a href="/">Home</a><span class="sep">/</span><a href="/">Gravel Calculator</a><span class="sep">/</span>How Much Gravel Do I Need
+    </p>
+
+    <section class="hero">
+      <span class="eyebrow">Guide</span>
+      <h1>How Much Gravel Do I Need?</h1>
+      <p class="lede">The short answer: measure your area, pick a depth, and run it through the <a href="/pea-gravel-calculator">pea gravel calculator</a>. Here's how the math works and a few worked examples so you can eyeball it yourself.</p>
+    </section>
+
+    <section class="calc-card" aria-label="Quick gravel calculator">
+      <div class="unit-toggle" role="group" aria-label="Depth units">
+        <button type="button" id="unitFt" class="active" data-unit="imperial">Inches</button>
+        <button type="button" id="unitM" data-unit="metric">Centimeters</button>
+      </div>
+      <div class="calc-grid">
+        <div>
+          <div class="field-row single">
+            <div class="field">
+              <label for="area">Area <span class="unit-tag">(sq ft)</span></label>
+              <div class="input-wrap">
+                <input type="number" id="area" inputmode="decimal" min="0" step="1" value="150">
+                <span class="suffix">ft²</span>
+              </div>
+            </div>
+          </div>
+          <div class="field-row single">
+            <div class="field">
+              <label for="depth">Depth <span class="unit-tag" id="depUnit">(inches)</span></label>
+              <div class="input-wrap">
+                <input type="number" id="depth" inputmode="decimal" min="0" step="0.25" value="2">
+                <span class="suffix" id="depSuffix">in</span>
+              </div>
+            </div>
+          </div>
+          <p class="help-text">For the full version with bag counts and unit toggles, use the <a href="/pea-gravel-calculator">pea gravel calculator</a>.</p>
+        </div>
+        <div class="results" aria-live="polite">
+          <div class="results-label">You'll need about</div>
+          <div class="result-stat primary">
+            <span class="rs-name">Cubic yards</span>
+            <span><span class="rs-value" id="outYards">0.00</span><span class="rs-unit">yd³</span></span>
+          </div>
+          <div class="result-stat">
+            <span class="rs-name">Weight</span>
+            <span><span class="rs-value" id="outTons">0.00</span><span class="rs-unit">tons</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">The three numbers you need</h2>
+      <p><strong>1. Your area.</strong> Measure length × width in feet. For odd shapes, break the space into rectangles and add them up.</p>
+      <p><strong>2. Your depth.</strong> Thin decorative layers use 2 inches; walkways and patios use 2–3 inches; driveways need 4+ inches of base material. See the full <a href="/gravel-depth-guide">gravel depth guide</a>.</p>
+      <p><strong>3. Your material's density.</strong> Most gravel weighs 1.4–1.5 tons per cubic yard — this is what converts your volume into a weight your supplier can quote and deliver.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Worked examples</h2>
+      <div class="table-wrap">
+        <table class="guide-table">
+          <thead><tr><th>Project</th><th>Typical size</th><th>Depth</th><th>Gravel needed</th></tr></thead>
+          <tbody>
+            <tr><td>Garden border</td><td>20 sq ft</td><td>2 in</td><td>≈0.12 yd³ (~0.17 tons)</td></tr>
+            <tr><td>Walkway</td><td>60 sq ft</td><td>2 in</td><td>≈0.37 yd³ (~0.52 tons)</td></tr>
+            <tr><td>Patio</td><td>200 sq ft</td><td>3 in</td><td>≈1.85 yd³ (~2.6 tons)</td></tr>
+            <tr><td>Single-car driveway</td><td>600 sq ft</td><td>4 in</td><td>≈7.4 yd³ (~11.1 tons)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="help-text">Figures use a 1.4 tons/yd³ density and round up slightly for waste. Your project may vary — use the calculator above for exact numbers.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Frequently asked questions</h2>
+      <details class="faq-item">
+        <summary>How much gravel do I need for my project?</summary>
+        <p class="faq-answer">Measure your area in square feet, decide on a depth (2–4 inches for most projects), then multiply area by depth in feet and divide by 27 to get cubic yards. The <a href="/pea-gravel-calculator">pea gravel calculator</a> does this automatically.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Should I order extra gravel?</summary>
+        <p class="faq-answer">Yes — order 5–10% more than your calculated amount to account for uneven ground, compaction, and spillage during spreading.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do I need a base layer under gravel?</summary>
+        <p class="faq-answer">For walkways and patios, a compacted base of crushed stone plus landscape fabric under your decorative gravel prevents sinking and weed growth. For driveways, a proper base layer is essential — see the <a href="/gravel-driveway-calculator">driveway calculator</a>.</p>
+      </details>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Related calculators</h2>
+      <div class="related-grid">
+        <a class="related-card" href="/pea-gravel-calculator">
+          <div class="rc-kicker">Calculator</div>
+          <h3>Pea Gravel Calculator</h3>
+          <p>Full calculator with bags and unit toggle.</p>
+        </a>
+        <a class="related-card" href="/gravel-cost-calculator">
+          <div class="rc-kicker">Calculator</div>
+          <h3>Gravel Cost Calculator</h3>
+          <p>Turn your volume into a dollar estimate.</p>
+        </a>
+        <a class="related-card" href="/gravel-depth-guide">
+          <div class="rc-kicker">Guide</div>
+          <h3>Gravel Depth Guide</h3>
+          <p>Recommended depth by project type.</p>
+        </a>
+        <a class="related-card" href="/types-of-gravel">
+          <div class="rc-kicker">Guide</div>
+          <h3>Types of Gravel</h3>
+          <p>Compare sizes and best uses.</p>
+        </a>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="/" style="color:#fff;"><span class="logo-mark">G</span>GravelCalc</a>
+        <p>Free, fast gravel &amp; aggregate calculators. Estimates only — always confirm quantities with your supplier.</p>
+      </div>
+      <div>
+        <h4>Calculators</h4>
+        <ul>
+          <li><a href="/pea-gravel-calculator">Pea Gravel</a></li>
+          <li><a href="/gravel-driveway-calculator">Driveway</a></li>
+          <li><a href="/gravel-cost-calculator">Cost</a></li>
+          <li><a href="/cubic-yards-calculator">Cubic Yards</a></li>
+          <li><a href="/river-rock-calculator">River Rock</a></li>
+          <li><a href="/square-feet-to-cubic-yards">Sq Ft → Cubic Yards</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Guides</h4>
+        <ul>
+          <li><a href="/how-much-gravel-do-i-need">How Much Do I Need</a></li>
+          <li><a href="/types-of-gravel">Types of Gravel</a></li>
+          <li><a href="/gravel-depth-guide">Gravel Depth Guide</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 GravelCalc. All estimates are approximate.</span>
+      <span>Built as static HTML — no tracking, no accounts.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/main.js"></script>
+<script>
+(function () {
+  var unit = "imperial";
+  var areaIn = document.getElementById("area");
+  var depIn = document.getElementById("depth");
+  var btnFt = document.getElementById("unitFt");
+  var btnM = document.getElementById("unitM");
+  var outYards = document.getElementById("outYards");
+  var outTons = document.getElementById("outTons");
+  var DENSITY = 1.4;
+
+  function setUnit(u) {
+    unit = u;
+    btnFt.classList.toggle("active", u === "imperial");
+    btnM.classList.toggle("active", u === "metric");
+    document.getElementById("depUnit").textContent = u === "imperial" ? "(inches)" : "(cm)";
+    document.getElementById("depSuffix").textContent = u === "imperial" ? "in" : "cm";
+    calc();
+  }
+
+  function calc() {
+    var areaSqFt = parseFloat(areaIn.value) || 0;
+    var depthFt = GRAVEL.depthToFeet(parseFloat(depIn.value) || 0, unit);
+    var cubicFeet = Math.max(areaSqFt, 0) * Math.max(depthFt, 0);
+    var cubicYards = cubicFeet / GRAVEL.CUFT_PER_CUYD;
+    var tons = GRAVEL.tons(cubicYards, DENSITY);
+
+    outYards.textContent = GRAVEL.fmt(cubicYards, 2);
+    outTons.textContent = GRAVEL.fmt(tons, 2);
+  }
+
+  var debounced = debounce(calc, 50);
+  [areaIn, depIn].forEach(function (el) {
+    el.addEventListener("input", debounced);
+    el.addEventListener("change", debounced);
+  });
+  btnFt.addEventListener("click", function () { setUnit("imperial"); });
+  btnM.addEventListener("click", function () { setUnit("metric"); });
+
+  calc();
+})();
+</script>
+</body>
+</html>

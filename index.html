@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gravel Calculator – Free Tons, Yards &amp; Bags Calculator | GravelCalc</title>
+<meta name="description" content="Free gravel calculator for any project. Enter your area, depth and material to get tons, cubic yards and bags — plus dedicated calculators for pea gravel, driveways, cost and more.">
+<link rel="canonical" href="https://gravelcalc.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Gravel Calculator",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "url": "https://gravelcalc.com/",
+  "description": "Enter length, width, depth and material to calculate cubic yards, tons and bags of gravel needed for any project."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to calculate how much gravel you need",
+  "step": [
+    { "@type": "HowToStep", "name": "Measure your area", "text": "Measure the length and width of the space in feet (or meters)." },
+    { "@type": "HowToStep", "name": "Choose depth and material", "text": "Pick a depth for your project and the gravel type you're using." },
+    { "@type": "HowToStep", "name": "Read your result", "text": "The calculator multiplies area by depth to give cubic yards, then converts to tons using your material's density." }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I calculate how much gravel I need?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Multiply your area (length × width) by your depth, in feet, to get cubic feet. Divide by 27 to get cubic yards, then multiply by your material's density (typically 1.4–1.5 tons per cubic yard) to get weight in tons." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a cubic yard of gravel cost?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Gravel typically costs $35–$85 per cubic yard, or $25–$65 per ton, depending on material and region. Use the gravel cost calculator to estimate your total." }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="/"><span class="logo-mark">G</span>GravelCalc</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <nav class="main-nav">
+      <a href="/" aria-current="page">Home</a>
+      <a href="/pea-gravel-calculator">Pea Gravel</a>
+      <a href="/gravel-driveway-calculator">Driveway</a>
+      <a href="/gravel-cost-calculator">Cost</a>
+      <a href="/cubic-yards-calculator">Cubic Yards</a>
+      <a href="/river-rock-calculator">River Rock</a>
+      <a href="/square-feet-to-cubic-yards">Sq Ft → CY</a>
+      <div class="has-dropdown">
+        <a href="/how-much-gravel-do-i-need">Guides</a>
+        <div class="dropdown">
+          <a href="/how-much-gravel-do-i-need">How Much Do I Need</a>
+          <a href="/types-of-gravel">Types of Gravel</a>
+          <a href="/gravel-depth-guide">Gravel Depth Guide</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+
+    <section class="hero" style="padding-top:26px;">
+      <span class="eyebrow">Free calculator hub</span>
+      <h1>Gravel Calculator</h1>
+      <p class="lede">Figure out exactly how much gravel you need — tons, cubic yards and bags — for any project. Pick a material below, or jump straight to a dedicated calculator.</p>
+    </section>
+
+    <section class="calc-card" aria-label="Gravel calculator">
+      <div class="unit-toggle" role="group" aria-label="Units">
+        <button type="button" id="unitFt" class="active" data-unit="imperial">Feet / Inches</button>
+        <button type="button" id="unitM" data-unit="metric">Meters / cm</button>
+      </div>
+
+      <div class="calc-grid">
+        <div>
+          <div class="field-row">
+            <div class="field">
+              <label for="length">Length <span class="unit-tag" id="lenUnit">(ft)</span></label>
+              <div class="input-wrap">
+                <input type="number" id="length" inputmode="decimal" min="0" step="0.1" value="15">
+                <span class="suffix" id="lenSuffix">ft</span>
+              </div>
+            </div>
+            <div class="field">
+              <label for="width">Width <span class="unit-tag" id="widUnit">(ft)</span></label>
+              <div class="input-wrap">
+                <input type="number" id="width" inputmode="decimal" min="0" step="0.1" value="10">
+                <span class="suffix" id="widSuffix">ft</span>
+              </div>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="depth">Depth <span class="unit-tag" id="depUnit">(inches)</span></label>
+              <div class="input-wrap">
+                <input type="number" id="depth" inputmode="decimal" min="0" step="0.25" value="2">
+                <span class="suffix" id="depSuffix">in</span>
+              </div>
+            </div>
+            <div class="field">
+              <label for="material">Material</label>
+              <div class="input-wrap">
+                <select id="material" class="plain-select">
+                  <option value="1.4" selected>Pea Gravel</option>
+                  <option value="1.5">River Rock</option>
+                  <option value="1.5">Crushed Stone</option>
+                  <option value="1.5">Road Base / Crush &amp; Run</option>
+                  <option value="1.4">Decorative Gravel</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <p class="help-text">Need bag counts, a cost estimate, or a driveway-specific calculator? See the dedicated tools below.</p>
+        </div>
+
+        <div class="results" aria-live="polite">
+          <div class="results-label">You'll need</div>
+          <div class="result-stat primary">
+            <span class="rs-name">Cubic yards</span>
+            <span><span class="rs-value" id="outYards">0.00</span><span class="rs-unit">yd³</span></span>
+          </div>
+          <div class="result-stat">
+            <span class="rs-name">Weight</span>
+            <span><span class="rs-value" id="outTons">0.00</span><span class="rs-unit">tons</span></span>
+          </div>
+          <div class="result-stat">
+            <span class="rs-name">Cubic feet</span>
+            <span><span class="rs-value" id="outFeet">0.00</span><span class="rs-unit">ft³</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">All calculators</h2>
+      <div class="hub-grid">
+        <a class="hub-card" href="/pea-gravel-calculator">
+          <div class="hc-icon">⬤</div>
+          <h3>Pea Gravel Calculator</h3>
+          <p>Tons, yards and bags for pea gravel projects.</p>
+          <span class="hc-meta">4,400 searches/mo</span>
+        </a>
+        <a class="hub-card" href="/gravel-driveway-calculator">
+          <div class="hc-icon">🚗</div>
+          <h3>Gravel Driveway Calculator</h3>
+          <p>Base + top-layer estimate by material.</p>
+          <span class="hc-meta">1,300 searches/mo</span>
+        </a>
+        <a class="hub-card" href="/gravel-cost-calculator">
+          <div class="hc-icon">$</div>
+          <h3>Gravel Cost Calculator</h3>
+          <p>Volume plus your local price, totaled.</p>
+          <span class="hc-meta">170 searches/mo</span>
+        </a>
+        <a class="hub-card" href="/cubic-yards-calculator">
+          <div class="hc-icon">▦</div>
+          <h3>Cubic Yards Calculator</h3>
+          <p>General L × W × D to cubic yard converter.</p>
+          <span class="hc-meta">320 searches/mo</span>
+        </a>
+        <a class="hub-card" href="/river-rock-calculator">
+          <div class="hc-icon">◆</div>
+          <h3>River Rock Calculator</h3>
+          <p>Same math, tuned for larger river rock.</p>
+          <span class="hc-meta">3,600 searches/mo</span>
+        </a>
+        <a class="hub-card" href="/square-feet-to-cubic-yards">
+          <div class="hc-icon">⇄</div>
+          <h3>Sq Ft to Cubic Yards</h3>
+          <p>Already have your area? Convert directly.</p>
+          <span class="hc-meta">3,600 searches/mo</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Guides</h2>
+      <div class="related-grid">
+        <a class="related-card" href="/how-much-gravel-do-i-need">
+          <div class="rc-kicker">Guide</div>
+          <h3>How Much Gravel Do I Need?</h3>
+          <p>Worked examples for common projects.</p>
+        </a>
+        <a class="related-card" href="/types-of-gravel">
+          <div class="rc-kicker">Guide</div>
+          <h3>Types of Gravel</h3>
+          <p>Sizes, densities and best uses.</p>
+        </a>
+        <a class="related-card" href="/gravel-depth-guide">
+          <div class="rc-kicker">Guide</div>
+          <h3>Gravel Depth Guide</h3>
+          <p>How deep should gravel be, by project.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">How this is calculated</h2>
+      <p>Every calculator on this site uses the same core formula: area × depth = volume, converted to cubic yards, then multiplied by your material's density to get weight in tons.</p>
+      <div class="formula-box">
+        cubic yards = (length × width × depth) ÷ 27<br>
+        tons = cubic yards × material density
+      </div>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Frequently asked questions</h2>
+      <details class="faq-item">
+        <summary>How do I calculate how much gravel I need?</summary>
+        <p class="faq-answer">Multiply your area (length × width) by your depth, in feet, to get cubic feet. Divide by 27 to get cubic yards, then multiply by your material's density (typically 1.4–1.5 tons per cubic yard) for weight in tons.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How much does a cubic yard of gravel cost?</summary>
+        <p class="faq-answer">Gravel typically costs $35–$85 per cubic yard, or $25–$65 per ton, depending on material and region. Use the <a href="/gravel-cost-calculator">gravel cost calculator</a> to estimate your total.</p>
+      </details>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="/" style="color:#fff;"><span class="logo-mark">G</span>GravelCalc</a>
+        <p>Free, fast gravel &amp; aggregate calculators. Estimates only — always confirm quantities with your supplier.</p>
+      </div>
+      <div>
+        <h4>Calculators</h4>
+        <ul>
+          <li><a href="/pea-gravel-calculator">Pea Gravel</a></li>
+          <li><a href="/gravel-driveway-calculator">Driveway</a></li>
+          <li><a href="/gravel-cost-calculator">Cost</a></li>
+          <li><a href="/cubic-yards-calculator">Cubic Yards</a></li>
+          <li><a href="/river-rock-calculator">River Rock</a></li>
+          <li><a href="/square-feet-to-cubic-yards">Sq Ft → Cubic Yards</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Guides</h4>
+        <ul>
+          <li><a href="/how-much-gravel-do-i-need">How Much Do I Need</a></li>
+          <li><a href="/types-of-gravel">Types of Gravel</a></li>
+          <li><a href="/gravel-depth-guide">Gravel Depth Guide</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 GravelCalc. All estimates are approximate.</span>
+      <span>Built as static HTML — no tracking, no accounts.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/main.js"></script>
+<script>
+(function () {
+  var unit = "imperial";
+  var lenIn = document.getElementById("length");
+  var widIn = document.getElementById("width");
+  var depIn = document.getElementById("depth");
+  var materialSel = document.getElementById("material");
+  var btnFt = document.getElementById("unitFt");
+  var btnM = document.getElementById("unitM");
+  var outYards = document.getElementById("outYards");
+  var outTons = document.getElementById("outTons");
+  var outFeet = document.getElementById("outFeet");
+
+  function setUnit(u) {
+    unit = u;
+    btnFt.classList.toggle("active", u === "imperial");
+    btnM.classList.toggle("active", u === "metric");
+    document.getElementById("lenUnit").textContent = u === "imperial" ? "(ft)" : "(m)";
+    document.getElementById("widUnit").textContent = u === "imperial" ? "(ft)" : "(m)";
+    document.getElementById("depUnit").textContent = u === "imperial" ? "(inches)" : "(cm)";
+    document.getElementById("lenSuffix").textContent = u === "imperial" ? "ft" : "m";
+    document.getElementById("widSuffix").textContent = u === "imperial" ? "ft" : "m";
+    document.getElementById("depSuffix").textContent = u === "imperial" ? "in" : "cm";
+    calc();
+  }
+
+  function calc() {
+    var lengthFt = GRAVEL.toFeet(parseFloat(lenIn.value) || 0, unit);
+    var widthFt = GRAVEL.toFeet(parseFloat(widIn.value) || 0, unit);
+    var depthFt = GRAVEL.depthToFeet(parseFloat(depIn.value) || 0, unit);
+    var density = parseFloat(materialSel.value);
+    var vol = GRAVEL.volume(lengthFt, widthFt, depthFt);
+    var tons = GRAVEL.tons(vol.cubicYards, density);
+
+    outYards.textContent = GRAVEL.fmt(vol.cubicYards, 2);
+    outTons.textContent = GRAVEL.fmt(tons, 2);
+    outFeet.textContent = GRAVEL.fmt(vol.cubicFeet, 2);
+  }
+
+  var debounced = debounce(calc, 50);
+  [lenIn, widIn, depIn, materialSel].forEach(function (el) {
+    el.addEventListener("input", debounced);
+    el.addEventListener("change", debounced);
+  });
+  btnFt.addEventListener("click", function () { setUnit("imperial"); });
+  btnM.addEventListener("click", function () { setUnit("metric"); });
+
+  calc();
+})();
+</script>
+</body>
+</html>
