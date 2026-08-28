@@ -2,72 +2,98 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://gravelcalc.com/</loc>
+    <lastmod>2026-08-28</lastmod>
     <priority>1.0</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://gravelcalc.com/pea-gravel-calculator</loc>
+    <lastmod>2026-08-28</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://gravelcalc.com/gravel-driveway-calculator</loc>
+    <lastmod>2026-08-28</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://gravelcalc.com/gravel-cost-calculator</loc>
+    <lastmod>2026-08-28</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://gravelcalc.com/cubic-yards-calculator</loc>
+    <lastmod>2026-08-28</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://gravelcalc.com/river-rock-calculator</loc>
+    <lastmod>2026-08-28</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://gravelcalc.com/square-feet-to-cubic-yards</loc>
+    <lastmod>2026-08-28</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://gravelcalc.com/de/kies-rechner</loc>
+    <lastmod>2026-08-28</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://gravelcalc.com/es/calculadora-de-grava</loc>
+    <lastmod>2026-08-28</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://gravelcalc.com/es/calculadora-de-concreto</loc>
+    <lastmod>2026-08-28</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://gravelcalc.com/pt/calculadora-da-brita</loc>
+    <lastmod>2026-08-28</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://gravelcalc.com/how-much-gravel-do-i-need</loc>
+    <lastmod>2026-08-28</lastmod>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://gravelcalc.com/types-of-gravel</loc>
+    <lastmod>2026-08-28</lastmod>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://gravelcalc.com/gravel-depth-guide</loc>
+    <lastmod>2026-08-28</lastmod>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://gravelcalc.com/privacy-policy</loc>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://gravelcalc.com/contact</loc>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
   </url>
 </urlset>
