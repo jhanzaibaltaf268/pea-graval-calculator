@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculadora de Concreto – Metros Cúbicos, Peso y Sacos (Gratis) | GravelCalc</title>
+<meta name="description" content="Calculadora de concreto (hormigón) gratuita. Introduce largo, ancho y espesor de tu losa y obtén al instante metros cúbicos, peso y sacos de concreto necesarios.">
+<link rel="canonical" href="https://gravelcalc.com/es/calculadora-de-concreto">
+<link rel="alternate" hreflang="es" href="https://gravelcalc.com/es/calculadora-de-concreto">
+<link rel="alternate" hreflang="x-default" href="https://gravelcalc.com/es/calculadora-de-concreto">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Calculadora de Concreto",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+  "url": "https://gravelcalc.com/es/calculadora-de-concreto",
+  "inLanguage": "es",
+  "description": "Introduce largo, ancho y espesor de tu losa y obtén al instante metros cúbicos, peso y sacos de concreto (hormigón) necesarios."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Cómo calcular cuánto concreto necesitas",
+  "inLanguage": "es",
+  "step": [
+    { "@type": "HowToStep", "name": "Mide tu losa", "text": "Mide el largo y el ancho de la losa o superficie a hormigonar, en metros." },
+    { "@type": "HowToStep", "name": "Elige el espesor", "text": "Decide el espesor de la losa, normalmente 8–10 cm para caminos y terrazas, más para soleras de garaje o cimentaciones." },
+    { "@type": "HowToStep", "name": "Lee el resultado", "text": "La calculadora multiplica el área por el espesor para obtener metros cúbicos, y calcula el peso y el número de sacos según el tamaño elegido." }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "es",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Cómo calculo cuánto concreto necesito?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Multiplica largo × ancho × espesor (en metros) para obtener metros cúbicos de concreto. Añade siempre un margen del 5–10 % para compensar un subsuelo irregular o pérdidas durante el vertido, o usa directamente la calculadora de arriba." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto pesa un metro cúbico de hormigón?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Un metro cúbico de concreto fresco pesa aproximadamente 2,4 toneladas (2.400 kg), aunque puede variar ligeramente según la dosificación y los áridos empleados." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué espesor debe tener una losa de concreto?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Para caminos peatonales y terrazas suelen bastar 8–10 cm. Para una solera de garaje o una entrada de coche conviene 12–15 cm, y para cimentaciones o soleras que soportan cargas mayores, 15–20 cm o el espesor que indique el proyecto estructural." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto cuesta un metro cúbico de concreto?",
+      "acceptedAnswer": { "@type": "Answer", "text": "El hormigón preparado entregado en camión hormigonera cuesta normalmente entre 60 y 90 € por metro cúbico, con un pedido mínimo habitual de 3–4 m³ y un posible recargo si el pedido es menor. Los sacos de concreto premezclado cuestan entre 4 y 7 € por saco de 25 kg, más económicos solo para volúmenes muy pequeños." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuántos sacos de concreto necesito por metro cúbico?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Un saco de 25 kg de concreto premezclado rinde aproximadamente 0,0125 m³, por lo que hacen falta unos 80 sacos de 25 kg (o unos 50 sacos de 40 kg) para completar un metro cúbico. A partir de ahí casi siempre compensa más pedir hormigón a granel." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Es gratuita esta calculadora de concreto?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sí — la calculadora de concreto es totalmente gratuita, funciona directamente en el navegador y no requiere registro ni datos personales." }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "GravelCalc", "item": "https://gravelcalc.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Calculadora de Concreto", "item": "https://gravelcalc.com/es/calculadora-de-concreto" }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="/es/calculadora-de-grava"><span class="logo-mark">G</span>GravelCalc</a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <nav class="main-nav">
+      <a href="/es/calculadora-de-grava">Calculadora de Grava</a>
+      <a href="/es/calculadora-de-concreto" aria-current="page">Calculadora de Concreto</a>
+      <a href="/">Todas las calculadoras (EN)</a>
+      <a href="/pea-gravel-calculator" class="lang-switch">🇬🇧 EN</a>
+      <a href="/de/kies-rechner" class="lang-switch">🇩🇪 DE</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+
+    <p class="breadcrumbs">
+      <a href="/">GravelCalc</a><span class="sep">/</span><a href="/es/calculadora-de-grava">Español</a><span class="sep">/</span>Calculadora de Concreto
+    </p>
+
+    <section class="hero" style="padding-top:6px;">
+      <span class="eyebrow">Calculadora gratuita</span>
+      <h1>Calculadora de Concreto</h1>
+      <p class="lede">Introduce las medidas de tu losa — metros cúbicos, peso y sacos de concreto se calculan al instante.</p>
+      <div class="trust-row">
+        <span>100&nbsp;% gratis</span>
+        <span>Sin registro</span>
+        <span>Resultado en tiempo real</span>
+      </div>
+    </section>
+
+    <section class="calc-card" aria-label="Calculadora de concreto">
+      <div class="unit-toggle" role="group" aria-label="Unidades">
+        <button type="button" id="unitM" class="active" data-unit="metric">Metros / cm</button>
+        <button type="button" id="unitFt" data-unit="imperial">Pies / pulgadas</button>
+      </div>
+
+      <div class="calc-grid">
+        <div>
+          <div class="field-row">
+            <div class="field">
+              <label for="length">Largo <span class="unit-tag" id="lenUnit">(m)</span></label>
+              <div class="input-wrap">
+                <input type="number" id="length" inputmode="decimal" min="0" step="0.1" value="5" aria-describedby="lenUnit">
+                <span class="suffix" id="lenSuffix">m</span>
+              </div>
+            </div>
+            <div class="field">
+              <label for="width">Ancho <span class="unit-tag" id="widUnit">(m)</span></label>
+              <div class="input-wrap">
+                <input type="number" id="width" inputmode="decimal" min="0" step="0.1" value="4">
+                <span class="suffix" id="widSuffix">m</span>
+              </div>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="depth">Espesor <span class="unit-tag" id="depUnit">(cm)</span></label>
+              <div class="input-wrap">
+                <input type="number" id="depth" inputmode="decimal" min="0" step="0.5" value="10">
+                <span class="suffix" id="depSuffix">cm</span>
+              </div>
+            </div>
+            <div class="field">
+              <label for="bagSize">Saco para calcular cantidad</label>
+              <div class="input-wrap">
+                <select id="bagSize" class="plain-select">
+                  <option value="0.0125" selected>Saco 25 kg (~0,0125 m³)</option>
+                  <option value="0.02">Saco 40 kg (~0,02 m³)</option>
+                  <option value="0.4">Big Bag 800 kg (~0,4 m³)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <p class="help-text">Calcula con una densidad media de 2,4 t/m³. Para más de 1 m³, casi siempre sale más barato pedir hormigón preparado a granel en camión hormigonera en lugar de sacos.</p>
+        </div>
+
+        <div class="results" aria-live="polite">
+          <div class="results-label">Necesitarás</div>
+          <div class="result-stat primary">
+            <span class="rs-name">Metros cúbicos</span>
+            <span><span class="rs-value" id="outCbm">0,00</span><span class="rs-unit">m³</span></span>
+          </div>
+          <div class="result-stat">
+            <span class="rs-name">Peso aproximado</span>
+            <span><span class="rs-value" id="outTons">0,00</span><span class="rs-unit">t</span></span>
+          </div>
+          <div class="result-stat">
+            <span class="rs-name">Sacos</span>
+            <span><span class="rs-value" id="outBags">0</span><span class="rs-unit">uds</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">¿Cuánto concreto necesito?</h2>
+      <p>La calculadora multiplica tu superficie (largo × ancho) por el espesor de la losa para obtener metros cúbicos, y estima el peso multiplicando por la densidad media del concreto fresco (2,4 t/m³). Mide el largo y el ancho en metros, elige un espesor — 8–10 cm para caminos y terrazas, 12–15 cm para soleras de garaje, 15–20 cm o más para cimentaciones — y la calculadora hace el resto.</p>
+      <div class="formula-box">
+        Metros cúbicos = Largo × Ancho × Espesor (m)<br>
+        Peso ≈ Metros cúbicos × 2,4 t/m³<br>
+        Sacos = Metros cúbicos ÷ rendimiento del saco
+      </div>
+      <p>Ejemplo de cálculo: una losa de 5 m × 4 m con un espesor de 10 cm da 5 × 4 × 0,10 = 2 m³, unas 4,8 toneladas de concreto. Para un volumen así harían falta unos 160 sacos de 25 kg — a partir de aproximadamente 1 m³ casi siempre compensa más pedir un camión hormigonera que comprar sacos. Añade siempre un margen del 5–10&nbsp;% para compensar un subsuelo irregular, sobre-excavación o pérdidas durante el vertido.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Precio del concreto</h2>
+      <p>El hormigón preparado (concreto premezclado) entregado en camión hormigonera cuesta normalmente entre 60 y 90&nbsp;€ por metro cúbico para una resistencia estándar tipo HA-25, dependiendo de la región, el proveedor y el acceso a la obra. La mayoría de las hormigoneras exigen un pedido mínimo de 3–4 m³ y aplican un recargo por carga pequeña si el pedido es menor; el bombeo (bomba de hormigón), cuando es necesario, suele añadir entre 100 y 200&nbsp;€ más.</p>
+      <p>Para volúmenes pequeños — un pilar, un remiendo o una base de cobertizo — los sacos de concreto premezclado son más prácticos: cuestan entre 4 y 7&nbsp;€ por saco de 25 kg. Por metro cúbico salen más caros que el hormigón a granel, pero evitan el pedido mínimo. Como referencia rápida: por debajo de 0,5 m³ suelen compensar los sacos; por encima, casi siempre es más barato pedir a granel. Usa el volumen de la calculadora de arriba junto con el precio de tu proveedor para estimar el coste total.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Proporción de la mezcla (si preparas el concreto tú mismo)</h2>
+      <p>Si vas a mezclar el concreto tú mismo en lugar de comprarlo preparado, la proporción clásica es 1 parte de cemento por 2 partes de arena por 3 partes de grava, más agua hasta lograr una consistencia trabajable. Esta mezcla rinde aproximadamente 1 m³ de concreto con unos 300–350 kg de cemento, 600–700 kg de arena y 1.100–1.200 kg de grava. Usa la <a href="/es/calculadora-de-grava">calculadora de grava</a> para estimar la cantidad de árido que necesitas a partir de ese peso.</p>
+      <div class="table-wrap">
+        <table class="guide-table">
+          <thead><tr><th>Uso</th><th>Proporción (cemento:arena:grava)</th><th>Resistencia aproximada</th></tr></thead>
+          <tbody>
+            <tr><td>Soleras y caminos ligeros</td><td>1 : 3 : 4</td><td>Baja–media</td></tr>
+            <tr><td>Losas y terrazas</td><td>1 : 2,5 : 3,5</td><td>Media</td></tr>
+            <tr><td>Cimentaciones y soleras de garaje</td><td>1 : 2 : 3</td><td>Media–alta</td></tr>
+            <tr><td>Elementos estructurales</td><td>Según proyecto</td><td>Alta (consultar proyecto)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="help-text">Estas proporciones son orientativas para obra menor no estructural. Para cimentaciones o elementos con carga, sigue siempre las indicaciones de un proyecto técnico o de la normativa local.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Preguntas frecuentes</h2>
+      <details class="faq-item">
+        <summary><h3>¿Cómo calculo cuánto concreto necesito?</h3></summary>
+        <p class="faq-answer">Multiplica largo × ancho × espesor (en metros) para obtener metros cúbicos de concreto. Añade siempre un margen del 5–10 % para compensar un subsuelo irregular o pérdidas durante el vertido, o usa directamente la calculadora de arriba.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>¿Cuánto pesa un metro cúbico de hormigón?</h3></summary>
+        <p class="faq-answer">Un metro cúbico de concreto fresco pesa aproximadamente 2,4 toneladas (2.400 kg), aunque puede variar ligeramente según la dosificación y los áridos empleados.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>¿Qué espesor debe tener una losa de concreto?</h3></summary>
+        <p class="faq-answer">Para caminos peatonales y terrazas suelen bastar 8–10 cm. Para una solera de garaje o una entrada de coche conviene 12–15 cm, y para cimentaciones o soleras que soportan cargas mayores, 15–20 cm o el espesor que indique el proyecto estructural.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>¿Cuánto cuesta un metro cúbico de concreto?</h3></summary>
+        <p class="faq-answer">El hormigón preparado entregado en camión hormigonera cuesta normalmente entre 60 y 90 € por metro cúbico, con un pedido mínimo habitual de 3–4 m³. Los sacos de concreto premezclado cuestan entre 4 y 7 € por saco de 25 kg, más económicos solo para volúmenes muy pequeños.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>¿Cuántos sacos de concreto necesito por metro cúbico?</h3></summary>
+        <p class="faq-answer">Un saco de 25 kg de concreto premezclado rinde aproximadamente 0,0125 m³, por lo que hacen falta unos 80 sacos de 25 kg (o unos 50 sacos de 40 kg) para completar un metro cúbico. A partir de ahí casi siempre compensa más pedir hormigón a granel.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>¿Es gratuita esta calculadora de concreto?</h3></summary>
+        <p class="faq-answer">Sí — la calculadora de concreto es totalmente gratuita, funciona directamente en el navegador y no requiere registro ni datos personales.</p>
+      </details>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Otras calculadoras</h2>
+      <div class="related-grid">
+        <a class="related-card" href="/es/calculadora-de-grava">
+          <div class="rc-kicker">Calculadora</div>
+          <h2>Calculadora de Grava</h2>
+          <p>Metros cúbicos, toneladas y Big Bags de grava.</p>
+        </a>
+        <a class="related-card" href="/gravel-driveway-calculator">
+          <div class="rc-kicker">Calculator (EN)</div>
+          <h2>Gravel Driveway Calculator</h2>
+          <p>Base de grava para tu entrada de coche.</p>
+        </a>
+        <a class="related-card" href="/gravel-cost-calculator">
+          <div class="rc-kicker">Calculator (EN)</div>
+          <h2>Gravel Cost Calculator</h2>
+          <p>Volumen más precio — coste total del proyecto.</p>
+        </a>
+        <a class="related-card" href="/de/kies-rechner">
+          <div class="rc-kicker">🇩🇪 Deutsch</div>
+          <h2>Kies Rechner</h2>
+          <p>Kubikmeter und Tonnen für Kies berechnen.</p>
+        </a>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="/es/calculadora-de-grava" style="color:#fff;"><span class="logo-mark">G</span>GravelCalc</a>
+        <p>Calculadoras gratuitas y rápidas para grava y concreto. Solo valores estimados — confirma siempre las cantidades con tu proveedor.</p>
+      </div>
+      <div>
+        <h4>Calculadoras</h4>
+        <ul>
+          <li><a href="/es/calculadora-de-grava">Calculadora de Grava</a></li>
+          <li><a href="/es/calculadora-de-concreto">Calculadora de Concreto</a></li>
+          <li><a href="/gravel-cost-calculator">Coste (EN)</a></li>
+          <li><a href="/gravel-driveway-calculator">Entrada de coche (EN)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Idioma</h4>
+        <ul>
+          <li><a href="/es/calculadora-de-grava">🇪🇸 Español</a></li>
+          <li><a href="/pea-gravel-calculator">🇬🇧 English</a></li>
+          <li><a href="/de/kies-rechner">🇩🇪 Deutsch</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Sitio</h4>
+        <ul>
+          <li><a href="/">GravelCalc Home (EN)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 GravelCalc. Todos los datos son estimaciones.</span>
+      <span>HTML estático — sin seguimiento, sin cuentas.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/main.js"></script>
+<script>
+(function () {
+  var unit = "metric";
+  var lenIn = document.getElementById("length");
+  var widIn = document.getElementById("width");
+  var depIn = document.getElementById("depth");
+  var bagSel = document.getElementById("bagSize");
+  var btnM = document.getElementById("unitM");
+  var btnFt = document.getElementById("unitFt");
+  var outCbm = document.getElementById("outCbm");
+  var outTons = document.getElementById("outTons");
+  var outBags = document.getElementById("outBags");
+  var DENSITY = 2.4; // toneladas por metro cúbico
+
+  function fmt(n, decimals) {
+    if (!isFinite(n) || n < 0) n = 0;
+    return n.toLocaleString("es-ES", {
+      minimumFractionDigits: decimals,
+      maximumFractionDigits: decimals
+    });
+  }
+
+  function setUnit(u) {
+    unit = u;
+    btnM.classList.toggle("active", u === "metric");
+    btnFt.classList.toggle("active", u === "imperial");
+    document.getElementById("lenUnit").textContent = u === "metric" ? "(m)" : "(ft)";
+    document.getElementById("widUnit").textContent = u === "metric" ? "(m)" : "(ft)";
+    document.getElementById("depUnit").textContent = u === "metric" ? "(cm)" : "(pulg.)";
+    document.getElementById("lenSuffix").textContent = u === "metric" ? "m" : "ft";
+    document.getElementById("widSuffix").textContent = u === "metric" ? "m" : "ft";
+    document.getElementById("depSuffix").textContent = u === "metric" ? "cm" : "in";
+    calc();
+  }
+
+  function calc() {
+    var lenRaw = parseFloat(lenIn.value) || 0;
+    var widRaw = parseFloat(widIn.value) || 0;
+    var depRaw = parseFloat(depIn.value) || 0;
+    var lengthM = unit === "metric" ? lenRaw : lenRaw * 0.3048;
+    var widthM = unit === "metric" ? widRaw : widRaw * 0.3048;
+    var depthM = unit === "metric" ? depRaw / 100 : (depRaw * 2.54) / 100;
+    var cbm = Math.max(lengthM, 0) * Math.max(widthM, 0) * Math.max(depthM, 0);
+    var tons = cbm * DENSITY;
+    var bagM3 = parseFloat(bagSel.value);
+    var bags = cbm <= 0 ? 0 : Math.ceil(cbm / bagM3);
+
+    outCbm.textContent = fmt(cbm, 2);
+    outTons.textContent = fmt(tons, 2);
+    outBags.textContent = fmt(bags, 0);
+  }
+
+  var debounced = debounce(calc, 50);
+  [lenIn, widIn, depIn, bagSel].forEach(function (el) {
+    el.addEventListener("input", debounced);
+    el.addEventListener("change", debounced);
+  });
+  btnM.addEventListener("click", function () { setUnit("metric"); });
+  btnFt.addEventListener("click", function () { setUnit("imperial"); });
+
+  calc();
+})();
+</script>
+</body>
+</html>
