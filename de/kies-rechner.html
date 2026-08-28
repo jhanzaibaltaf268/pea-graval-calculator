@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kies Rechner – Kubikmeter, Tonnen &amp; Kosten berechnen (Kostenlos) | GravelCalc</title>
+<meta name="description" content="Kostenloser Kies Rechner. Fläche und Schütthöhe eingeben und sofort Kubikmeter, Tonnen und Big Bags für Kies, Splitt, Schotter oder Flusskies berechnen.">
+<link rel="canonical" href="https://gravelcalc.com/de/kies-rechner">
+<link rel="alternate" hreflang="de" href="https://gravelcalc.com/de/kies-rechner">
+<link rel="alternate" hreflang="en" href="https://gravelcalc.com/pea-gravel-calculator">
+<link rel="alternate" hreflang="x-default" href="https://gravelcalc.com/pea-gravel-calculator">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Kies Rechner",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+  "url": "https://gravelcalc.com/de/kies-rechner",
+  "inLanguage": "de",
+  "description": "Länge, Breite und Schütthöhe eingeben und sofort Kubikmeter, Tonnen und Big Bags für Kies berechnen."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "So berechnen Sie, wie viel Kies Sie brauchen",
+  "inLanguage": "de",
+  "step": [
+    { "@type": "HowToStep", "name": "Fläche messen", "text": "Länge und Breite der Fläche in Metern messen." },
+    { "@type": "HowToStep", "name": "Schütthöhe festlegen", "text": "Gewünschte Schütthöhe wählen, üblich sind 5 cm für Wege und Terrassen, mehr für Einfahrten." },
+    { "@type": "HowToStep", "name": "Ergebnis ablesen", "text": "Der Rechner multipliziert Fläche mit Schütthöhe zu Kubikmetern und rechnet mit der Schüttdichte des Materials in Tonnen um." }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "de",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wie berechne ich, wie viel Kies ich brauche?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Multiplizieren Sie Länge × Breite × Schütthöhe (in Metern), um Kubikmeter zu erhalten. Multiplizieren Sie die Kubikmeter anschließend mit der Schüttdichte des Materials (meist 1,4–1,6 Tonnen pro Kubikmeter), um das Gewicht in Tonnen zu erhalten." }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie viele Tonnen Kies sind ein Kubikmeter?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ein Kubikmeter Kies wiegt je nach Körnung und Feuchtigkeit etwa 1,4 bis 1,8 Tonnen. Rundkies liegt meist bei rund 1,6 t/m³, Splitt und Schotter etwas darunter bei circa 1,5 t/m³." }
+    },
+    {
+      "@type": "Question",
+      "name": "Welche Schütthöhe braucht man für eine Einfahrt oder einen Gartenweg?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Für Zierbeete reichen 3–5 cm, für Gartenwege und Terrassen sind 5 cm üblich, und für eine Einfahrt braucht es meist eine 15–20 cm dicke Tragschicht aus Schotter plus eine 5 cm dicke Deckschicht aus Splitt oder Kies." }
+    },
+    {
+      "@type": "Question",
+      "name": "Was kostet ein Kubikmeter Kies?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Kies kostet lose ab Werk meist etwa 20–40 € pro Tonne bzw. 30–60 € pro Kubikmeter, dazu kommt die Anlieferung mit dem Kipper von etwa 50–150 € je nach Entfernung und Menge. Für kleine Mengen ist ein Big Bag mit 60–150 € inklusive Lieferung oft praktischer." }
+    },
+    {
+      "@type": "Question",
+      "name": "Was ist der Unterschied zwischen Kies, Splitt und Schotter?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Kies besteht aus natürlich gerundeten Körnern und eignet sich gut für Wege und Zierflächen. Splitt ist gebrochenes, kantiges Gestein, das sich beim Verdichten verzahnt und daher als Tragschicht dient. Schotter ist die grobkörnigste Variante und wird meist als unterste Tragschicht unter Einfahrten und Wegen verwendet." }
+    },
+    {
+      "@type": "Question",
+      "name": "Ist dieser Kies Rechner kostenlos?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ja — der Kies Rechner ist komplett kostenlos, läuft direkt im Browser und benötigt weder Anmeldung noch persönliche Daten." }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "GravelCalc", "item": "https://gravelcalc.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Kies Rechner", "item": "https://gravelcalc.com/de/kies-rechner" }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="/de/kies-rechner"><span class="logo-mark">G</span>GravelCalc</a>
+    <button class="nav-toggle" aria-label="Menü umschalten" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <nav class="main-nav">
+      <a href="/de/kies-rechner" aria-current="page">Kies Rechner</a>
+      <a href="/">Alle Rechner (EN)</a>
+      <a href="/pea-gravel-calculator" class="lang-switch">🇬🇧 English</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+
+    <p class="breadcrumbs">
+      <a href="/">GravelCalc</a><span class="sep">/</span>Kies Rechner
+    </p>
+
+    <section class="hero" style="padding-top:6px;">
+      <span class="eyebrow">Kostenloser Rechner</span>
+      <h1>Kies Rechner</h1>
+      <p class="lede">Fläche und Schütthöhe eingeben — Kubikmeter, Tonnen und Big Bags werden sofort berechnet.</p>
+      <div class="trust-row">
+        <span>100&nbsp;% kostenlos</span>
+        <span>Keine Anmeldung</span>
+        <span>Ergebnis in Echtzeit</span>
+      </div>
+    </section>
+
+    <section class="calc-card" aria-label="Kies Rechner">
+      <div class="unit-toggle" role="group" aria-label="Einheiten">
+        <button type="button" id="unitM" class="active" data-unit="metric">Meter / cm</button>
+        <button type="button" id="unitFt" data-unit="imperial">Fuß / Zoll</button>
+      </div>
+
+      <div class="calc-grid">
+        <div>
+          <div class="field-row">
+            <div class="field">
+              <label for="length">Länge <span class="unit-tag" id="lenUnit">(m)</span></label>
+              <div class="input-wrap">
+                <input type="number" id="length" inputmode="decimal" min="0" step="0.1" value="4" aria-describedby="lenUnit">
+                <span class="suffix" id="lenSuffix">m</span>
+              </div>
+            </div>
+            <div class="field">
+              <label for="width">Breite <span class="unit-tag" id="widUnit">(m)</span></label>
+              <div class="input-wrap">
+                <input type="number" id="width" inputmode="decimal" min="0" step="0.1" value="3">
+                <span class="suffix" id="widSuffix">m</span>
+              </div>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="depth">Schütthöhe <span class="unit-tag" id="depUnit">(cm)</span></label>
+              <div class="input-wrap">
+                <input type="number" id="depth" inputmode="decimal" min="0" step="0.5" value="5">
+                <span class="suffix" id="depSuffix">cm</span>
+              </div>
+            </div>
+            <div class="field">
+              <label for="material">Material</label>
+              <div class="input-wrap">
+                <select id="material" class="plain-select">
+                  <option value="1.6" selected>Kies (Rundkies)</option>
+                  <option value="1.5">Splitt</option>
+                  <option value="1.6">Schotter</option>
+                  <option value="1.6">Flusskies</option>
+                  <option value="1.4">Dekokies / Ziersplitt</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <p class="help-text">Rechnet mit einer typischen Schüttdichte von 1,4–1,6&nbsp;t/m³ und einem Big Bag à 0,5&nbsp;m³. Große Mengen liefern die meisten Kieswerke lose per Kipper.</p>
+        </div>
+
+        <div class="results" aria-live="polite">
+          <div class="results-label">Sie benötigen</div>
+          <div class="result-stat primary">
+            <span class="rs-name">Kubikmeter</span>
+            <span><span class="rs-value" id="outCbm">0,00</span><span class="rs-unit">m³</span></span>
+          </div>
+          <div class="result-stat">
+            <span class="rs-name">Gewicht</span>
+            <span><span class="rs-value" id="outTons">0,00</span><span class="rs-unit">t</span></span>
+          </div>
+          <div class="result-stat">
+            <span class="rs-name">Big Bags</span>
+            <span><span class="rs-value" id="outBags">0</span><span class="rs-unit">Stück</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Wie viel Kies brauche ich?</h2>
+      <p>Der Rechner multipliziert Ihre Fläche (Länge × Breite) mit der Schütthöhe zu Kubikmetern und rechnet diese mit der Schüttdichte des gewählten Materials in Tonnen um. Messen Sie Länge und Breite Ihrer Fläche in Metern, legen Sie eine Schütthöhe fest — 3–5 cm für Zierbeete, 5 cm für Wege und Terrassen, 15–20 cm Tragschicht plus 5 cm Deckschicht für Einfahrten — und der Rechner erledigt den Rest.</p>
+      <div class="formula-box">
+        Kubikmeter = Länge × Breite × Schütthöhe (m)<br>
+        Tonnen = Kubikmeter × Schüttdichte<br>
+        Big Bags = Kubikmeter ÷ 0,5
+      </div>
+      <p>Rechenbeispiel: Ein 4 m × 3 m großer Gartenweg mit 5 cm Schütthöhe ergibt 4 × 3 × 0,05 = 0,6 m³, bei Rundkies also rund 0,96 Tonnen. Planen Sie immer 5–10&nbsp;% Reserve ein — unebener Untergrund, Verdichtung und Verluste beim Verteilen zehren am Ergebnis, und eine Nachbestellung ist meist teurer als eine leicht großzügige Erstbestellung.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Was kostet Kies?</h2>
+      <p>Kies und Splitt kosten lose ab Werk meist etwa 20–40&nbsp;€ pro Tonne bzw. 30–60&nbsp;€ pro Kubikmeter, abhängig von Körnung, Region und Kieswerk. Die Anlieferung per Kipper wird meist separat berechnet und liegt je nach Entfernung und Ladungsgröße bei etwa 50–150&nbsp;€. Viele Kieswerke setzen zudem eine Mindestabnahme von 3–5 Tonnen voraus, bevor ein LKW losfährt.</p>
+      <p>Für kleine Mengen — etwa ein Beet oder eine Ausbesserung — lohnt sich oft ein Big Bag: Diese großen Sandsäcke fassen meist 0,5 bis 1 m³ und kosten inklusive Lieferung etwa 60–150&nbsp;€. Pro Kubikmeter ist das teurer als eine lose Lieferung, aber praktisch, wenn keine Kipperzufahrt möglich ist oder nur wenig Material gebraucht wird. Sobald Sie Ihr Volumen aus dem Rechner oben kennen, multiplizieren Sie es einfach mit dem Preis Ihres Lieferanten, um die Gesamtkosten zu schätzen.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Kiesarten im Überblick</h2>
+      <p>„Kies" ist ein Sammelbegriff für mehrere Materialien mit unterschiedlicher Körnung, Dichte und Verwendung. Rundkies ist natürlich abgerundet und angenehm zu begehen, ideal für Wege und Beete. Splitt und Schotter sind gebrochenes, kantiges Gestein, das sich beim Verdichten verzahnt — die Standardwahl für Tragschichten unter Einfahrten und Terrassen.</p>
+      <div class="table-wrap">
+        <table class="guide-table">
+          <thead><tr><th>Typ</th><th>Körnung</th><th>Schüttdichte</th><th>Verwendung</th></tr></thead>
+          <tbody>
+            <tr><td>Rundkies (Kies)</td><td>8–16 mm</td><td>~1,6 t/m³</td><td>Gartenwege, Beete, Terrassen</td></tr>
+            <tr><td>Splitt</td><td>2–5 mm bzw. 16–32 mm</td><td>~1,5 t/m³</td><td>Tragschicht, Pflasterfugen, Drainage</td></tr>
+            <tr><td>Schotter</td><td>32–63 mm</td><td>~1,6 t/m³</td><td>Unterste Tragschicht für Einfahrten</td></tr>
+            <tr><td>Flusskies</td><td>16–32 mm</td><td>~1,6 t/m³</td><td>Drainage, Deko, Teichrand</td></tr>
+            <tr><td>Dekokies / Ziersplitt</td><td>8–16 mm, farbig</td><td>~1,4 t/m³</td><td>Beete als Mulch-Alternative</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="help-text">Die Dichteunterschiede zwischen den Materialien sind gering (1,4–1,6 t/m³), daher liefert der Rechner oben für jede Kiesart eine verlässliche Schätzung — einfach im Dropdown wechseln.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Häufige Fragen</h2>
+      <details class="faq-item">
+        <summary><h3>Wie berechne ich, wie viel Kies ich brauche?</h3></summary>
+        <p class="faq-answer">Multiplizieren Sie Länge × Breite × Schütthöhe (in Metern), um Kubikmeter zu erhalten. Multiplizieren Sie die Kubikmeter anschließend mit der Schüttdichte des Materials (meist 1,4–1,6 t/m³), um das Gewicht in Tonnen zu erhalten — oder nutzen Sie einfach den Rechner oben.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>Wie viele Tonnen Kies sind ein Kubikmeter?</h3></summary>
+        <p class="faq-answer">Ein Kubikmeter Kies wiegt je nach Körnung und Feuchtigkeit etwa 1,4 bis 1,8 Tonnen. Rundkies liegt meist bei rund 1,6 t/m³, Splitt und Schotter etwas darunter bei circa 1,5 t/m³.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>Welche Schütthöhe braucht man für eine Einfahrt oder einen Gartenweg?</h3></summary>
+        <p class="faq-answer">Für Zierbeete reichen 3–5 cm, für Gartenwege und Terrassen sind 5 cm üblich, und für eine Einfahrt braucht es meist eine 15–20 cm dicke Tragschicht aus Schotter plus eine 5 cm dicke Deckschicht aus Splitt oder Kies.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>Was kostet ein Kubikmeter Kies?</h3></summary>
+        <p class="faq-answer">Kies kostet lose ab Werk meist etwa 20–40 € pro Tonne bzw. 30–60 € pro Kubikmeter, dazu kommt die Anlieferung von etwa 50–150 € je nach Entfernung. Für kleine Mengen ist ein Big Bag mit 60–150 € inklusive Lieferung oft praktischer.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>Was ist der Unterschied zwischen Kies, Splitt und Schotter?</h3></summary>
+        <p class="faq-answer">Kies besteht aus natürlich gerundeten Körnern und eignet sich gut für Wege und Zierflächen. Splitt ist gebrochenes, kantiges Gestein, das sich beim Verdichten verzahnt und daher als Tragschicht dient. Schotter ist die grobkörnigste Variante und wird meist als unterste Tragschicht unter Einfahrten und Wegen verwendet.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>Ist dieser Kies Rechner kostenlos?</h3></summary>
+        <p class="faq-answer">Ja — der Kies Rechner ist komplett kostenlos, läuft direkt im Browser und benötigt weder Anmeldung noch persönliche Daten.</p>
+      </details>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Weitere Rechner</h2>
+      <p class="help-text">Diese spezialisierten Tools sind aktuell nur auf Englisch verfügbar — die Berechnung selbst funktioniert unabhängig von der Sprache.</p>
+      <div class="related-grid">
+        <a class="related-card" href="/gravel-cost-calculator">
+          <div class="rc-kicker">Calculator (EN)</div>
+          <h2>Gravel Cost Calculator</h2>
+          <p>Volumen plus Preis pro Tonne — Gesamtkosten berechnen.</p>
+        </a>
+        <a class="related-card" href="/gravel-driveway-calculator">
+          <div class="rc-kicker">Calculator (EN)</div>
+          <h2>Gravel Driveway Calculator</h2>
+          <p>Tragschicht + Deckschicht für Einfahrten.</p>
+        </a>
+        <a class="related-card" href="/river-rock-calculator">
+          <div class="rc-kicker">Calculator (EN)</div>
+          <h2>River Rock Calculator</h2>
+          <p>Gleiche Formel, abgestimmt auf Flusskies.</p>
+        </a>
+        <a class="related-card" href="/pea-gravel-calculator">
+          <div class="rc-kicker">🇬🇧 English</div>
+          <h2>Pea Gravel Calculator</h2>
+          <p>Die englische Originalversion dieses Rechners.</p>
+        </a>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="/de/kies-rechner" style="color:#fff;"><span class="logo-mark">G</span>GravelCalc</a>
+        <p>Kostenloser, schneller Kies-Rechner. Nur Schätzwerte — Mengen bitte immer mit Ihrem Lieferanten abstimmen.</p>
+      </div>
+      <div>
+        <h4>Rechner</h4>
+        <ul>
+          <li><a href="/de/kies-rechner">Kies Rechner</a></li>
+          <li><a href="/gravel-cost-calculator">Kosten (EN)</a></li>
+          <li><a href="/gravel-driveway-calculator">Einfahrt (EN)</a></li>
+          <li><a href="/river-rock-calculator">Flusskies (EN)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Sprache</h4>
+        <ul>
+          <li><a href="/de/kies-rechner">🇩🇪 Deutsch</a></li>
+          <li><a href="/pea-gravel-calculator">🇬🇧 English</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Seite</h4>
+        <ul>
+          <li><a href="/">GravelCalc Home (EN)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 GravelCalc. Alle Angaben ohne Gewähr.</span>
+      <span>Statisches HTML — kein Tracking, keine Konten.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/main.js"></script>
+<script>
+(function () {
+  var unit = "metric";
+  var lenIn = document.getElementById("length");
+  var widIn = document.getElementById("width");
+  var depIn = document.getElementById("depth");
+  var materialSel = document.getElementById("material");
+  var btnM = document.getElementById("unitM");
+  var btnFt = document.getElementById("unitFt");
+  var outCbm = document.getElementById("outCbm");
+  var outTons = document.getElementById("outTons");
+  var outBags = document.getElementById("outBags");
+  var BAG_M3 = 0.5;
+
+  function fmt(n, decimals) {
+    if (!isFinite(n) || n < 0) n = 0;
+    return n.toLocaleString("de-DE", {
+      minimumFractionDigits: decimals,
+      maximumFractionDigits: decimals
+    });
+  }
+
+  function setUnit(u) {
+    unit = u;
+    btnM.classList.toggle("active", u === "metric");
+    btnFt.classList.toggle("active", u === "imperial");
+    document.getElementById("lenUnit").textContent = u === "metric" ? "(m)" : "(ft)";
+    document.getElementById("widUnit").textContent = u === "metric" ? "(m)" : "(ft)";
+    document.getElementById("depUnit").textContent = u === "metric" ? "(cm)" : "(Zoll)";
+    document.getElementById("lenSuffix").textContent = u === "metric" ? "m" : "ft";
+    document.getElementById("widSuffix").textContent = u === "metric" ? "m" : "ft";
+    document.getElementById("depSuffix").textContent = u === "metric" ? "cm" : "in";
+    calc();
+  }
+
+  function calc() {
+    var lenRaw = parseFloat(lenIn.value) || 0;
+    var widRaw = parseFloat(widIn.value) || 0;
+    var depRaw = parseFloat(depIn.value) || 0;
+    var lengthM = unit === "metric" ? lenRaw : lenRaw * 0.3048;
+    var widthM = unit === "metric" ? widRaw : widRaw * 0.3048;
+    var depthM = unit === "metric" ? depRaw / 100 : (depRaw * 2.54) / 100;
+    var cbm = Math.max(lengthM, 0) * Math.max(widthM, 0) * Math.max(depthM, 0);
+    var density = parseFloat(materialSel.value);
+    var tons = cbm * density;
+    var bags = cbm <= 0 ? 0 : Math.ceil(cbm / BAG_M3);
+
+    outCbm.textContent = fmt(cbm, 2);
+    outTons.textContent = fmt(tons, 2);
+    outBags.textContent = fmt(bags, 0);
+  }
+
+  var debounced = debounce(calc, 50);
+  [lenIn, widIn, depIn, materialSel].forEach(function (el) {
+    el.addEventListener("input", debounced);
+    el.addEventListener("change", debounced);
+  });
+  btnM.addEventListener("click", function () { setUnit("metric"); });
+  btnFt.addEventListener("click", function () { setUnit("imperial"); });
+
+  calc();
+})();
+</script>
+</body>
+</html>

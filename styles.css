@@ -218,6 +218,35 @@ nav.main-nav a:hover { background: var(--concrete-100); color: var(--stone-900);
   margin-bottom: 12px;
 }
 
+/* ---------- Trust row (above-the-fold hero badges) ---------- */
+.trust-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin: 12px 0 2px;
+}
+.trust-row span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--stone-600);
+}
+.trust-row span::before {
+  content: "✓";
+  color: var(--good);
+  font-weight: 800;
+}
+
+/* ---------- Language switch ---------- */
+.lang-switch {
+  border: 1px solid var(--border) !important;
+  border-radius: 999px !important;
+  margin-left: 4px;
+}
+.lang-switch:hover { border-color: var(--accent) !important; }
+
 /* ---------- Calculator card ---------- */
 .calc-card {
   background: var(--white);
