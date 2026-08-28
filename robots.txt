@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gravelcalc.com/sitemap.xml
+Sitemap: https://thegravelcalculators.com/sitemap.xml
