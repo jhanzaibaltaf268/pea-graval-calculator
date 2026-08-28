@@ -36,6 +36,11 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>https://gravelcalc.com/de/kies-rechner</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>https://gravelcalc.com/how-much-gravel-do-i-need</loc>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
