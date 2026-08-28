@@ -84,4 +84,16 @@
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
+  <url>
+    <loc>https://gravelcalc.com/privacy-policy</loc>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://gravelcalc.com/contact</loc>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
+  </url>
 </urlset>
