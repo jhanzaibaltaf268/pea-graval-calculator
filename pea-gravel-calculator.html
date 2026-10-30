@@ -8,8 +8,8 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#ff5a1f">
-<title>Pea Gravel Calculator – Tons, Yards &amp; Bags | GravelCalc</title>
-<meta name="description" content="Free pea gravel calculator. Enter your area and depth to instantly get cubic yards, tons, and bags of pea gravel needed for your project.">
+<title>Pea Gravel Calculator: Cubic Yards, Tons, Bags &amp; Cost</title>
+<meta name="description" content="Free pea gravel calculator. Enter length, width and depth to get cubic yards, tons, 50 lb bags and cost, plus coverage charts, depth guide and examples.">
 <link rel="canonical" href="https://thegravelcalculators.com/pea-gravel-calculator">
 <link rel="alternate" hreflang="en" href="https://thegravelcalculators.com/pea-gravel-calculator">
 <link rel="alternate" hreflang="de" href="https://thegravelcalculators.com/de/kies-rechner">
@@ -24,25 +24,27 @@
 <meta property="og:site_name" content="GravelCalc">
 <meta property="og:locale" content="en_US">
 <meta property="og:url" content="https://thegravelcalculators.com/pea-gravel-calculator">
-<meta property="og:title" content="Pea Gravel Calculator – Tons, Yards &amp; Bags | GravelCalc">
-<meta property="og:description" content="Free pea gravel calculator. Enter your area and depth to instantly get cubic yards, tons, and bags of pea gravel needed for your project.">
+<meta property="og:title" content="Pea Gravel Calculator: Cubic Yards, Tons, Bags &amp; Cost">
+<meta property="og:description" content="Free pea gravel calculator. Enter length, width and depth to get cubic yards, tons, 50 lb bags and cost, plus coverage charts, depth guide and examples.">
 <meta property="og:image" content="https://thegravelcalculators.com/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Pea Gravel Calculator – Tons, Yards &amp; Bags | GravelCalc">
-<meta name="twitter:description" content="Free pea gravel calculator. Enter your area and depth to instantly get cubic yards, tons, and bags of pea gravel needed for your project.">
+<meta name="twitter:title" content="Pea Gravel Calculator: Cubic Yards, Tons, Bags &amp; Cost">
+<meta name="twitter:description" content="Free pea gravel calculator. Enter length, width and depth to get cubic yards, tons, 50 lb bags and cost, plus coverage charts, depth guide and examples.">
 <meta name="twitter:image" content="https://thegravelcalculators.com/og-image.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
+  "@type": "WebApplication",
   "name": "Pea Gravel Calculator",
+  "url": "https://thegravelcalculators.com/pea-gravel-calculator",
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "description": "Free pea gravel calculator for cubic yards, tons, bags and cost, with coverage charts, depth guide and worked examples.",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "url": "https://thegravelcalculators.com/pea-gravel-calculator",
-  "description": "Enter length, width and depth to calculate cubic yards, tons and bags of pea gravel needed."
+  "dateModified": "2026-10-30"
 }
 </script>
 <script type="application/ld+json">
@@ -51,8 +53,9 @@
   "@type": "HowTo",
   "name": "How to calculate how much pea gravel you need",
   "step": [
-    { "@type": "HowToStep", "name": "Measure your area", "text": "Measure the length and width of the space in feet (or meters)." },
-    { "@type": "HowToStep", "name": "Measure your depth", "text": "Decide how deep you want the pea gravel layer, typically 2–3 inches for walkways and patios." },
+    { "@type": "HowToStep", "name": "Pick the shape", "text": "Choose a rectangle, circle, or border/ring if you are filling around a feature such as a tree or fire pit." },
+    { "@type": "HowToStep", "name": "Measure your area", "text": "Measure the length and width (or diameter) of the space in feet or meters. Split irregular areas into rectangles and circles and add the totals." },
+    { "@type": "HowToStep", "name": "Set your depth", "text": "Decide how deep you want the finished, settled layer — typically 2 inches for paths and 2 to 3 inches for patios." },
     { "@type": "HowToStep", "name": "Read your result", "text": "The calculator multiplies area by depth to give cubic yards, then converts to tons and standard 0.5 cu ft bags." }
   ]
 }
@@ -64,33 +67,63 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How much pea gravel do I need per square foot?",
-      "acceptedAnswer": { "@type": "Answer", "text": "For a standard 2-inch depth, one square foot of coverage needs about 0.0062 cubic yards (roughly 17.3 lbs) of pea gravel. Multiply your area in square feet by your chosen depth to get total cubic yards, or just use the calculator above." }
+      "name": "How much does a cubic yard of pea gravel weigh?",
+      "acceptedAnswer": { "@type": "Answer", "text": "About 1.4 tons, or roughly 2,800 lb. Washed, dry pea gravel can run from about 2,600 to 3,000 lb per cubic yard, and wet gravel weighs more." }
     },
     {
       "@type": "Question",
       "name": "How many tons of pea gravel are in a cubic yard?",
-      "acceptedAnswer": { "@type": "Answer", "text": "One cubic yard of pea gravel weighs approximately 1.4 tons (about 2,800 lbs), though this can vary slightly by moisture content and supplier." }
+      "acceptedAnswer": { "@type": "Answer", "text": "About 1.4 tons at the default density. Multiply cubic yards by 1.4 to get tons, or divide tons by 1.4 to get cubic yards." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much area does a ton of pea gravel cover?",
+      "acceptedAnswer": { "@type": "Answer", "text": "About 116 square feet at 2 inches deep, 77 square feet at 3 inches, and 58 square feet at 4 inches, assuming 1.4 tons per cubic yard." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does 5 cubic feet of pea gravel weigh?",
+      "acceptedAnswer": { "@type": "Answer", "text": "About 520 lb at the default density, which is roughly 10 bags of 0.5 cubic foot." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a 50 lb bag of pea gravel cover?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A 0.5 cubic foot bag covers about 2 square feet at 3 inches deep, or 3 square feet at 2 inches. Check the bag size on your product." }
     },
     {
       "@type": "Question",
       "name": "What depth of pea gravel should I use?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Use 2 inches for decorative ground cover, 3 inches for walkways and patios, and 4 inches or more for driveways or areas with foot and light vehicle traffic. See our gravel depth guide for a full breakdown by use case." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Use 1 to 2 inches for garden beds, 2 inches for paths, and 2 to 3 inches for patios and dog runs, always over a compacted base." }
     },
     {
       "@type": "Question",
       "name": "How much does pea gravel cost per ton?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Pea gravel typically costs $30–$65 per ton delivered, or $40–$85 per cubic yard, depending on region and quantity. Use the gravel cost calculator to estimate your total project cost." }
-    },
-    {
-      "@type": "Question",
-      "name": "How much does a cubic yard of pea gravel weigh?",
-      "acceptedAnswer": { "@type": "Answer", "text": "A cubic yard of pea gravel weighs roughly 2,800 lbs (1.4 tons). A cubic foot weighs about 105 lbs." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Prices vary by region, colour, whether it is washed, and delivery distance, so get a couple of local quotes and enter the price in the gravel cost calculator to see your total." }
     },
     {
       "@type": "Question",
       "name": "Is pea gravel good for drainage?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes — pea gravel's rounded stones leave small gaps that let water pass through easily, making it a common fill around French drains, downspouts, and drain fields. For heavier drainage beds, larger river rock is often preferred." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. The rounded, uniform stones leave open spaces for water to pass through. For a French drain, use washed stone, line the trench with geotextile fabric, and slope it." }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I put down before pea gravel?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Remove the grass or topsoil, level and compact the soil, lay landscape fabric, add 3 to 4 inches of compacted crushed stone for patios and seating areas, then install edging before spreading the pea gravel." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use pea gravel for a driveway?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It is not recommended as the main surface, because rounded stone shifts under vehicles. Build the driveway from angular crushed stone instead." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between pea gravel and river rock?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Pea gravel is small, about 1/8 to 3/8 inch, while river rock is larger, usually 1 to 3 inches or more. Both are rounded." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this pea gravel calculator free?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, it is free to use and needs no sign-up." }
     }
   ]
 }
@@ -149,7 +182,8 @@
     <section class="hero">
       <span class="eyebrow">Free calculator</span>
       <h1>Pea Gravel Calculator</h1>
-      <p class="lede">Enter your area and depth to get the tons, cubic yards, and bags of pea gravel you need — updates instantly as you type.</p>
+      <p class="lede">A cubic yard of pea gravel covers about 108 square feet at 3 inches deep and weighs roughly 1.4 tons. Enter your length, width and depth below to get the cubic yards, tons, bags and cost for your patio, path, playground, drainage trench or garden bed.</p>
+      <p class="lede">This calculator uses 1.4 tons per cubic yard (about 2,800 lb) as its default density — change it if your supplier quotes a different figure, and add a 10% allowance for settling and spillage.</p>
     </section>
 
     <section class="calc-card" aria-label="Pea gravel calculator">
@@ -219,61 +253,225 @@
     </section>
 
     <section class="block tight">
-      <h2 class="section-title">How Much Pea Gravel Do I Need?</h2>
-      <p>The calculator multiplies your area (length × width) by depth to get cubic feet, converts to cubic yards, then multiplies by pea gravel's average density of 1.4 tons per cubic yard to estimate weight.</p>
+      <h2 class="section-title">How much pea gravel do I need?</h2>
+      <p>Multiply the area by the depth, then convert to cubic yards. In imperial units the shortcut is:</p>
       <div class="formula-box">
-        cubic yards = (length × width × depth) ÷ 27<br>
-        tons = cubic yards × 1.4<br>
-        bags = cubic feet ÷ bag size
+        cubic yards = length (ft) × width (ft) × depth (in) ÷ 324
       </div>
-      <p>Worked example: a 10 ft × 10 ft patio border at a 2-inch depth is 100 sq ft × 0.167 ft = 16.7 cubic feet, or about 0.62 cubic yards — roughly 0.86 tons. Always round up and buy 5–10% extra to cover uneven ground, compaction, and spillage during spreading.</p>
+      <p>324 is 27 cubic feet per cubic yard times 12 inches per foot. To get tons, multiply cubic yards by the density — about 1.4 tons per cubic yard for pea gravel. To get a safe order quantity, add 10% for compaction and waste.</p>
+
+      <h3>How much pea gravel do I need per square foot?</h3>
+      <p>A cubic yard of pea gravel covers 324 square feet at 1 inch, 162 at 2 inches, 108 at 3 inches and 81 at 4 inches. Per square foot at 2 inches deep you need about 0.006 cubic yards, or 0.17 cubic feet.</p>
+
+      <h3>Pea gravel coverage chart</h3>
+      <div class="table-wrap">
+        <table class="guide-table">
+          <thead><tr><th>Depth</th><th>Sq ft per cubic yard</th><th>Sq ft per ton (at 1.4 t/yd³)</th><th>Bags (0.5 cu ft) per 100 sq ft</th></tr></thead>
+          <tbody>
+            <tr><td>1 inch</td><td>324</td><td>231</td><td>17</td></tr>
+            <tr><td>2 inches</td><td>162</td><td>116</td><td>34</td></tr>
+            <tr><td>3 inches</td><td>108</td><td>77</td><td>50</td></tr>
+            <tr><td>4 inches</td><td>81</td><td>58</td><td>67</td></tr>
+            <tr><td>6 inches</td><td>54</td><td>39</td><td>100</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>If your supplier quotes a different density (1.3 to 1.5 tons per cubic yard is common for washed pea gravel), scale the per-ton column up or down by the same ratio.</p>
     </section>
 
     <section class="block tight">
-      <h2 class="section-title">What Is Pea Gravel Used For?</h2>
-      <p>Pea gravel's small, rounded stones make it comfortable to walk on and easy to spread by hand, which is why it shows up in more project types than almost any other aggregate:</p>
+      <h2 class="section-title">Worked pea gravel examples</h2>
+
+      <h3>Example 1: patio, 10 × 12 ft at 3 inches</h3>
+      <p>Area is 120 sq ft. Volume is 120 × 3 ÷ 324 = 1.11 cubic yards, or 30 cubic feet. Weight is 1.11 × 1.4 = 1.56 tons. With a 10% allowance, order 1.22 cubic yards or about 1.7 tons — 60 bags of 0.5 cu ft, or 66 with the allowance.</p>
+
+      <h3>Example 2: garden path, 3 ft wide × 30 ft long at 2 inches</h3>
+      <p>Area is 90 sq ft. Volume is 90 × 2 ÷ 324 = 0.56 cubic yards. Weight is 0.78 tons. With 10% extra, order 0.61 cubic yards or about 0.86 tons — a small enough job that bags may be easier than a bulk delivery.</p>
+
+      <h3>Example 3: circular bed, 10 ft diameter at 3 inches</h3>
+      <p>Area is 3.14 × 5 × 5 = 78.5 sq ft. Volume is 78.5 × 3 ÷ 324 = 0.73 cubic yards. Weight is 1.02 tons. With 10% extra, order 0.80 cubic yards or about 1.12 tons.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">How to use this pea gravel calculator</h2>
+      <ol>
+        <li><strong>Pick the shape.</strong> Rectangle, circle, or a border/ring if you're filling around a feature such as a tree or fire pit.</li>
+        <li><strong>Enter the dimensions.</strong> Measure in feet and inches or metres and centimetres. For an irregular area, split it into rectangles and circles, calculate each, and add the totals.</li>
+        <li><strong>Set the depth.</strong> Use the depth table below if you're unsure. Depth is the finished, settled layer, not the loose depth when you spread it.</li>
+        <li><strong>Check density and bag size.</strong> Keep the default 1.4 tons per cubic yard unless your supplier gives a different figure, and choose the bag size printed on the label.</li>
+        <li><strong>Read the results and order.</strong> Round up to the next half yard, or to the next whole bag.</li>
+      </ol>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">What is pea gravel, and what size is it?</h2>
+      <p>Pea gravel is small, smooth, rounded stone, usually about 1/8 to 3/8 inch across, named for its resemblance to peas. It's a natural, water-worn aggregate, typically screened and washed, ranging from tan and cream to grey and brown. Because the stones are round, they drain well but don't lock together the way angular crushed stone does.</p>
+
+      <h3>Pea gravel sizes and grades</h3>
+      <p>Suppliers sell pea gravel under several names. Sizing varies by region and quarry, so confirm the gradation with your supplier before ordering.</p>
+      <div class="table-wrap">
+        <table class="guide-table">
+          <thead><tr><th>Common name</th><th>Typical size</th><th>Best for</th></tr></thead>
+          <tbody>
+            <tr><td>Pea gravel (3/8 inch)</td><td>about 1/4 to 3/8 inch</td><td>Paths, patios, play areas, garden beds</td></tr>
+            <tr><td>#8 stone</td><td>about 3/8 inch down to the No. 8 sieve</td><td>Drainage, concrete aggregate, fine fill</td></tr>
+            <tr><td>#89 stone</td><td>about 3/8 inch to #16 sieve</td><td>Drainage, fine surfacing, pipe bedding</td></tr>
+            <tr><td>Chat or river pea</td><td>varies</td><td>Decorative beds, edging</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">How deep should pea gravel be?</h2>
+      <p>Depth is the biggest driver of how much you buy, so choose it before you calculate. These are typical finished depths for residential projects.</p>
+      <div class="table-wrap">
+        <table class="guide-table">
+          <thead><tr><th>Project</th><th>Typical depth</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td>Garden bed or tree ring</td><td>1–2 in</td><td>Decorative cover; add landscape fabric underneath</td></tr>
+            <tr><td>Walkway or garden path</td><td>2 in</td><td>Over a compacted base, with edging</td></tr>
+            <tr><td>Patio or seating area</td><td>2–3 in</td><td>Over 4 in of compacted crushed stone base</td></tr>
+            <tr><td>Dog run</td><td>2–3 in</td><td>Over a base; rinse or replace periodically</td></tr>
+            <tr><td>Playground</td><td>per the safety standard</td><td>Follow the surfacing standard for your equipment's fall height</td></tr>
+            <tr><td>French drain or pipe bedding</td><td>fill the trench</td><td>Use washed stone and wrap the trench in geotextile fabric</td></tr>
+            <tr><td>Driveway</td><td>not recommended</td><td>Rounded stone rolls under tires; use crushed stone such as #57 or #411</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>For a full breakdown of base layers and compaction, see the <a href="/gravel-depth-guide">Gravel Depth Guide</a>.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">How many bags of pea gravel do I need?</h2>
+      <p>Bags are sold by cubic foot or by weight, commonly 0.5 cubic foot (about 50 lb). One cubic yard is 27 cubic feet, so you need 54 half-cubic-foot bags per cubic yard, or about 40 bags per ton.</p>
+      <div class="formula-box">
+        bags needed = cubic feet ÷ bag size (cu ft)
+      </div>
+      <p>For example, a path that needs 15 cubic feet takes 30 bags of 0.5 cubic foot. Always check the label — bag sizes vary by brand, and some are sold by weight only.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Bulk vs bagged pea gravel: which is cheaper?</h2>
+      <p>Bagged gravel costs more per cubic foot because you pay for packaging, handling and retail margin, but it has no delivery fee and no minimum. Bulk is usually cheaper per ton once you need more than about half a cubic yard, but delivery fees and minimum loads can erase the saving on small jobs.</p>
+      <div class="table-wrap">
+        <table class="guide-table">
+          <thead><tr><th></th><th>Bagged</th><th>Bulk delivery</th></tr></thead>
+          <tbody>
+            <tr><td>Best for</td><td>Under about 0.5 cubic yard; hard-to-reach areas</td><td>Over about 0.5 to 1 cubic yard</td></tr>
+            <tr><td>Delivery</td><td>None; you haul it</td><td>Fee by distance; minimum load</td></tr>
+            <tr><td>Handling</td><td>50 lb bags, many trips</td><td>One dump, then wheelbarrow</td></tr>
+            <tr><td>Accuracy</td><td>Whole bags; easy to top up</td><td>Ordered by ton or yard; may be tricky to return extra</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Compare the cost per cubic yard, not per bag: multiply the bag price by 54 (for 0.5 cubic foot bags), then compare it with the bulk price plus delivery. Use the <a href="/gravel-cost-calculator">Gravel Cost Calculator</a> to run the numbers with your local prices.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Calculating circular, curved and irregular areas</h2>
       <ul>
-        <li><strong>Walkways and paths</strong> — a low-cost, permeable alternative to pavers or concrete.</li>
-        <li><strong>Patios and seating areas</strong> — often edged with pavers or steel edging to hold the line.</li>
-        <li><strong>Playgrounds</strong> — a soft, well-draining surface under swing sets and play structures.</li>
-        <li><strong>Garden beds and mulch alternative</strong> — suppresses weeds without breaking down like bark mulch.</li>
-        <li><strong>Drainage</strong> — pea gravel's rounded shape leaves small gaps between stones, so it's a common fill around French drains, downspout splash pads, and drain fields where water needs to pass through freely.</li>
+        <li><strong>Circle:</strong> area = 3.14 × radius × radius. A 10 ft diameter circle is 78.5 sq ft.</li>
+        <li><strong>Ring or border</strong> (filling around an object): area of the outer circle minus area of the inner circle.</li>
+        <li><strong>Triangle:</strong> area = base × height ÷ 2.</li>
+        <li><strong>Irregular shape:</strong> split it into rectangles and circles, calculate each area, then add them.</li>
+      </ul>
+      <p>Convert the total area to cubic yards with the depth formula above. If you already know the area in square feet, use the <a href="/square-feet-to-cubic-yards">Square Feet to Cubic Yards Calculator</a>.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Why you should add 10% extra</h2>
+      <p>Pea gravel settles into the base and spreads at the edges as you rake it, and a bulk load is rarely exactly the quantity you ordered. Adding 10% covers settling and spillage. Add 15% if the base is soft or uneven, and round up to the next half cubic yard. Running short means a second delivery fee and a possible colour mismatch between batches.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">What is pea gravel used for?</h2>
+      <ul>
+        <li><strong>Walkways and garden paths</strong> — a comfortable, permeable surface that's easy to lay.</li>
+        <li><strong>Patios and seating areas</strong> — a low-cost alternative to pavers when set over a compacted base with edging.</li>
+        <li><strong>Playgrounds</strong> — gentle underfoot, but loose fill needs enough depth for your equipment, and it isn't wheelchair-accessible.</li>
+        <li><strong>Drainage and French drains</strong> — water passes through quickly; use washed stone and fabric to stop soil from clogging it.</li>
+        <li><strong>Dog runs</strong> — drains fast and is easy on paws, though it needs periodic cleaning.</li>
+        <li><strong>Garden beds and tree rings</strong> — suppresses weeds and holds a clean edge.</li>
+        <li><strong>Fire pit surrounds</strong> — use with care; wet river-style stones can crack under heat, so keep pea gravel away from direct flame and use lava rock or fire-rated media inside the ring.</li>
+        <li><strong>Concrete mix and pipe bedding</strong> — smaller grades such as #8 and #89.</li>
       </ul>
     </section>
 
     <section class="block tight">
-      <h2 class="section-title">How Many Bags of Pea Gravel Do I Need?</h2>
-      <p>Bagged pea gravel is usually sold in 0.5 cubic foot bags (around 50 lbs each). To convert, divide your total cubic feet by the bag size — the calculator above does this automatically and lets you switch bag sizes if your supplier sells 0.75 or 2 cubic foot bags instead.</p>
-      <p>Bags make sense for small top-ups and garden beds, but they cost more per cubic foot than a bulk delivery. Once your project needs more than a cubic yard or two, it's almost always cheaper to order loose by the ton — see the <a href="/gravel-cost-calculator">gravel cost calculator</a> to compare.</p>
+      <h2 class="section-title">Pea gravel pros and cons</h2>
+      <p><strong>Pros:</strong> excellent drainage, smooth underfoot, many colours, easy to spread and relocate, and no mixing or curing.</p>
+      <p><strong>Cons:</strong> the stones shift and migrate without edging, it's hard to walk or wheel on, it needs top-ups over time, it holds leaves and debris that need raking, and it's difficult to shovel snow from. If you need a firmer surface, consider crushed stone, or see <a href="/types-of-gravel">Types of Gravel</a> and the <a href="/river-rock-calculator">River Rock Calculator</a>.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Common pea gravel estimating mistakes</h2>
+      <ul>
+        <li><strong>Using loose depth instead of finished depth.</strong> Calculate for the settled layer, then add the 10% allowance.</li>
+        <li><strong>Mixing units.</strong> Convert inches to feet or use the 324 formula; don't multiply feet by inches.</li>
+        <li><strong>Ignoring the base layer.</strong> A patio or path needs a compacted base under the pea gravel; calculate that separately as crushed stone.</li>
+        <li><strong>Skipping edging and fabric.</strong> Without edging the stones spread; without fabric they sink into soil and weeds push through.</li>
+        <li><strong>Using the wrong density.</strong> Washed, dry and wet pea gravel weigh differently — ask your supplier for the tons per cubic yard they use.</li>
+        <li><strong>Forgetting access.</strong> A full truck can't always reach the site; check the dump location before ordering bulk.</li>
+      </ul>
     </section>
 
     <section class="block tight">
       <h2 class="section-title">Frequently asked questions</h2>
 
       <details class="faq-item">
-        <summary><h3>How much pea gravel do I need per square foot?</h3></summary>
-        <p class="faq-answer">For a standard 2-inch depth, one square foot needs about 0.0062 cubic yards (roughly 17.3 lbs) of pea gravel. Multiply your area by your chosen depth, or just use the calculator above.</p>
+        <summary><h3>How much does a cubic yard of pea gravel weigh?</h3></summary>
+        <p class="faq-answer">About 1.4 tons, or roughly 2,800 lb. Washed, dry pea gravel can run from about 2,600 to 3,000 lb per cubic yard, and wet gravel weighs more.</p>
       </details>
       <details class="faq-item">
         <summary><h3>How many tons of pea gravel are in a cubic yard?</h3></summary>
-        <p class="faq-answer">One cubic yard of pea gravel weighs approximately 1.4 tons (about 2,800 lbs), though this varies slightly by moisture content and supplier.</p>
+        <p class="faq-answer">About 1.4 tons at the default density. Multiply cubic yards by 1.4 to get tons, or divide tons by 1.4 to get cubic yards.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>How much area does a ton of pea gravel cover?</h3></summary>
+        <p class="faq-answer">About 116 square feet at 2 inches deep, 77 square feet at 3 inches, and 58 square feet at 4 inches, assuming 1.4 tons per cubic yard.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>How much does 5 cubic feet of pea gravel weigh?</h3></summary>
+        <p class="faq-answer">About 520 lb at the default density, which is roughly 10 bags of 0.5 cubic foot.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>How much does a 50 lb bag of pea gravel cover?</h3></summary>
+        <p class="faq-answer">A 0.5 cubic foot bag covers about 2 square feet at 3 inches deep, or 3 square feet at 2 inches. Use the bag size printed on your product, because brands differ.</p>
       </details>
       <details class="faq-item">
         <summary><h3>What depth of pea gravel should I use?</h3></summary>
-        <p class="faq-answer">Use 2 inches for decorative ground cover, 3 inches for walkways and patios, and 4 inches or more for driveways or light vehicle traffic. See our <a href="/gravel-depth-guide">gravel depth guide</a> for a full breakdown.</p>
+        <p class="faq-answer">Use 1 to 2 inches for garden beds, 2 inches for paths, and 2 to 3 inches for patios and dog runs, always over a compacted base. See our <a href="/gravel-depth-guide">gravel depth guide</a> for a full breakdown.</p>
       </details>
       <details class="faq-item">
         <summary><h3>How much does pea gravel cost per ton?</h3></summary>
-        <p class="faq-answer">Pea gravel typically costs $30–$65 per ton delivered, or $40–$85 per cubic yard, depending on region and quantity. Try the <a href="/gravel-cost-calculator">gravel cost calculator</a> to estimate your total.</p>
-      </details>
-      <details class="faq-item">
-        <summary><h3>How much does a cubic yard of pea gravel weigh?</h3></summary>
-        <p class="faq-answer">A cubic yard of pea gravel weighs roughly 2,800 lbs (1.4 tons). A single cubic foot weighs about 105 lbs.</p>
+        <p class="faq-answer">Prices vary by region, colour, whether it's washed, and delivery distance, so get a couple of local quotes. Enter the price per ton, cubic yard or bag in the <a href="/gravel-cost-calculator">gravel cost calculator</a> to see your total.</p>
       </details>
       <details class="faq-item">
         <summary><h3>Is pea gravel good for drainage?</h3></summary>
         <p class="faq-answer">Yes — pea gravel's rounded stones leave small gaps that let water pass through easily, making it a common fill around French drains, downspouts, and drain fields. For heavier drainage beds, larger <a href="/river-rock-calculator">river rock</a> is often preferred.</p>
       </details>
+      <details class="faq-item">
+        <summary><h3>What should I put down before pea gravel?</h3></summary>
+        <p class="faq-answer">Remove the grass or topsoil, level and compact the soil, lay landscape fabric, add 3 to 4 inches of compacted crushed stone for patios and seating areas, then install edging before spreading the pea gravel.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>Can I use pea gravel for a driveway?</h3></summary>
+        <p class="faq-answer">It's not recommended as the main surface, because rounded stone shifts under vehicles. Build the driveway from angular crushed stone and use the <a href="/gravel-driveway-calculator">Gravel Driveway Calculator</a> to size the layers.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>What is the difference between pea gravel and river rock?</h3></summary>
+        <p class="faq-answer">Pea gravel is small (about 1/8 to 3/8 inch), while river rock is larger, usually 1 to 3 inches or more. Both are rounded. Pea gravel suits walking surfaces, and river rock suits decorative beds and dry creek beds. See the <a href="/river-rock-calculator">River Rock Calculator</a>.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>Is this pea gravel calculator free?</h3></summary>
+        <p class="faq-answer">Yes, it's free to use and needs no sign-up.</p>
+      </details>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Method and sources</h2>
+      <p>This calculator uses volume = length × width × depth, converted to cubic yards (27 cubic feet per cubic yard, or 324 for depth in inches), and weight = volume × density (default 1.4 tons per cubic yard). Size labels such as #8 and #89 follow the ASTM D448 aggregate sizing system; confirm actual gradation with your supplier. Estimates are for planning — confirm quantities with your supplier before ordering.</p>
     </section>
 
     <section class="block tight">
@@ -294,10 +492,30 @@
           <h2>River Rock Calculator</h2>
           <p>Same math, tuned for larger river rock.</p>
         </a>
+        <a class="related-card" href="/cubic-yards-calculator">
+          <div class="rc-kicker">Calculator</div>
+          <h2>Cubic Yards Calculator</h2>
+          <p>Convert any volume to cubic yards.</p>
+        </a>
+        <a class="related-card" href="/square-feet-to-cubic-yards">
+          <div class="rc-kicker">Calculator</div>
+          <h2>Square Feet to Cubic Yards Calculator</h2>
+          <p>Already know the area? Start here.</p>
+        </a>
         <a class="related-card" href="/how-much-gravel-do-i-need">
           <div class="rc-kicker">Guide</div>
           <h2>How Much Gravel Do I Need?</h2>
           <p>A plain-English walkthrough with examples.</p>
+        </a>
+        <a class="related-card" href="/gravel-depth-guide">
+          <div class="rc-kicker">Guide</div>
+          <h2>Gravel Depth Guide</h2>
+          <p>Recommended depths and base layers by project.</p>
+        </a>
+        <a class="related-card" href="/types-of-gravel">
+          <div class="rc-kicker">Guide</div>
+          <h2>Types of Gravel</h2>
+          <p>Compare pea gravel with other aggregates.</p>
         </a>
       </div>
     </section>
