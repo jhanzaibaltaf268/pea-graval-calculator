@@ -8,8 +8,8 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#ff5a1f">
-<title>Gravel Driveway Calculator – Yards, Tons &amp; Cost | GravelCalc</title>
-<meta name="description" content="Free gravel driveway calculator with layer-by-layer recommendations. Get cubic yards, tons and cost for your subbase, base course and surface layer.">
+<title>Gravel Driveway Calculator: Tons, Yards &amp; Layers by Depth</title>
+<meta name="description" content="Free gravel driveway calculator. Enter length, width and depth per layer for cubic yards, tons and cost, plus layer depths, stone grades and a worked example.">
 <link rel="canonical" href="https://thegravelcalculators.com/gravel-driveway-calculator">
 <link rel="alternate" hreflang="en" href="https://thegravelcalculators.com/gravel-driveway-calculator">
 <link rel="alternate" hreflang="de" href="https://thegravelcalculators.com/de/kies-rechner">
@@ -24,25 +24,27 @@
 <meta property="og:site_name" content="GravelCalc">
 <meta property="og:locale" content="en_US">
 <meta property="og:url" content="https://thegravelcalculators.com/gravel-driveway-calculator">
-<meta property="og:title" content="Gravel Driveway Calculator – Yards, Tons &amp; Cost | GravelCalc">
-<meta property="og:description" content="Free gravel driveway calculator with layer-by-layer recommendations. Get cubic yards, tons and cost for your subbase, base course and surface layer.">
+<meta property="og:title" content="Gravel Driveway Calculator: Tons, Yards &amp; Layers by Depth">
+<meta property="og:description" content="Free gravel driveway calculator. Enter length, width and depth per layer for cubic yards, tons and cost, plus layer depths, stone grades and a worked example.">
 <meta property="og:image" content="https://thegravelcalculators.com/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Gravel Driveway Calculator – Yards, Tons &amp; Cost | GravelCalc">
-<meta name="twitter:description" content="Free gravel driveway calculator with layer-by-layer recommendations. Get cubic yards, tons and cost for your subbase, base course and surface layer.">
+<meta name="twitter:title" content="Gravel Driveway Calculator: Tons, Yards &amp; Layers by Depth">
+<meta name="twitter:description" content="Free gravel driveway calculator. Enter length, width and depth per layer for cubic yards, tons and cost, plus layer depths, stone grades and a worked example.">
 <meta name="twitter:image" content="https://thegravelcalculators.com/og-image.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
+  "@type": "WebApplication",
   "name": "Gravel Driveway Calculator",
+  "url": "https://thegravelcalculators.com/gravel-driveway-calculator",
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "description": "Free gravel driveway calculator for cubic yards, tons and cost by layer, with depth guide, stone grade table and worked examples.",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "url": "https://thegravelcalculators.com/gravel-driveway-calculator",
-  "description": "Enter driveway length, width, depth and material to calculate cubic yards and tons of gravel needed."
+  "dateModified": "2026-10-30"
 }
 </script>
 <script type="application/ld+json">
@@ -51,9 +53,10 @@
   "@type": "HowTo",
   "name": "How to calculate gravel for a driveway",
   "step": [
-    { "@type": "HowToStep", "name": "Measure your driveway", "text": "Measure the length and width of the driveway area in feet (or meters)." },
-    { "@type": "HowToStep", "name": "Pick a depth and material", "text": "Most driveways use 4–6 inches of crushed stone or road base, sometimes topped with a thinner decorative layer." },
-    { "@type": "HowToStep", "name": "Read your result", "text": "The calculator multiplies area by depth to give cubic yards, then converts to tons using your material's density." }
+    { "@type": "HowToStep", "name": "Measure your driveway", "text": "Measure the length and width of the driveway area in feet or meters." },
+    { "@type": "HowToStep", "name": "Plan your layers", "text": "Decide how many layers you need (subbase, base course, surface course) and the depth and stone type for each one." },
+    { "@type": "HowToStep", "name": "Set the density and allowance", "text": "Use the typical density for each stone, usually 1.3 to 1.5 tons per cubic yard, and add a 10% allowance for compaction and waste." },
+    { "@type": "HowToStep", "name": "Read your result", "text": "The calculator multiplies area by depth for each layer to give cubic yards, then converts to tons and total cost." }
   ]
 }
 </script>
@@ -64,28 +67,53 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How deep should gravel be on a driveway?",
-      "acceptedAnswer": { "@type": "Answer", "text": "A typical gravel driveway uses 4–6 inches of base material (crushed stone or road base), sometimes with a base layer plus a 1–2 inch decorative top layer." }
+      "name": "How much gravel do I need for my driveway?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A 12 x 50 ft driveway at 4 inches needs 7.4 cubic yards (about 10.4 tons), or 8.2 cubic yards (11.4 tons) with a 10% allowance. A three-layer build of the same driveway needs about 16.7 cubic yards (24.2 tons) before the allowance. Enter your own size and depths in the calculator." }
+    },
+    {
+      "@type": "Question",
+      "name": "How deep should each gravel layer be?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Typically 4 to 6 inches for the subbase, 2 to 3 inches for the base course and 1 to 2 inches for the surface. A light-use driveway on firm soil can often manage with 4 to 6 inches of compacted stone in total." }
     },
     {
       "@type": "Question",
       "name": "How many tons of gravel do I need for a driveway?",
-      "acceptedAnswer": { "@type": "Answer", "text": "It depends on length, width and depth. A 50 ft × 12 ft driveway at 4 inches deep needs roughly 8.2 cubic yards, or about 12 tons of crushed stone. Use the calculator above for your exact dimensions." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Multiply cubic yards by the stone's density, usually 1.3 to 1.5 tons per cubic yard. A 12 x 100 ft driveway at 4 inches is about 14.8 cubic yards, or 20.7 tons." }
     },
     {
       "@type": "Question",
-      "name": "What's the best gravel for a driveway base?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Crushed stone or road base (sometimes called crush and run) compacts well and is the standard base layer. Pea gravel or decorative gravel is often used as a thinner top layer for looks." }
+      "name": "How much does driveway gravel cost?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It depends on your region, the stone, and the distance from the quarry. Get local quotes per ton delivered, enter the price in the calculator, and add spreading, compaction and drainage costs if you are hiring help." }
     },
     {
       "@type": "Question",
       "name": "Do I need more than one layer of gravel?",
-      "acceptedAnswer": { "@type": "Answer", "text": "For anything more than a short, light-use path, yes — a compacted crushed stone or road base layer gives the driveway structure, and a thinner decorative top layer sits on top. Skipping the base layer is the most common reason gravel driveways rut and sink." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Usually yes, if the driveway will carry regular traffic or the soil is soft. Layers of different stone give strength below, drainage in the middle and a firm surface on top. On firm, well-drained soil, one compacted layer of crusher run or #411 can be enough for light use." }
     },
     {
       "@type": "Question",
-      "name": "What's the difference between subbase, base course and surface course?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Subbase is the bottom layer of larger crushed stone or road base that drains water and stabilizes the ground. Base course sits above it, typically #57 crushed stone, and compacts into the load-bearing layer. Surface course is the thin, finished top layer, often pea gravel or fine limestone screenings, that you actually see and walk on." }
+      "name": "What is the difference between subbase, base course and surface course?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The subbase is the thick coarse bottom layer that spreads the load. The base course is a clean angular stone such as #57 that drains and interlocks. The surface course is a finer stone with fines that compacts into a smooth top." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much extra gravel should I order?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Add 10% for compaction and waste on firm ground, or 15% on soft ground or a deep subbase." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use pea gravel for a driveway?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Not as the main surface. Rounded stone rolls under tires and does not lock together. Use angular crushed stone and keep pea gravel for decorative edges." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I calculate gravel for a driveway that is not a rectangle?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Split it into rectangles, circles and triangles, work out the area of each, and add them together. Curved driveways can be measured by the length along the center line times the average width." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this gravel driveway calculator free?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, it is free to use and needs no sign-up." }
     }
   ]
 }
@@ -144,7 +172,8 @@
     <section class="hero">
       <span class="eyebrow">Free calculator</span>
       <h1>Gravel Driveway Calculator</h1>
-      <p class="lede">Enter your driveway's length, width and depth to get the tons and cubic yards of gravel you need, by material.</p>
+      <p class="lede">A 12 x 50 ft gravel driveway at 4 inches deep needs 7.4 cubic yards, or about 10.4 tons. Order about 8.2 cubic yards (11.4 tons) once you add a 10% allowance for compaction and waste. Enter your driveway's length, width and the depth of each layer below to get cubic yards, tons and cost for the whole job.</p>
+      <p class="lede">Most driveways are built in layers: a coarse subbase, a base course and a surface course. This calculator lets you enter each layer separately, so you order the right stone for each one instead of one blended number.</p>
     </section>
 
     <section class="calc-card" aria-label="Gravel driveway calculator">
@@ -214,103 +243,244 @@
     </section>
 
     <section class="block tight">
-      <h2 class="section-title">How to Estimate a Gravel Driveway</h2>
-      <p>The calculator multiplies driveway area (length × width) by depth to get cubic feet, converts to cubic yards, then multiplies by your material's density to estimate weight in tons.</p>
+      <h2 class="section-title">How to estimate how much gravel a driveway needs</h2>
+      <p>Find the area, multiply by the depth, and convert to cubic yards. In imperial units:</p>
       <div class="formula-box">
-        cubic yards = (length × width × depth) ÷ 27<br>
-        tons = cubic yards × material density
+        cubic yards = length (ft) × width (ft) × depth (in) ÷ 324
       </div>
-      <p>Worked example: a 50 ft × 12 ft driveway at 4 inches deep is 600 sq ft × 0.33 ft = 200 cubic feet, or about 7.4 cubic yards — roughly 11.1 tons of crushed stone. Add 5–10% for compaction and uneven subgrade, and for long driveways order in bulk by the ton — most suppliers deliver by dump truck and price per ton rather than per bag. For a dollar estimate, run your tons through the <a href="/gravel-cost-calculator">gravel cost calculator</a>.</p>
+      <p>Then convert to tons with the density of your stone, usually 1.3 to 1.5 tons per cubic yard for crushed stone. Repeat for each layer, add the layers together, and add 10% for compaction and waste.</p>
+
+      <h3>How many cubic yards of gravel do I need?</h3>
+      <p>A driveway 12 ft wide and 50 ft long is 600 square feet. At 4 inches deep, that is 600 × 4 ÷ 324 = 7.41 cubic yards. With a 10% allowance, order 8.15 cubic yards, rounded up to 8.2.</p>
+
+      <h3>How many tons of gravel do I need?</h3>
+      <p>Multiply cubic yards by the density. At 1.4 tons per cubic yard, 7.41 cubic yards weighs 10.4 tons, or 11.4 tons with the 10% allowance. Ask your supplier which density they use, because tons are how most quarries bill.</p>
     </section>
 
     <section class="block tight">
-      <h2 class="section-title">Recommended Driveway Layers</h2>
-      <p>A driveway built to last isn't one layer of gravel — it's usually three, each doing a different job. Skipping straight to a single top layer is the most common reason gravel driveways rut, pothole, and sink into the ground within a year or two.</p>
+      <h2 class="section-title">Recommended gravel driveway layers</h2>
+      <p>A stable driveway is built from the bottom up, with coarser stone below and finer stone on top. The depths below are typical for residential driveways; heavier traffic and softer soil need more.</p>
       <div class="table-wrap">
         <table class="guide-table">
-          <thead><tr><th>Layer</th><th>Material</th><th>Depth</th><th>Purpose</th></tr></thead>
+          <thead><tr><th>Layer</th><th>Typical depth</th><th>Typical material</th><th>Job</th></tr></thead>
           <tbody>
-            <tr><td>Subbase</td><td>Crushed stone or road base</td><td>4–6 in</td><td>Drains water away from the subgrade and creates a stable foundation</td></tr>
-            <tr><td>Base course</td><td>#57 crushed stone (3/4"–1")</td><td>2–4 in</td><td>Compacts into a load-bearing layer that resists rutting under vehicle weight</td></tr>
-            <tr><td>Surface course</td><td>Pea gravel or #411 limestone screenings</td><td>1–2 in</td><td>Finished, walkable/drivable top layer</td></tr>
+            <tr><td>Subbase</td><td>4 to 6 inches</td><td>Crusher run, road base or #3 stone</td><td>Spreads load and stabilizes the soil</td></tr>
+            <tr><td>Base course</td><td>2 to 3 inches</td><td>#57 crushed stone</td><td>Drains water and locks together</td></tr>
+            <tr><td>Surface course</td><td>1 to 2 inches</td><td>#411 or crusher run (stone with fines)</td><td>Compacts to a firm, smooth top</td></tr>
           </tbody>
         </table>
       </div>
-      <p class="help-text">A full three-layer build runs 7–12 inches total. Many light-use driveways combine the subbase and base course into one 4–6 inch crushed stone layer (what the calculator above assumes by default) topped with a thin decorative surface course.</p>
+
+      <h3>Layer 1: Subbase (4 to 6 inches)</h3>
+      <p>The subbase is the structural layer. Use a coarse, well-graded stone such as crusher run or road base, spread in lifts of no more than about 4 inches, and compact each lift. On soft or clay soil, lay geotextile fabric first so the stone does not sink into the subgrade.</p>
+
+      <h3>Layer 2: Base course (2 to 3 inches)</h3>
+      <p>The base course is usually #57 crushed stone, a clean, angular stone about 3/4 inch across. The angular faces lock together and the gaps let water drain, which keeps the driveway from turning to mud.</p>
+
+      <h3>Layer 3: Surface course (1 to 2 inches)</h3>
+      <p>The surface layer is a stone with fines, such as #411 or crusher run, that compacts into a firm, even surface. Avoid rounded stone such as pea gravel as the main surface, because it rolls under tires; see the <a href="/pea-gravel-calculator">Pea Gravel Calculator</a> if you want it for a decorative top dressing.</p>
     </section>
 
     <section class="block tight">
-      <h2 class="section-title">Driveway Depth Guide</h2>
-      <p>Depth needs scale with how much weight the driveway carries. A light-use path to a shed or garden gate can get by with 4 inches total. A standard car driveway wants the full subbase-plus-base combination — 6–8 inches compacted. Anything carrying trucks, RVs, or regular heavy loads should go to 8–12 inches, ideally with a geotextile fabric under the subbase to stop the gravel from working its way into soft soil over time. See the full <a href="/gravel-depth-guide">gravel depth guide</a> for depth recommendations across every project type, not just driveways.</p>
-      <p>If you don't have exact measurements yet, these common driveway sizes give a rough starting point at a 4-inch base depth using crushed stone (1.5 tons/yd³) — plug in your own numbers above for an exact figure.</p>
+      <h2 class="section-title">Gravel driveway depth guide</h2>
+      <p>Total depth depends on traffic and soil. Use these as planning figures and adjust for your local conditions and any contractor or council requirements.</p>
       <div class="table-wrap">
         <table class="guide-table">
-          <thead><tr><th>Driveway</th><th>Typical size</th><th>Cubic yards</th><th>Tons</th></tr></thead>
+          <thead><tr><th>Use</th><th>Total stone depth</th><th>Typical layers</th></tr></thead>
           <tbody>
-            <tr><td>Single-car</td><td>10 ft × 20 ft</td><td>≈2.5 yd³</td><td>≈3.7 tons</td></tr>
-            <tr><td>Double-car</td><td>20 ft × 20 ft</td><td>≈4.9 yd³</td><td>≈7.4 tons</td></tr>
-            <tr><td>Long / rural (12 ft wide)</td><td>12 ft × 100 ft</td><td>≈14.8 yd³</td><td>≈22.2 tons</td></tr>
+            <tr><td>Light residential, cars only</td><td>4 to 6 inches</td><td>Base + surface, or a single compacted layer on firm soil</td></tr>
+            <tr><td>Regular use, occasional delivery trucks</td><td>6 to 8 inches</td><td>Subbase + base + surface</td></tr>
+            <tr><td>Heavy or soft ground, frequent trucks</td><td>8 to 12 inches</td><td>Thick subbase in lifts, geotextile, base and surface</td></tr>
+            <tr><td>Parking pad or turnaround</td><td>4 to 6 inches</td><td>As for the driveway it joins</td></tr>
           </tbody>
         </table>
       </div>
+      <p>For a full breakdown of depth by project, see the <a href="/gravel-depth-guide">Gravel Depth Guide</a>.</p>
     </section>
 
     <section class="block tight">
-      <h2 class="section-title">Best Gravel Types for Driveways</h2>
-      <p>Most gravel driveways use two visible layers on top of the compacted subgrade. The structural layer is crushed stone or road base (crush and run) — angular, machine-broken material that locks together when compacted, giving the driveway structure and drainage. A thinner 1–2 inch decorative top layer, often pea gravel or a colored landscape gravel, sits on top for looks and easier raking. The material dropdown above switches density between these options so your tonnage stays accurate whichever you're ordering. See the <a href="/types-of-gravel">types of gravel guide</a> for a full size and use comparison, or the <a href="/pea-gravel-calculator">pea gravel calculator</a> if you've already settled on pea gravel as your surface course.</p>
+      <h2 class="section-title">Best gravel for a driveway: stone grades and densities</h2>
+      <p>Stone is named by size number under the ASTM D448 system. Densities below are typical planning figures; quarries differ, so use your supplier's number if it is different.</p>
+      <div class="table-wrap">
+        <table class="guide-table">
+          <thead><tr><th>Stone</th><th>Size</th><th>Typical density</th><th>Best for</th></tr></thead>
+          <tbody>
+            <tr><td>Crusher run (dense-graded aggregate)</td><td>up to about 3/4 inch with fines</td><td>1.4 to 1.6 tons per cubic yard</td><td>Subbase and surface; compacts firmly</td></tr>
+            <tr><td>#3 stone</td><td>about 1.5 to 2.5 inches</td><td>1.3 to 1.4</td><td>Deep subbase on soft ground</td></tr>
+            <tr><td>#57 stone</td><td>about 3/4 to 1 inch, clean</td><td>1.3 to 1.4</td><td>Base course; drains well</td></tr>
+            <tr><td>#411</td><td>about 3/4 inch with fines</td><td>1.4 to 1.6</td><td>Surface course</td></tr>
+            <tr><td>Pea gravel</td><td>1/8 to 3/8 inch, rounded</td><td>about 1.4</td><td>Decorative top only; not a driving surface</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>What is the best gravel for a driveway base?</h3>
+      <p>A coarse, angular, compactable stone: crusher run for the subbase and #57 for the base course. Angular faces interlock under load; rounded stone does not.</p>
+
+      <h3>What is the best gravel for a driveway surface?</h3>
+      <p>A stone with fines, such as #411 or crusher run, that packs into a firm top and sheds water. Clean stone without fines stays loose and shifts.</p>
     </section>
 
     <section class="block tight">
-      <h2 class="section-title">Cost Breakdown</h2>
-      <p>Crushed stone and road base for the structural layers typically run $25–$50 per ton; decorative surface materials like pea gravel or colored gravel run $40–$85 per ton. A 600 sq ft single-car driveway at a combined 6-inch depth (base + surface) lands around 11–12 tons total, so a rough all-in material cost is $350–$700 before delivery. Delivery is usually billed separately by the load, and most suppliers set a minimum order (often 2–5 tons) before dispatching a truck. For an exact number based on your dimensions and local pricing, run your tons through the <a href="/gravel-cost-calculator">gravel cost calculator</a>.</p>
+      <h2 class="section-title">Worked example: 12 x 50 ft driveway, three layers</h2>
+      <p>Area is 12 × 50 = 600 square feet.</p>
+      <div class="table-wrap">
+        <table class="guide-table">
+          <thead><tr><th>Layer</th><th>Depth</th><th>Cubic yards</th><th>Density used</th><th>Tons</th></tr></thead>
+          <tbody>
+            <tr><td>Subbase, crusher run</td><td>4 in</td><td>7.41</td><td>1.5</td><td>11.1</td></tr>
+            <tr><td>Base course, #57</td><td>3 in</td><td>5.56</td><td>1.35</td><td>7.5</td></tr>
+            <tr><td>Surface, #411</td><td>2 in</td><td>3.70</td><td>1.5</td><td>5.6</td></tr>
+            <tr><td><strong>Total</strong></td><td>9 in</td><td><strong>16.67</strong></td><td></td><td><strong>24.2</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Add 10% for compaction and waste: order about 18.3 cubic yards, or 26.6 tons. A tandem-axle dump truck commonly carries roughly 10 to 15 tons, so expect two or three loads; confirm the truck's capacity and your site access with the supplier.</p>
+      <p><strong>Single-layer check.</strong> If you use one 4-inch layer, the volume is 7.41 cubic yards (10.4 tons at 1.4 tons per cubic yard), and 8.15 cubic yards (11.4 tons) with the allowance.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Quick reference: driveway quantities at 4 inches deep</h2>
+      <div class="table-wrap">
+        <table class="guide-table">
+          <thead><tr><th>Driveway</th><th>Area</th><th>Cubic yards</th><th>Tons (1.4 t/yd³)</th><th>With 10% extra</th></tr></thead>
+          <tbody>
+            <tr><td>10 × 50 ft (single car)</td><td>500 sq ft</td><td>6.17</td><td>8.6</td><td>6.8 yd³ / 9.5 t</td></tr>
+            <tr><td>12 × 50 ft</td><td>600 sq ft</td><td>7.41</td><td>10.4</td><td>8.2 yd³ / 11.4 t</td></tr>
+            <tr><td>12 × 100 ft</td><td>1,200 sq ft</td><td>14.81</td><td>20.7</td><td>16.3 yd³ / 22.8 t</td></tr>
+            <tr><td>20 × 50 ft (double car)</td><td>1,000 sq ft</td><td>12.35</td><td>17.3</td><td>13.6 yd³ / 19.0 t</td></tr>
+            <tr><td>20 × 100 ft</td><td>2,000 sq ft</td><td>24.69</td><td>34.6</td><td>27.2 yd³ / 38.0 t</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>How much gravel for a 100 ft driveway?</h3>
+      <p>A 12 ft wide, 100 ft long driveway at 4 inches needs 14.8 cubic yards, about 20.7 tons, or 22.8 tons with a 10% allowance. For a three-layer build, calculate each layer as in the worked example.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">How much extra gravel to order for compaction and waste</h2>
+      <p>Crushed stone compacts by roughly 10 to 15% once it is rolled or plate-compacted, and some is lost at the edges. Add 10% for a firm, level subgrade and 15% for soft ground or a deep subbase. Order in whole truckloads where you can, and keep a few tons back for later top-ups, because driveways lose stone to traffic, plowing and rain over time.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Crown, ditches and drainage</h2>
+      <p>A driveway that holds water will rut, however thick the stone. Build a crown, with the center about 2 to 3 inches higher than the edges per 12 feet of width, or slope the whole surface to one side. Give runoff somewhere to go with a ditch, culvert or grassed swale, and lay geotextile fabric over clay or soft subgrade to stop the stone sinking. Allow for the crown and for any extra depth in low spots in your volume; the calculator's waste allowance covers small variations, not large regrading.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Gravel driveway cost breakdown</h2>
+      <p><strong>Material cost = tons × price per ton</strong>, or cubic yards × price per cubic yard. Total project cost also includes:</p>
+      <ul>
+        <li><strong>Delivery.</strong> Usually charged per load or by distance, with a minimum order.</li>
+        <li><strong>Spreading and grading.</strong> Hand labor, a skid steer or a grader.</li>
+        <li><strong>Compaction.</strong> Plate compactor or roller hire.</li>
+        <li><strong>Geotextile fabric, edging and drainage.</strong> Small cost per square foot, but needed on soft ground.</li>
+        <li><strong>Excavation.</strong> If you remove topsoil or regrade first.</li>
+      </ul>
+      <p>Prices vary widely by region, stone type and distance from the quarry, so get at least two local quotes, priced per ton delivered. Enter the price in the calculator to see the cost per layer and per square foot, or use the <a href="/gravel-cost-calculator">Gravel Cost Calculator</a> for a full breakdown. Buy driveway stone in bulk: bags are practical only for small patches and repairs.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Common gravel driveway estimating mistakes</h2>
+      <ul>
+        <li><strong>Ordering only the surface layer.</strong> A 2-inch top over bare soil sinks within a year; budget for the subbase and base.</li>
+        <li><strong>Using pea gravel or other rounded stone as the surface.</strong> It shifts and rolls; use angular stone with fines.</li>
+        <li><strong>Forgetting compaction.</strong> Loose stone settles 10 to 15%; add the allowance.</li>
+        <li><strong>Mixing densities.</strong> Crusher run, #57 and pea gravel weigh differently; set the density per layer.</li>
+        <li><strong>Ignoring drainage.</strong> Without a crown or ditch, water undermines the base.</li>
+        <li><strong>Skipping fabric on soft soil.</strong> Stone mixes into clay and the layers lose their strength.</li>
+        <li><strong>Not checking truck access.</strong> A loaded truck needs room to turn and clearance for its weight on your soil.</li>
+      </ul>
     </section>
 
     <section class="block tight">
       <h2 class="section-title">Frequently asked questions</h2>
+
       <details class="faq-item">
-        <summary><h3>How deep should gravel be on a driveway?</h3></summary>
-        <p class="faq-answer">A typical gravel driveway uses 4–6 inches of base material (crushed stone or road base), sometimes with a thinner 1–2 inch decorative top layer.</p>
+        <summary><h3>How much gravel do I need for my driveway?</h3></summary>
+        <p class="faq-answer">A 12 x 50 ft driveway at 4 inches needs 7.4 cubic yards (about 10.4 tons), or 8.2 cubic yards (11.4 tons) with a 10% allowance. A three-layer build of the same driveway needs about 16.7 cubic yards (24.2 tons) before the allowance. Enter your own size and depths in the calculator.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>How deep should each gravel layer be?</h3></summary>
+        <p class="faq-answer">Typically 4 to 6 inches for the subbase, 2 to 3 inches for the base course and 1 to 2 inches for the surface. A light-use driveway on firm soil can often manage with 4 to 6 inches of compacted stone in total.</p>
       </details>
       <details class="faq-item">
         <summary><h3>How many tons of gravel do I need for a driveway?</h3></summary>
-        <p class="faq-answer">It depends on your dimensions. A 50 ft × 12 ft driveway at 4 inches deep needs roughly 8.2 cubic yards, or about 12 tons of crushed stone. Use the calculator above for your exact numbers.</p>
+        <p class="faq-answer">Multiply cubic yards by the stone's density, usually 1.3 to 1.5 tons per cubic yard. A 12 x 100 ft driveway at 4 inches is about 14.8 cubic yards, or 20.7 tons.</p>
       </details>
       <details class="faq-item">
-        <summary><h3>What's the best gravel for a driveway base?</h3></summary>
-        <p class="faq-answer">Crushed stone or road base (crush and run) compacts well and is the standard structural layer. Pea gravel or decorative gravel is often added as a thinner top layer for looks.</p>
+        <summary><h3>How much does driveway gravel cost?</h3></summary>
+        <p class="faq-answer">It depends on your region, the stone, and the distance from the quarry. Get local quotes per ton delivered, enter the price in the calculator, and add spreading, compaction and drainage costs if you are hiring help. Use the <a href="/gravel-cost-calculator">Gravel Cost Calculator</a> for a full breakdown.</p>
       </details>
       <details class="faq-item">
         <summary><h3>Do I need more than one layer of gravel?</h3></summary>
-        <p class="faq-answer">For anything more than a short, light-use path, yes — a compacted crushed stone or road base layer gives the driveway structure, and a thinner decorative top layer (pea gravel or landscape gravel) sits on top. Skipping the base layer is the most common reason gravel driveways rut and sink.</p>
+        <p class="faq-answer">Usually yes, if the driveway will carry regular traffic or the soil is soft. Layers of different stone give strength below, drainage in the middle and a firm surface on top. On firm, well-drained soil, one compacted layer of crusher run or #411 can be enough for light use.</p>
       </details>
       <details class="faq-item">
-        <summary><h3>What's the difference between subbase, base course and surface course?</h3></summary>
-        <p class="faq-answer">Subbase is the bottom layer of larger crushed stone or road base that drains water and stabilizes the ground. Base course sits above it — typically #57 crushed stone — and compacts into the load-bearing layer. Surface course is the thin, finished top layer, often pea gravel or fine limestone screenings, that you actually see and walk on.</p>
+        <summary><h3>What is the difference between subbase, base course and surface course?</h3></summary>
+        <p class="faq-answer">The subbase is the thick coarse bottom layer that spreads the load. The base course is a clean angular stone such as #57 that drains and interlocks. The surface course is a finer stone with fines that compacts into a smooth top.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>How much extra gravel should I order?</h3></summary>
+        <p class="faq-answer">Add 10% for compaction and waste on firm ground, or 15% on soft ground or a deep subbase.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>Can I use pea gravel for a driveway?</h3></summary>
+        <p class="faq-answer">Not as the main surface. Rounded stone rolls under tires and does not lock together. Use angular crushed stone and keep pea gravel for decorative edges; see the <a href="/pea-gravel-calculator">Pea Gravel Calculator</a>.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>How do I calculate gravel for a driveway that is not a rectangle?</h3></summary>
+        <p class="faq-answer">Split it into rectangles, circles and triangles, work out the area of each, and add them together. Curved driveways can be measured by the length along the center line times the average width.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>Is this gravel driveway calculator free?</h3></summary>
+        <p class="faq-answer">Yes, it is free to use and needs no sign-up.</p>
       </details>
     </section>
 
     <section class="block tight">
-      <h2 class="section-title">Related calculators</h2>
+      <h2 class="section-title">Method and sources</h2>
+      <p>Volume = length × width × depth, converted to cubic yards (27 cubic feet per cubic yard, or 324 when depth is in inches). Weight = volume × density, calculated separately for each layer. Stone size numbers follow the ASTM D448 system. Layer depths and densities are typical planning figures, not engineering specifications; confirm them with your supplier, and ask a local contractor or engineer for a heavy-load or steep-site design.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Related calculators and guides</h2>
       <div class="related-grid">
-        <a class="related-card" href="/pea-gravel-calculator">
+        <a class="related-card" href="/">
           <div class="rc-kicker">Calculator</div>
-          <h2>Pea Gravel Calculator</h2>
-          <p>For walkways, patios and decorative beds.</p>
+          <h2>Gravel Calculator</h2>
+          <p>The general-purpose gravel volume calculator.</p>
         </a>
         <a class="related-card" href="/gravel-cost-calculator">
           <div class="rc-kicker">Calculator</div>
           <h2>Gravel Cost Calculator</h2>
           <p>Turn your volume into a total dollar estimate.</p>
         </a>
-        <a class="related-card" href="/cubic-yards-calculator">
-          <div class="rc-kicker">Calculator</div>
-          <h2>Cubic Yards Calculator</h2>
-          <p>General L × W × H to cubic yard converter.</p>
-        </a>
         <a class="related-card" href="/gravel-depth-guide">
           <div class="rc-kicker">Guide</div>
           <h2>Gravel Depth Guide</h2>
-          <p>Recommended depths by project type.</p>
+          <p>Recommended depths and base layers by project.</p>
+        </a>
+        <a class="related-card" href="/types-of-gravel">
+          <div class="rc-kicker">Guide</div>
+          <h2>Types of Gravel</h2>
+          <p>Compare stone grades, sizes and uses.</p>
+        </a>
+        <a class="related-card" href="/pea-gravel-calculator">
+          <div class="rc-kicker">Calculator</div>
+          <h2>Pea Gravel Calculator</h2>
+          <p>For walkways, patios and decorative beds.</p>
+        </a>
+        <a class="related-card" href="/cubic-yards-calculator">
+          <div class="rc-kicker">Calculator</div>
+          <h2>Cubic Yards Calculator</h2>
+          <p>Convert any volume to cubic yards.</p>
+        </a>
+        <a class="related-card" href="/square-feet-to-cubic-yards">
+          <div class="rc-kicker">Calculator</div>
+          <h2>Square Feet to Cubic Yards Calculator</h2>
+          <p>Already know the area? Start here.</p>
         </a>
       </div>
     </section>
