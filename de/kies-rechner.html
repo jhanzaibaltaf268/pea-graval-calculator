@@ -8,8 +8,8 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#ff5a1f">
-<title>Kies Rechner – Kubikmeter, Tonnen &amp; Kosten | GravelCalc</title>
-<meta name="description" content="Kostenloser Kies Rechner. Fläche und Schütthöhe eingeben und sofort Kubikmeter, Tonnen und Big Bags für Kies, Splitt, Schotter oder Flusskies berechnen.">
+<title>Kies Rechner: Kubikmeter, Tonnen &amp; Big Bags berechnen</title>
+<meta name="description" content="Kostenloser Kies Rechner: Fläche und Schütthöhe eingeben und Kubikmeter, Tonnen und Big Bags berechnen. Mit Dichte-Tabelle, Aufbau für Einfahrt und Beispielen.">
 <link rel="canonical" href="https://thegravelcalculators.com/de/kies-rechner">
 <link rel="alternate" hreflang="de" href="https://thegravelcalculators.com/de/kies-rechner">
 <link rel="alternate" hreflang="en" href="https://thegravelcalculators.com/pea-gravel-calculator">
@@ -24,26 +24,28 @@
 <meta property="og:site_name" content="GravelCalc">
 <meta property="og:locale" content="de_DE">
 <meta property="og:url" content="https://thegravelcalculators.com/de/kies-rechner">
-<meta property="og:title" content="Kies Rechner – Kubikmeter, Tonnen &amp; Kosten | GravelCalc">
-<meta property="og:description" content="Kostenloser Kies Rechner. Fläche und Schütthöhe eingeben und sofort Kubikmeter, Tonnen und Big Bags für Kies, Splitt, Schotter oder Flusskies berechnen.">
+<meta property="og:title" content="Kies Rechner: Kubikmeter, Tonnen &amp; Big Bags berechnen">
+<meta property="og:description" content="Kostenloser Kies Rechner: Fläche und Schütthöhe eingeben und Kubikmeter, Tonnen und Big Bags berechnen. Mit Dichte-Tabelle, Aufbau für Einfahrt und Beispielen.">
 <meta property="og:image" content="https://thegravelcalculators.com/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Kies Rechner – Kubikmeter, Tonnen &amp; Kosten | GravelCalc">
-<meta name="twitter:description" content="Kostenloser Kies Rechner. Fläche und Schütthöhe eingeben und sofort Kubikmeter, Tonnen und Big Bags für Kies, Splitt, Schotter oder Flusskies berechnen.">
+<meta name="twitter:title" content="Kies Rechner: Kubikmeter, Tonnen &amp; Big Bags berechnen">
+<meta name="twitter:description" content="Kostenloser Kies Rechner: Fläche und Schütthöhe eingeben und Kubikmeter, Tonnen und Big Bags berechnen. Mit Dichte-Tabelle, Aufbau für Einfahrt und Beispielen.">
 <meta name="twitter:image" content="https://thegravelcalculators.com/og-image.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
+  "@type": "WebApplication",
   "name": "Kies Rechner",
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
   "url": "https://thegravelcalculators.com/de/kies-rechner",
   "inLanguage": "de",
-  "description": "Länge, Breite und Schütthöhe eingeben und sofort Kubikmeter, Tonnen und Big Bags für Kies berechnen."
+  "description": "Kostenloser Kies Rechner: Fläche und Schütthöhe eingeben und Kubikmeter, Tonnen und Big Bags berechnen. Mit Dichte-Tabelle, Aufbau für Einfahrt und Beispielen.",
+  "dateModified": "2026-10-30"
 }
 </script>
 <script type="application/ld+json">
@@ -67,33 +69,23 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Wie berechne ich, wie viel Kies ich brauche?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Multiplizieren Sie Länge × Breite × Schütthöhe (in Metern), um Kubikmeter zu erhalten. Multiplizieren Sie die Kubikmeter anschließend mit der Schüttdichte des Materials (meist 1,4–1,6 Tonnen pro Kubikmeter), um das Gewicht in Tonnen zu erhalten." }
+      "name": "Wie viele Tonnen Kies brauche ich pro Quadratmeter?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Bei 5 cm Schütthöhe etwa 0,08 Tonnen pro Quadratmeter (0,05 m³ x 1,6 t/m³)." }
     },
     {
       "@type": "Question",
-      "name": "Wie viele Tonnen Kies sind ein Kubikmeter?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Ein Kubikmeter Kies wiegt je nach Körnung und Feuchtigkeit etwa 1,4 bis 1,8 Tonnen. Rundkies liegt meist bei rund 1,6 t/m³, Splitt und Schotter etwas darunter bei circa 1,5 t/m³." }
+      "name": "Wie viel Kies brauche ich für eine Einfahrt?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Für 3 x 15 m mit 20 cm Tragschicht etwa 9 m³ oder 14 bis 16 Tonnen, plus 10 % Zuschlag." }
     },
     {
       "@type": "Question",
-      "name": "Welche Schütthöhe braucht man für eine Einfahrt oder einen Gartenweg?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Für Zierbeete reichen 3–5 cm, für Gartenwege und Terrassen sind 5 cm üblich, und für eine Einfahrt braucht es meist eine 15–20 cm dicke Tragschicht aus Schotter plus eine 5 cm dicke Deckschicht aus Splitt oder Kies." }
-    },
-    {
-      "@type": "Question",
-      "name": "Was kostet ein Kubikmeter Kies?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Kies kostet lose ab Werk meist etwa 20–40 € pro Tonne bzw. 30–60 € pro Kubikmeter, dazu kommt die Anlieferung mit dem Kipper von etwa 50–150 € je nach Entfernung und Menge. Für kleine Mengen ist ein Big Bag mit 60–150 € inklusive Lieferung oft praktischer." }
-    },
-    {
-      "@type": "Question",
-      "name": "Was ist der Unterschied zwischen Kies, Splitt und Schotter?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Kies besteht aus natürlich gerundeten Körnern und eignet sich gut für Wege und Zierflächen. Splitt ist gebrochenes, kantiges Gestein, das sich beim Verdichten verzahnt und daher als Tragschicht dient. Schotter ist die grobkörnigste Variante und wird meist als unterste Tragschicht unter Einfahrten und Wegen verwendet." }
+      "name": "Muss ich unter den Kies ein Vlies legen?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Bei Wegen, Beeten und weichem Boden ja: Vlies trennt den Kies vom Boden und hält Unkraut ab." }
     },
     {
       "@type": "Question",
       "name": "Ist dieser Kies Rechner kostenlos?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Ja — der Kies Rechner ist komplett kostenlos, läuft direkt im Browser und benötigt weder Anmeldung noch persönliche Daten." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Ja, er ist kostenlos und ohne Anmeldung nutzbar." }
     }
   ]
 }
@@ -104,7 +96,8 @@
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "GravelCalc", "item": "https://thegravelcalculators.com/" },
-    { "@type": "ListItem", "position": 2, "name": "Kies Rechner", "item": "https://thegravelcalculators.com/de/kies-rechner" }
+    { "@type": "ListItem", "position": 2, "name": "Gravel Calculators", "item": "https://thegravelcalculators.com/" },
+    { "@type": "ListItem", "position": 3, "name": "Kies Rechner", "item": "https://thegravelcalculators.com/de/kies-rechner" }
   ]
 }
 </script>
@@ -138,7 +131,7 @@
     <section class="hero" style="padding-top:6px;">
       <span class="eyebrow">Kostenloser Rechner</span>
       <h1>Kies Rechner</h1>
-      <p class="lede">Fläche und Schütthöhe eingeben — Kubikmeter, Tonnen und Big Bags werden sofort berechnet.</p>
+      <p class="lede">Für 10 Quadratmeter Gartenweg mit 5 cm Kies brauchen Sie 0,5 Kubikmeter, das sind etwa 0,8 Tonnen. Geben Sie unten die Länge, Breite und Schütthöhe ein, und der Kies Rechner zeigt Ihnen den Bedarf in Kubikmetern, Tonnen und Big Bags, auf Wunsch mit einem Zuschlag von 10 % für Verdichtung und Verlust.</p>
       <div class="trust-row">
         <span>100&nbsp;% kostenlos</span>
         <span>Keine Anmeldung</span>
@@ -214,71 +207,129 @@
 
     <section class="block tight">
       <h2 class="section-title">Wie viel Kies brauche ich?</h2>
-      <p>Der Rechner multipliziert Ihre Fläche (Länge × Breite) mit der Schütthöhe zu Kubikmetern und rechnet diese mit der Schüttdichte des gewählten Materials in Tonnen um. Messen Sie Länge und Breite Ihrer Fläche in Metern, legen Sie eine Schütthöhe fest — 3–5 cm für Zierbeete, 5 cm für Wege und Terrassen, 15–20 cm Tragschicht plus 5 cm Deckschicht für Einfahrten — und der Rechner erledigt den Rest.</p>
+      <p>Fläche mal Höhe ergibt das Volumen:</p>
       <div class="formula-box">
-        Kubikmeter = Länge × Breite × Schütthöhe (m)<br>
-        Tonnen = Kubikmeter × Schüttdichte<br>
-        Big Bags = Kubikmeter ÷ 0,5
+        Kubikmeter = Länge (m) x Breite (m) x Höhe (m)
       </div>
-      <p>Rechenbeispiel: Ein 4 m × 3 m großer Gartenweg mit 5 cm Schütthöhe ergibt 4 × 3 × 0,05 = 0,6 m³, bei Rundkies also rund 0,96 Tonnen. Planen Sie immer 5–10&nbsp;% Reserve ein — unebener Untergrund, Verdichtung und Verluste beim Verteilen zehren am Ergebnis, und eine Nachbestellung ist meist teurer als eine leicht großzügige Erstbestellung.</p>
+      <p>Rechnen Sie die Schütthöhe von Zentimetern in Meter um (5 cm = 0,05 m). Das Gewicht erhalten Sie mit der Dichte: <strong>Tonnen = Kubikmeter x Dichte.</strong> Für Kies gilt ein Richtwert von etwa 1,6 Tonnen pro Kubikmeter. Rechnen Sie 10 % Zuschlag für Verdichtung, Setzung und Verlust dazu.</p>
+
+      <h3>Wie berechne ich, wie viel Kies ich brauche?</h3>
+      <p>Messen Sie die Fläche aus, legen Sie die Schütthöhe fest, multiplizieren Sie beides und dann mit der Dichte. Bei runden Flächen nutzen Sie Pi mal Radius zum Quadrat, bei unregelmäßigen Flächen teilen Sie in Rechtecke auf und addieren.</p>
+
+      <h3>Wie viele Tonnen Kies sind ein Kubikmeter?</h3>
+      <p>Etwa 1,5 bis 1,8 Tonnen, je nach Körnung, Material und Feuchte. Der Rechner nutzt 1,6 Tonnen pro m³ als Standardwert und lässt Sie ihn ändern.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Rechenbeispiele</h2>
+      <div class="table-wrap">
+        <table class="guide-table">
+          <thead><tr><th>Projekt</th><th>Maße</th><th>Höhe</th><th>m³</th><th>Tonnen</th><th>Mit 10 %</th></tr></thead>
+          <tbody>
+            <tr><td>Gartenweg</td><td>1 x 10 m</td><td>5 cm</td><td>0,50</td><td>0,8</td><td>0,55 m³ / 0,9 t</td></tr>
+            <tr><td>Terrassen-Unterbau</td><td>4 x 5 m</td><td>15 cm</td><td>3,00</td><td>4,8</td><td>3,3 m³ / 5,3 t</td></tr>
+            <tr><td>Einfahrt (Tragschicht)</td><td>3 x 15 m</td><td>20 cm</td><td>9,00</td><td>14,4</td><td>9,9 m³ / 15,8 t</td></tr>
+            <tr><td>Beetabdeckung</td><td>2 x 8 m</td><td>4 cm</td><td>0,64</td><td>1,0</td><td>0,70 m³ / 1,1 t</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="help-text">Die Tonnen sind mit 1,6 t/m³ gerechnet. Für Schotter oder Frostschutz (0/32) mit etwa 1,8 t/m³ liegen die Werte rund 12 % höher.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Welche Schütthöhe braucht man für eine Einfahrt oder einen Gartenweg?</h2>
+      <div class="table-wrap">
+        <table class="guide-table">
+          <thead><tr><th>Anwendung</th><th>Typische Schütthöhe</th><th>Aufbau</th></tr></thead>
+          <tbody>
+            <tr><td>Beetabdeckung, Dekokies</td><td>3 bis 5 cm</td><td>Unkrautvlies + Kies</td></tr>
+            <tr><td>Gartenweg</td><td>3 bis 5 cm Deckschicht</td><td>10 bis 15 cm Schotter-Unterbau + Vlies</td></tr>
+            <tr><td>Terrasse, Sitzplatz</td><td>3 bis 5 cm Deckschicht</td><td>15 bis 20 cm verdichteter Unterbau</td></tr>
+            <tr><td>Einfahrt, Stellplatz</td><td>3 bis 5 cm Deckschicht</td><td>20 bis 40 cm Tragschicht, je nach Belastung</td></tr>
+            <tr><td>Drainage, Sickergraben</td><td>volle Grabentiefe</td><td>Vlies + gewaschener Kies 8/16 oder 16/32</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="help-text">Diese Werte sind übliche Richtwerte; Untergrund, Belastung und Frosttiefe in Ihrer Region können mehr verlangen.</p>
     </section>
 
     <section class="block tight">
       <h2 class="section-title">Was kostet Kies?</h2>
-      <p>Kies und Splitt kosten lose ab Werk meist etwa 20–40&nbsp;€ pro Tonne bzw. 30–60&nbsp;€ pro Kubikmeter, abhängig von Körnung, Region und Kieswerk. Die Anlieferung per Kipper wird meist separat berechnet und liegt je nach Entfernung und Ladungsgröße bei etwa 50–150&nbsp;€. Viele Kieswerke setzen zudem eine Mindestabnahme von 3–5 Tonnen voraus, bevor ein LKW losfährt.</p>
-      <p>Für kleine Mengen — etwa ein Beet oder eine Ausbesserung — lohnt sich oft ein Big Bag: Diese großen Sandsäcke fassen meist 0,5 bis 1 m³ und kosten inklusive Lieferung etwa 60–150&nbsp;€. Pro Kubikmeter ist das teurer als eine lose Lieferung, aber praktisch, wenn keine Kipperzufahrt möglich ist oder nur wenig Material gebraucht wird. Sobald Sie Ihr Volumen aus dem Rechner oben kennen, multiplizieren Sie es einfach mit dem Preis Ihres Lieferanten, um die Gesamtkosten zu schätzen.</p>
+      <p>Kiespreise werden meist pro Tonne oder pro Kubikmeter angegeben und hängen von Körnung, Region und Entfernung zum Kieswerk ab. Frei Haus geliefert ist meist teurer als Abholung, und kleine Mengen kosten pro Tonne mehr. Vergleichen Sie Angebote immer als Preis pro Tonne frei Haus.</p>
+
+      <h3>Was kostet ein Kubikmeter Kies?</h3>
+      <p>Preis pro Tonne x 1,6. Aktuelle Preise erfragen Sie bei Ihrem Baustoffhändler.</p>
     </section>
 
     <section class="block tight">
       <h2 class="section-title">Kiesarten im Überblick</h2>
-      <p>„Kies" ist ein Sammelbegriff für mehrere Materialien mit unterschiedlicher Körnung, Dichte und Verwendung. Rundkies ist natürlich abgerundet und angenehm zu begehen, ideal für Wege und Beete. Splitt und Schotter sind gebrochenes, kantiges Gestein, das sich beim Verdichten verzahnt — die Standardwahl für Tragschichten unter Einfahrten und Terrassen.</p>
       <div class="table-wrap">
         <table class="guide-table">
-          <thead><tr><th>Typ</th><th>Körnung</th><th>Schüttdichte</th><th>Verwendung</th></tr></thead>
+          <thead><tr><th>Material</th><th>Körnung</th><th>Dichte (ca.)</th><th>Verwendung</th></tr></thead>
           <tbody>
-            <tr><td>Rundkies (Kies)</td><td>8–16 mm</td><td>~1,6 t/m³</td><td>Gartenwege, Beete, Terrassen</td></tr>
-            <tr><td>Splitt</td><td>2–5 mm bzw. 16–32 mm</td><td>~1,5 t/m³</td><td>Tragschicht, Pflasterfugen, Drainage</td></tr>
-            <tr><td>Schotter</td><td>32–63 mm</td><td>~1,6 t/m³</td><td>Unterste Tragschicht für Einfahrten</td></tr>
-            <tr><td>Flusskies</td><td>16–32 mm</td><td>~1,6 t/m³</td><td>Drainage, Deko, Teichrand</td></tr>
-            <tr><td>Dekokies / Ziersplitt</td><td>8–16 mm, farbig</td><td>~1,4 t/m³</td><td>Beete als Mulch-Alternative</td></tr>
+            <tr><td>Rundkies / Perlkies</td><td>2/8, 8/16, 16/32</td><td>1,5 bis 1,7 t/m³</td><td>Dekoration, Wege, Drainage</td></tr>
+            <tr><td>Splitt</td><td>2/5, 5/8, 8/11</td><td>1,4 bis 1,6 t/m³</td><td>Fugen, Wege, Pflasterbett</td></tr>
+            <tr><td>Edelsplitt</td><td>2/5 bis 16/32</td><td>1,4 bis 1,6 t/m³</td><td>Zierflächen, Einfahrten</td></tr>
+            <tr><td>Schotter 0/32</td><td>0 bis 32 mm</td><td>1,7 bis 1,9 t/m³</td><td>Tragschicht, Unterbau</td></tr>
+            <tr><td>Frostschutz 0/32 oder 0/45</td><td>0 bis 32 bzw. 45 mm</td><td>1,7 bis 1,9 t/m³</td><td>Frostschutzschicht</td></tr>
+            <tr><td>Brechsand</td><td>0/2</td><td>1,5 bis 1,7 t/m³</td><td>Pflasterbett, Verfugung</td></tr>
           </tbody>
         </table>
       </div>
-      <p class="help-text">Die Dichteunterschiede zwischen den Materialien sind gering (1,4–1,6 t/m³), daher liefert der Rechner oben für jede Kiesart eine verlässliche Schätzung — einfach im Dropdown wechseln.</p>
+
+      <h3>Was ist der Unterschied zwischen Kies, Splitt und Schotter?</h3>
+      <p>Kies ist natürlich gerundetes Gestein, Splitt ist gebrochenes Gestein mit kantigen Flächen in kleiner, gleichmäßiger Körnung, und Schotter ist gebrochenes Gestein in größerer, oft gemischter Körnung. Kantiges Material verzahnt sich und trägt Lasten; rundes Material sieht schön aus, wandert aber unter Belastung.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Big Bags, Sackware oder lose Lieferung?</h2>
+      <ul>
+        <li><strong>Big Bag:</strong> praktisch für 0,5 bis 2 m³, wird per Lieferung oder Abholung geliefert; Größe und Gewicht stehen auf dem Etikett.</li>
+        <li><strong>Loser Kies per Kipper:</strong> üblich ab etwa 3 bis 5 m³; fragen Sie nach Mindestmenge und ob die Zufahrt für ein schweres Fahrzeug ausreicht.</li>
+        <li><strong>Sackware aus dem Baumarkt:</strong> nur für Kleinmengen und Ausbesserungen.</li>
+      </ul>
+      <p>Den Big-Bag-Bedarf berechnen Sie, indem Sie die Menge in m³ durch den Inhalt eines Big Bags teilen und aufrunden.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Zuschlag für Verdichtung und Verlust</h2>
+      <p>Gebrochenes Material verdichtet sich um etwa 10 bis 15 %. Rechnen Sie 10 % Zuschlag bei festem Untergrund und 15 % bei weichem Boden oder tiefer Tragschicht, und runden Sie auf einen halben Kubikmeter auf.</p>
     </section>
 
     <section class="block tight">
       <h2 class="section-title">Häufige Fragen</h2>
       <details class="faq-item">
-        <summary><h3>Wie berechne ich, wie viel Kies ich brauche?</h3></summary>
-        <p class="faq-answer">Multiplizieren Sie Länge × Breite × Schütthöhe (in Metern), um Kubikmeter zu erhalten. Multiplizieren Sie die Kubikmeter anschließend mit der Schüttdichte des Materials (meist 1,4–1,6 t/m³), um das Gewicht in Tonnen zu erhalten — oder nutzen Sie einfach den Rechner oben.</p>
+        <summary><h3>Wie viele Tonnen Kies brauche ich pro Quadratmeter?</h3></summary>
+        <p class="faq-answer">Bei 5 cm Schütthöhe etwa 0,08 Tonnen pro Quadratmeter (0,05 m³ x 1,6 t/m³).</p>
       </details>
       <details class="faq-item">
-        <summary><h3>Wie viele Tonnen Kies sind ein Kubikmeter?</h3></summary>
-        <p class="faq-answer">Ein Kubikmeter Kies wiegt je nach Körnung und Feuchtigkeit etwa 1,4 bis 1,8 Tonnen. Rundkies liegt meist bei rund 1,6 t/m³, Splitt und Schotter etwas darunter bei circa 1,5 t/m³.</p>
+        <summary><h3>Wie viel Kies brauche ich für eine Einfahrt?</h3></summary>
+        <p class="faq-answer">Für 3 x 15 m mit 20 cm Tragschicht etwa 9 m³ oder 14 bis 16 Tonnen, plus 10 % Zuschlag.</p>
       </details>
       <details class="faq-item">
-        <summary><h3>Welche Schütthöhe braucht man für eine Einfahrt oder einen Gartenweg?</h3></summary>
-        <p class="faq-answer">Für Zierbeete reichen 3–5 cm, für Gartenwege und Terrassen sind 5 cm üblich, und für eine Einfahrt braucht es meist eine 15–20 cm dicke Tragschicht aus Schotter plus eine 5 cm dicke Deckschicht aus Splitt oder Kies.</p>
-      </details>
-      <details class="faq-item">
-        <summary><h3>Was kostet ein Kubikmeter Kies?</h3></summary>
-        <p class="faq-answer">Kies kostet lose ab Werk meist etwa 20–40 € pro Tonne bzw. 30–60 € pro Kubikmeter, dazu kommt die Anlieferung von etwa 50–150 € je nach Entfernung. Für kleine Mengen ist ein Big Bag mit 60–150 € inklusive Lieferung oft praktischer.</p>
-      </details>
-      <details class="faq-item">
-        <summary><h3>Was ist der Unterschied zwischen Kies, Splitt und Schotter?</h3></summary>
-        <p class="faq-answer">Kies besteht aus natürlich gerundeten Körnern und eignet sich gut für Wege und Zierflächen. Splitt ist gebrochenes, kantiges Gestein, das sich beim Verdichten verzahnt und daher als Tragschicht dient. Schotter ist die grobkörnigste Variante und wird meist als unterste Tragschicht unter Einfahrten und Wegen verwendet.</p>
+        <summary><h3>Muss ich unter den Kies ein Vlies legen?</h3></summary>
+        <p class="faq-answer">Bei Wegen, Beeten und weichem Boden ja: Vlies trennt den Kies vom Boden und hält Unkraut ab.</p>
       </details>
       <details class="faq-item">
         <summary><h3>Ist dieser Kies Rechner kostenlos?</h3></summary>
-        <p class="faq-answer">Ja — der Kies Rechner ist komplett kostenlos, läuft direkt im Browser und benötigt weder Anmeldung noch persönliche Daten.</p>
+        <p class="faq-answer">Ja, er ist kostenlos und ohne Anmeldung nutzbar.</p>
       </details>
     </section>
 
     <section class="block tight">
+      <h2 class="section-title">Methode und Hinweise</h2>
+      <p>Rechenweg: Volumen = Länge x Breite x Höhe, Gewicht = Volumen x Dichte. Dichten und Schütthöhen sind übliche Richtwerte; fragen Sie Ihren Lieferanten nach der genauen Schüttdichte und Ihre örtliche Bauberatung nach Anforderungen an Frostschutz und Tragfähigkeit.</p>
+    </section>
+
+    <section class="block tight">
       <h2 class="section-title">Weitere Rechner</h2>
-      <p class="help-text">Diese spezialisierten Tools sind aktuell nur auf Englisch verfügbar — die Berechnung selbst funktioniert unabhängig von der Sprache.</p>
+      <p class="help-text">Die englischen Rechner: Gravel Calculator, Gravel Cost Calculator.</p>
       <div class="related-grid">
+        <a class="related-card" href="/pea-gravel-calculator">
+          <div class="rc-kicker">Calculator (EN)</div>
+          <h2>Gravel Calculator</h2>
+          <p>Die englische Originalversion dieses Rechners.</p>
+        </a>
         <a class="related-card" href="/gravel-cost-calculator">
           <div class="rc-kicker">Calculator (EN)</div>
           <h2>Gravel Cost Calculator</h2>
@@ -293,11 +344,6 @@
           <div class="rc-kicker">Calculator (EN)</div>
           <h2>River Rock Calculator</h2>
           <p>Gleiche Formel, abgestimmt auf Flusskies.</p>
-        </a>
-        <a class="related-card" href="/pea-gravel-calculator">
-          <div class="rc-kicker">🇬🇧 English</div>
-          <h2>Pea Gravel Calculator</h2>
-          <p>Die englische Originalversion dieses Rechners.</p>
         </a>
         <a class="related-card" href="/es/calculadora-de-grava">
           <div class="rc-kicker">🇪🇸 Español</div>
