@@ -8,8 +8,8 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#ff5a1f">
-<title>Square Feet to Cubic Yards Calculator | GravelCalc</title>
-<meta name="description" content="Free square feet to cubic yards calculator. Enter your area and depth to convert instantly — no need to re-measure length and width.">
+<title>Square Feet to Cubic Yards Calculator and Formula</title>
+<meta name="description" content="Convert square feet to cubic yards by entering a depth. Formula, the 324 factor explained, a conversion table by depth, and worked examples.">
 <link rel="canonical" href="https://thegravelcalculators.com/square-feet-to-cubic-yards">
 <link rel="alternate" hreflang="en" href="https://thegravelcalculators.com/square-feet-to-cubic-yards">
 <link rel="alternate" hreflang="de" href="https://thegravelcalculators.com/de/kies-rechner">
@@ -24,25 +24,27 @@
 <meta property="og:site_name" content="GravelCalc">
 <meta property="og:locale" content="en_US">
 <meta property="og:url" content="https://thegravelcalculators.com/square-feet-to-cubic-yards">
-<meta property="og:title" content="Square Feet to Cubic Yards Calculator | GravelCalc">
-<meta property="og:description" content="Free square feet to cubic yards calculator. Enter your area and depth to convert instantly — no need to re-measure length and width.">
+<meta property="og:title" content="Square Feet to Cubic Yards Calculator and Formula">
+<meta property="og:description" content="Convert square feet to cubic yards by entering a depth. Formula, the 324 factor explained, a conversion table by depth, and worked examples.">
 <meta property="og:image" content="https://thegravelcalculators.com/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Square Feet to Cubic Yards Calculator | GravelCalc">
-<meta name="twitter:description" content="Free square feet to cubic yards calculator. Enter your area and depth to convert instantly — no need to re-measure length and width.">
+<meta name="twitter:title" content="Square Feet to Cubic Yards Calculator and Formula">
+<meta name="twitter:description" content="Convert square feet to cubic yards by entering a depth. Formula, the 324 factor explained, a conversion table by depth, and worked examples.">
 <meta name="twitter:image" content="https://thegravelcalculators.com/og-image.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
+  "@type": "WebApplication",
   "name": "Square Feet to Cubic Yards Calculator",
+  "url": "https://thegravelcalculators.com/square-feet-to-cubic-yards",
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "description": "Convert square feet to cubic yards by entering a depth. Formula, the 324 factor explained, a conversion table by depth, and worked examples.",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "url": "https://thegravelcalculators.com/square-feet-to-cubic-yards",
-  "description": "Enter area in square feet and depth to convert to cubic yards and cubic feet."
+  "dateModified": "2026-10-30"
 }
 </script>
 <script type="application/ld+json">
@@ -51,9 +53,10 @@
   "@type": "HowTo",
   "name": "How to convert square feet to cubic yards",
   "step": [
-    { "@type": "HowToStep", "name": "Enter your area", "text": "Enter your area in square feet (length × width, already calculated)." },
-    { "@type": "HowToStep", "name": "Enter your depth", "text": "Enter the depth in inches (or centimeters)." },
-    { "@type": "HowToStep", "name": "Read your result", "text": "The calculator converts depth to feet, multiplies by area for cubic feet, then divides by 27 for cubic yards." }
+    { "@type": "HowToStep", "name": "Find the area", "text": "Find the area in square feet (length x width)." },
+    { "@type": "HowToStep", "name": "Choose the depth", "text": "Choose the depth in inches." },
+    { "@type": "HowToStep", "name": "Multiply and divide by 324", "text": "Multiply area by depth in inches, then divide by 324 to get cubic yards." },
+    { "@type": "HowToStep", "name": "Add waste allowance", "text": "Add 5 to 10% if you are ordering material." }
   ]
 }
 </script>
@@ -65,22 +68,27 @@
     {
       "@type": "Question",
       "name": "How do I convert square feet to cubic yards?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Multiply your area in square feet by your depth in feet (inches ÷ 12) to get cubic feet, then divide by 27 to get cubic yards. Example: 300 sq ft at 3 inches deep = 300 × 0.25 ÷ 27 ≈ 2.78 cubic yards." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Multiply square feet by depth in inches and divide by 324." }
     },
     {
       "@type": "Question",
       "name": "How many square feet does a cubic yard cover?",
-      "acceptedAnswer": { "@type": "Answer", "text": "One cubic yard covers about 324 square feet at 1 inch deep, 162 square feet at 2 inches deep, or 108 square feet at 3 inches deep." }
+      "acceptedAnswer": { "@type": "Answer", "text": "324 square feet at 1 inch, 162 at 2 inches, 108 at 3 inches, 81 at 4 inches." }
     },
     {
       "@type": "Question",
-      "name": "Do I need to know cubic feet before I can find cubic yards?",
-      "acceptedAnswer": { "@type": "Answer", "text": "No, cubic feet is just an intermediate step. Area (sq ft) times depth (ft) gives cubic feet, and dividing that by 27 gives cubic yards directly." }
+      "name": "Do I need cubic feet before I can find cubic yards?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. The 324 formula goes directly from square feet and inches to cubic yards. If you already have cubic feet, divide by 27." }
     },
     {
       "@type": "Question",
-      "name": "Why divide by 12 for depth?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Depth is usually measured in inches, but area is in square feet, so the units have to match before multiplying. Dividing inches by 12 converts to feet, for example 3 inches / 12 = 0.25 feet." }
+      "name": "What is the difference between cubic yards and square yards?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A square yard is an area of 9 square feet; a cubic yard is a volume of 27 cubic feet." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I convert cubic yards to square feet?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Multiply cubic yards by 324 and divide by the depth in inches. For example, 2 cubic yards at 3 inches covers 2 x 324 / 3 = 216 square feet." }
     }
   ]
 }
@@ -139,8 +147,8 @@
     <section class="hero">
       <span class="eyebrow">Free calculator</span>
       <h1>Square Feet to Cubic Yards Calculator</h1>
-      <p class="lede">Already know your area? Enter square feet and depth to convert straight to cubic yards and cubic feet.</p>
-      <p>This is the shortcut version of the standard gravel formula — useful if you already have a square footage from a landscaper's quote, a floor plan, or a property listing, and don't want to re-measure length and width separately.</p>
+      <p class="lede">Cubic yards = square feet x depth in inches / 324. For example, 100 square feet at 3 inches deep is 100 x 3 / 324 = 0.93 cubic yards.</p>
+      <p>You cannot convert square feet to cubic yards without a depth, because square feet measure area and cubic yards measure volume. Enter your area and depth below, or use the formula and tables on this page to work it out by hand — useful if you already have a square footage from a landscaper's quote, a floor plan, or a property listing, and don't want to re-measure length and width separately.</p>
     </section>
 
     <section class="calc-card" aria-label="Square feet to cubic yards calculator">
@@ -191,60 +199,115 @@
     </section>
 
     <section class="block tight">
-      <h2 class="section-title">The Conversion Formula</h2>
-      <p>Convert depth to feet, multiply by your area to get cubic feet, then divide by 27 to get cubic yards.</p>
+      <h2 class="section-title">How to convert square feet to cubic yards</h2>
+      <ol>
+        <li><strong>Find the area</strong> in square feet (length x width).</li>
+        <li><strong>Choose the depth</strong> in inches.</li>
+        <li><strong>Multiply</strong> area x depth in inches, then <strong>divide by 324</strong>.</li>
+        <li><strong>Add 5 to 10%</strong> if you are ordering material.</li>
+      </ol>
+
+      <h3>Square feet to cubic yards formula</h3>
       <div class="formula-box">
-        cubic feet = area (sq ft) × (depth ÷ 12)<br>
-        cubic yards = cubic feet ÷ 27
+        cubic yards = square feet × depth (in) ÷ 324
       </div>
-      <p>The division by 12 turns your depth from inches into feet, since area is in square feet — mixing units is the single most common mistake people make converting this by hand.</p>
+      <p>If your depth is in feet, use: cubic yards = square feet × depth (ft) ÷ 27.</p>
     </section>
 
     <section class="block tight">
-      <h2 class="section-title">Quick Conversion Table</h2>
+      <h2 class="section-title">Where the number 324 comes from</h2>
+      <p>One cubic yard is 27 cubic feet. Depth in inches has to be turned into feet by dividing by 12. So 27 × 12 = 324: area (sq ft) × depth (in) ÷ 12 ÷ 27 simplifies to area × depth ÷ 324. The two forms below are the same formula written two ways.</p>
+      <ul>
+        <li>Cubic yards = sq ft × (depth in inches ÷ 12) ÷ 27</li>
+        <li>Cubic yards = sq ft × depth in inches ÷ 324</li>
+      </ul>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Why a depth is required</h2>
+      <p>Square feet is a flat surface, with no thickness. A 100 square foot patio covered 1 inch deep and 100 square feet covered 12 inches deep are very different amounts of material: 0.31 cubic yards versus 3.7 cubic yards. Always decide the depth first.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Square feet to cubic yards by depth</h2>
       <div class="table-wrap">
         <table class="guide-table">
-          <thead><tr><th>Depth</th><th>Sq ft per cubic yard</th><th>Cubic yards per 100 sq ft</th></tr></thead>
+          <thead><tr><th>Depth</th><th>Cubic yards per 100 sq ft</th><th>Sq ft covered by 1 cubic yard</th></tr></thead>
           <tbody>
-            <tr><td>1 in</td><td>324 sq ft</td><td>0.31 yd³</td></tr>
-            <tr><td>2 in</td><td>162 sq ft</td><td>0.62 yd³</td></tr>
-            <tr><td>3 in</td><td>108 sq ft</td><td>0.93 yd³</td></tr>
-            <tr><td>4 in</td><td>81 sq ft</td><td>1.23 yd³</td></tr>
-            <tr><td>6 in</td><td>54 sq ft</td><td>1.85 yd³</td></tr>
+            <tr><td>1 inch</td><td>0.31</td><td>324</td></tr>
+            <tr><td>2 inches</td><td>0.62</td><td>162</td></tr>
+            <tr><td>3 inches</td><td>0.93</td><td>108</td></tr>
+            <tr><td>4 inches</td><td>1.23</td><td>81</td></tr>
+            <tr><td>6 inches</td><td>1.85</td><td>54</td></tr>
+            <tr><td>12 inches</td><td>3.70</td><td>27</td></tr>
           </tbody>
         </table>
       </div>
     </section>
 
     <section class="block tight">
-      <h2 class="section-title">Worked Example</h2>
-      <p>Say you're ordering pea gravel for a 300 sq ft patio at a 3-inch depth. Convert 3 inches to feet: 3 ÷ 12 = 0.25 ft. Multiply by area: 300 × 0.25 = 75 cubic feet. Divide by 27: 75 ÷ 27 ≈ 2.78 cubic yards — call it 3 cubic yards once you add a little for waste. At pea gravel's typical density of 1.4 tons per cubic yard, that's roughly 3.9 tons to order from your supplier. Change the area or depth above to run the same steps on your own project.</p>
-      <p>A second example at a larger scale: a contractor quotes a 1,200 sq ft gravel driveway at a 4-inch depth. That's 4 ÷ 12 = 0.33 ft, so 1,200 × 0.33 = 400 cubic feet, or 400 ÷ 27 ≈ 14.8 cubic yards — call it roughly 22 tons of crushed stone at 1.5 tons/yd³. Knowing the shortcut means you can sanity-check a supplier's quote in your head before you ever pick up a tape measure.</p>
+      <h2 class="section-title">Worked examples</h2>
+      <h3>Example 1: 150 sq ft at 2 inches (mulch or gravel)</h3>
+      <p>150 × 2 ÷ 324 = 0.93 cubic yards. With 10% extra, 1.02 cubic yards.</p>
+
+      <h3>Example 2: 400 sq ft lawn at 4 inches (topsoil)</h3>
+      <p>400 × 4 ÷ 324 = 4.94 cubic yards. With 10% extra, 5.43 cubic yards.</p>
     </section>
 
     <section class="block tight">
-      <h2 class="section-title">What Is a Cubic Yard?</h2>
-      <p>A cubic yard is a cube 3 feet on every side — 27 cubic feet — and it's the standard unit gravel, mulch, sand, and topsoil are priced and delivered in, since it lines up with typical dump-truck and loader capacities. Square feet measures a flat area; cubic yards measures volume, which is why depth has to enter the calculation at all — the same 300 sq ft patio needs roughly four times as much material at an 8-inch depth as it does at 2 inches, even though the footprint on the ground never changes. For more on how cubic yards convert to weight by material, see the <a href="/cubic-yards-calculator">cubic yards calculator</a>.</p>
+      <h2 class="section-title">How many cubic yards of gravel or soil does my area need?</h2>
+      <p>Once you have cubic yards, multiply by the material's density to get tons: about 1.4 tons per cubic yard for gravel and crushed stone, 1.1 to 1.4 for topsoil, and 0.4 to 0.6 for mulch. Use the <a href="/pea-gravel-calculator">Pea Gravel Calculator</a> for stone and the <a href="/cubic-yards-calculator">Cubic Yards Calculator</a> for other shapes.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Common uses</h2>
+      <ul>
+        <li>Topsoil and compost for lawns and gardens</li>
+        <li>Mulch and bark for beds</li>
+        <li>Gravel, sand and crushed stone for paths, patios and driveways</li>
+        <li>Concrete for slabs</li>
+        <li>Asphalt for patching</li>
+      </ul>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Common mistakes</h2>
+      <ul>
+        <li><strong>Skipping the depth.</strong> Square feet alone cannot give you cubic yards.</li>
+        <li><strong>Mixing units.</strong> Use inches with 324, or feet with 27. Do not mix them.</li>
+        <li><strong>Confusing square yards with cubic yards.</strong> Square yards are area, cubic yards are volume.</li>
+        <li><strong>Forgetting waste.</strong> Add 5 to 10% for uneven ground and settling.</li>
+        <li><strong>Using volume when you need weight.</strong> Suppliers often sell by the ton; convert using density.</li>
+      </ul>
     </section>
 
     <section class="block tight">
       <h2 class="section-title">Frequently asked questions</h2>
       <details class="faq-item">
         <summary><h3>How do I convert square feet to cubic yards?</h3></summary>
-        <p class="faq-answer">Multiply your area in square feet by your depth in feet (inches ÷ 12) to get cubic feet, then divide by 27. Example: 300 sq ft at 3 inches deep = 300 × 0.25 ÷ 27 ≈ 2.78 cubic yards.</p>
+        <p class="faq-answer">Multiply square feet by depth in inches and divide by 324.</p>
       </details>
       <details class="faq-item">
         <summary><h3>How many square feet does a cubic yard cover?</h3></summary>
-        <p class="faq-answer">One cubic yard covers about 324 square feet at 1 inch deep, 162 square feet at 2 inches, or 108 square feet at 3 inches — see the table above for more depths.</p>
+        <p class="faq-answer">324 square feet at 1 inch, 162 at 2 inches, 108 at 3 inches, 81 at 4 inches.</p>
       </details>
       <details class="faq-item">
-        <summary><h3>Do I need to know cubic feet before I can find cubic yards?</h3></summary>
-        <p class="faq-answer">No — cubic feet is just an intermediate step in the math. Area (sq ft) × depth (ft) gives cubic feet, and dividing that by 27 gives cubic yards directly. The calculator above skips straight from your inputs to the final cubic yard figure.</p>
+        <summary><h3>Do I need cubic feet before I can find cubic yards?</h3></summary>
+        <p class="faq-answer">No. The 324 formula goes directly from square feet and inches to cubic yards. If you already have cubic feet, divide by 27.</p>
       </details>
       <details class="faq-item">
-        <summary><h3>Why divide by 12 for depth?</h3></summary>
-        <p class="faq-answer">Depth is usually measured in inches, but area is in square feet, so the units have to match before multiplying. Dividing inches by 12 converts to feet — for example, 3 inches ÷ 12 = 0.25 feet.</p>
+        <summary><h3>What is the difference between cubic yards and square yards?</h3></summary>
+        <p class="faq-answer">A square yard is an area of 9 square feet; a cubic yard is a volume of 27 cubic feet.</p>
       </details>
+      <details class="faq-item">
+        <summary><h3>How do I convert cubic yards to square feet?</h3></summary>
+        <p class="faq-answer">Multiply cubic yards by 324 and divide by the depth in inches. For example, 2 cubic yards at 3 inches covers 2 × 324 ÷ 3 = 216 square feet.</p>
+      </details>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Method and sources</h2>
+      <p>Conversion factors: 1 cubic yard = 27 cubic feet; 1 foot = 12 inches.</p>
     </section>
 
     <section class="block tight">
@@ -260,15 +323,15 @@
           <h2>Pea Gravel Calculator</h2>
           <p>Adds tons and bag counts.</p>
         </a>
-        <a class="related-card" href="/gravel-cost-calculator">
+        <a class="related-card" href="/">
           <div class="rc-kicker">Calculator</div>
-          <h2>Gravel Cost Calculator</h2>
-          <p>Turn your volume into a dollar estimate.</p>
+          <h2>Gravel Calculator</h2>
+          <p>The general-purpose gravel volume calculator.</p>
         </a>
-        <a class="related-card" href="/how-much-gravel-do-i-need">
+        <a class="related-card" href="/gravel-depth-guide">
           <div class="rc-kicker">Guide</div>
-          <h2>How Much Gravel Do I Need?</h2>
-          <p>A plain-English walkthrough with examples.</p>
+          <h2>Gravel Depth Guide</h2>
+          <p>Recommended depths by project type.</p>
         </a>
       </div>
     </section>
