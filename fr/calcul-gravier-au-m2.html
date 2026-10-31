@@ -111,7 +111,9 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </button>
     <nav class="main-nav">
-      <a href="/">Gravel Calculator (EN)</a>
+      <a href="/fr/calcul-gravier-au-m2" aria-current="page">Calcul Gravier au m² (FR)</a>
+      <a href="/">Tous les calculateurs (EN)</a>
+      <a href="/pea-gravel-calculator" class="lang-switch">🇬🇧 English</a>
       <a href="/de/kies-rechner" class="lang-switch">🇩🇪 Deutsch</a>
       <a href="/es/calculadora-de-grava" class="lang-switch">🇪🇸 Español</a>
       <a href="/pt/calculadora-da-brita" class="lang-switch">🇧🇷 Português</a>
@@ -129,7 +131,6 @@
     <section class="hero" style="padding-top:6px;">
       <span class="eyebrow">Calculatrice gratuite</span>
       <h1>Calcul Gravier au m²</h1>
-      <p class="lede">Pour du gravier à 5 cm d'épaisseur, il faut environ 0,05 m³ par m², soit environ 80 kg par m² avec une densité de 1,6 t/m³. <strong>Volume (m³) = surface (m²) × épaisseur (m).</strong> Entrez votre surface et l'épaisseur voulue dans la calculatrice ci-dessous pour obtenir le volume en m³, le poids en tonnes et en kg/m², et le nombre de sacs de 25 kg.</p>
       <div class="trust-row">
         <span>100&nbsp;% gratuit</span>
         <span>Sans inscription</span>
@@ -165,61 +166,35 @@
               </div>
             </div>
             <div class="field">
-              <label for="sacPoids">Poids d'un sac</label>
-              <div class="input-wrap">
-                <select id="sacPoids" class="plain-select">
-                  <option value="25" selected>25 kg</option>
-                  <option value="20">20 kg</option>
-                  <option value="35">35 kg</option>
-                  <option value="1000">Big bag (1 000 kg)</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div class="field-row">
-            <div class="field">
-              <label for="marge">Marge de sécurité <span class="unit-tag">(%)</span></label>
+              <label for="marge">Marge <span class="unit-tag">(%)</span></label>
               <div class="input-wrap">
                 <input type="number" id="marge" inputmode="decimal" min="0" step="1" value="10">
                 <span class="suffix">%</span>
               </div>
             </div>
           </div>
-          <p class="help-text">Densité de planification par défaut : 1,6 t/m³. Vérifiez-la auprès de votre fournisseur ; elle varie de 1,5 à 1,8 t/m³ selon le gravier. Marge par défaut de 10 % (15 % sur un sol meuble ou une fondation profonde).</p>
+          <p class="help-text">Densité par défaut : 1,6 t/m³ (vérifiez auprès de votre fournisseur ; de 1,5 à 1,8 t/m³ selon le gravier). Sacs de 25 kg par défaut. Marge par défaut de 10 % (15 % sur un sol meuble ou une fondation profonde).</p>
         </div>
 
         <div class="results" aria-live="polite">
-          <div class="results-label">Sans marge</div>
+          <div class="results-label">À commander (avec marge)</div>
           <div class="result-stat primary">
             <span class="rs-name">Volume</span>
-            <span><span class="rs-value" id="outVolumeBrut">0,00</span><span class="rs-unit">m³</span></span>
+            <span><span class="rs-value" id="outVolume">0,00</span><span class="rs-unit">m³</span></span>
           </div>
           <div class="result-stat">
             <span class="rs-name">Poids</span>
-            <span><span class="rs-value" id="outPoidsBrut">0,00</span><span class="rs-unit">t</span></span>
+            <span><span class="rs-value" id="outPoids">0,00</span><span class="rs-unit">t</span></span>
           </div>
           <div class="result-stat">
-            <span class="rs-name">kg par m²</span>
-            <span><span class="rs-value" id="outKgM2">0</span><span class="rs-unit">kg/m²</span></span>
-          </div>
-
-          <div class="results-label" style="margin-top:16px;">Avec marge</div>
-          <div class="result-stat primary">
-            <span class="rs-name">Volume à commander</span>
-            <span><span class="rs-value" id="outVolumeMarge">0,00</span><span class="rs-unit">m³</span></span>
-          </div>
-          <div class="result-stat">
-            <span class="rs-name">Poids à commander</span>
-            <span><span class="rs-value" id="outPoidsMarge">0,00</span><span class="rs-unit">t</span></span>
-          </div>
-          <div class="result-stat">
-            <span class="rs-name">Nombre de sacs</span>
+            <span class="rs-name">Sacs de 25 kg</span>
             <span><span class="rs-value" id="outSacs">0</span><span class="rs-unit">sacs</span></span>
           </div>
-          <p class="help-text">La quantité « avec marge » est celle à commander ; elle couvre le tassement et les pertes à l'épandage.</p>
         </div>
       </div>
     </section>
+
+    <p class="lede" style="margin-top:14px;">Pour du gravier à 5 cm d'épaisseur, il faut environ 0,05 m³ par m², soit environ 80 kg par m², à une densité de 1,6 t/m³. <strong>Volume (m³) = surface (m²) × épaisseur (m).</strong> Les résultats ci-dessus incluent déjà la marge de sécurité ; voir le tableau ci-dessous pour le détail sans marge.</p>
 
     <section class="block tight">
       <h2 class="section-title">Tableau gravier au m² par épaisseur</h2>
@@ -431,6 +406,7 @@
           <li><a href="/de/kies-rechner">🇩🇪 Deutsch</a></li>
           <li><a href="/es/calculadora-de-grava">🇪🇸 Español</a></li>
           <li><a href="/pt/calculadora-da-brita">🇧🇷 Português</a></li>
+          <li><a href="/fr/calcul-gravier-au-m2" aria-current="page">🇫🇷 Français</a></li>
         </ul>
       </div>
       <div>
@@ -457,14 +433,11 @@
   var surfaceIn = document.getElementById("surface");
   var epaisseurIn = document.getElementById("epaisseur");
   var densiteIn = document.getElementById("densite");
-  var sacPoidsIn = document.getElementById("sacPoids");
   var margeIn = document.getElementById("marge");
+  var SAC_POIDS = 25; // kg, taille de sac la plus courante
 
-  var outVolumeBrut = document.getElementById("outVolumeBrut");
-  var outPoidsBrut = document.getElementById("outPoidsBrut");
-  var outKgM2 = document.getElementById("outKgM2");
-  var outVolumeMarge = document.getElementById("outVolumeMarge");
-  var outPoidsMarge = document.getElementById("outPoidsMarge");
+  var outVolume = document.getElementById("outVolume");
+  var outPoids = document.getElementById("outPoids");
   var outSacs = document.getElementById("outSacs");
 
   function fmt(n, decimals) {
@@ -476,32 +449,26 @@
     var surface = parseFloat(surfaceIn.value) || 0;
     var epaisseurCm = parseFloat(epaisseurIn.value) || 0;
     var densite = parseFloat(densiteIn.value) || 0;
-    var sacPoids = parseFloat(sacPoidsIn.value) || 25;
     var marge = parseFloat(margeIn.value) || 0;
 
     var epaisseurM = epaisseurCm / 100;
 
     var volumeBrut = Math.max(surface, 0) * Math.max(epaisseurM, 0);   // m3
     var poidsBrutKg = volumeBrut * densite * 1000;                     // kg
-    var poidsBrutT = poidsBrutKg / 1000;                               // t
-    var kgParM2 = epaisseurM * densite * 1000;                         // kg/m2
 
     var facteurMarge = 1 + marge / 100;
     var volumeMarge = volumeBrut * facteurMarge;
     var poidsMargeKg = poidsBrutKg * facteurMarge;
     var poidsMargeT = poidsMargeKg / 1000;
-    var sacs = sacPoids > 0 ? Math.ceil(poidsMargeKg / sacPoids) : 0;
+    var sacs = Math.ceil(poidsMargeKg / SAC_POIDS);
 
-    outVolumeBrut.textContent = fmt(volumeBrut, 2);
-    outPoidsBrut.textContent = fmt(poidsBrutT, 2);
-    outKgM2.textContent = fmt(kgParM2, 0);
-    outVolumeMarge.textContent = fmt(volumeMarge, 2);
-    outPoidsMarge.textContent = fmt(poidsMargeT, 2);
+    outVolume.textContent = fmt(volumeMarge, 2);
+    outPoids.textContent = fmt(poidsMargeT, 2);
     outSacs.textContent = fmt(sacs, 0);
   }
 
   var debounced = typeof debounce === "function" ? debounce(calc, 50) : calc;
-  [surfaceIn, epaisseurIn, densiteIn, sacPoidsIn, margeIn].forEach(function (el) {
+  [surfaceIn, epaisseurIn, densiteIn, margeIn].forEach(function (el) {
     el.addEventListener("input", debounced);
     el.addEventListener("change", debounced);
   });
