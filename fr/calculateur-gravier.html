@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#ff5a1f">
+<title>Calculateur Gravier : m³, Tonnes et Sacs de 25 kg</title>
+<meta name="description" content="Calculateur de gravier gratuit : entrez surface et épaisseur pour obtenir le volume en m³, le poids en tonnes et le nombre de sacs de 25 kg à commander.">
+<link rel="canonical" href="https://thegravelcalculators.com/fr/calculateur-gravier">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="GravelCalc">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://thegravelcalculators.com/fr/calculateur-gravier">
+<meta property="og:title" content="Calculateur Gravier : m³, Tonnes et Sacs de 25 kg">
+<meta property="og:description" content="Calculateur de gravier gratuit : entrez surface et épaisseur pour obtenir le volume en m³, le poids en tonnes et le nombre de sacs de 25 kg à commander.">
+<meta property="og:image" content="https://thegravelcalculators.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Calculateur Gravier : m³, Tonnes et Sacs de 25 kg">
+<meta name="twitter:description" content="Calculateur de gravier gratuit : entrez surface et épaisseur pour obtenir le volume en m³, le poids en tonnes et le nombre de sacs de 25 kg à commander.">
+<meta name="twitter:image" content="https://thegravelcalculators.com/og-image.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Calculateur Gravier",
+      "url": "https://thegravelcalculators.com/fr/calculateur-gravier",
+      "inLanguage": "fr",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any",
+      "browserRequirements": "Requires JavaScript",
+      "description": "Calculateur gratuit de gravier : surface et épaisseur converties en m3, en tonnes et en kg, et en sacs de 25 kg, avec ou sans marge de sécurité.",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+      "dateModified": "2026-10-31"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Calculateurs de gravier", "item": "https://thegravelcalculators.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Calculateur Gravier", "item": "https://thegravelcalculators.com/fr/calculateur-gravier" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "fr",
+      "mainEntity": [
+        { "@type": "Question", "name": "Comment calculer la quantité de gravier nécessaire ?", "acceptedAnswer": { "@type": "Answer", "text": "Multipliez la surface en m² par l'épaisseur en mètres pour obtenir le volume en m³, puis multipliez ce volume par la densité du gravier pour obtenir le poids. Ajoutez ensuite une marge de sécurité avant de commander." } },
+        { "@type": "Question", "name": "Combien de kg y a-t-il dans 1 m³ de gravier ?", "acceptedAnswer": { "@type": "Answer", "text": "Environ 1 600 kg à la densité de planification de 1,6 t/m³ utilisée par défaut sur cette page. Le poids réel varie de 1 500 à 1 800 kg selon le type de gravier." } },
+        { "@type": "Question", "name": "Combien coûte le gravier ?", "acceptedAnswer": { "@type": "Answer", "text": "Le coût dépend du prix à la tonne pratiqué localement et du transport ; aucun prix générique ne peut être fiable, demandez un devis à votre fournisseur avec le volume ou le poids calculé ici." } },
+        { "@type": "Question", "name": "Quelle est la différence entre gravier, gravillon et concassé ?", "acceptedAnswer": { "@type": "Answer", "text": "Le gravier et le gravillon désignent des grains arrondis ou de petit calibre, souvent d'origine alluvionnaire ; le concassé est obtenu en broyant la roche et a des faces anguleuses qui s'imbriquent mieux, ce qui le rend adapté aux fondations." } },
+        { "@type": "Question", "name": "Comment mesurer une surface irrégulière ?", "acceptedAnswer": { "@type": "Answer", "text": "Découpez la surface en rectangles et en cercles (surface = π × rayon²), mesurez chaque partie séparément, additionnez les résultats, puis utilisez ce total comme surface dans le calculateur." } },
+        { "@type": "Question", "name": "Ce calculateur est-il gratuit ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, il est entièrement gratuit et ne demande aucune inscription." } }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="/"><span class="logo-mark">G</span>GravelCalc</a>
+    <button class="nav-toggle" aria-label="Afficher le menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <nav class="main-nav">
+      <a href="/fr/calculateur-gravier" aria-current="page">Calculateur Gravier</a>
+      <a href="/fr/calcul-gravier-m3">Calcul Gravier m³ (FR)</a>
+      <a href="/fr/calcul-gravier-au-m2">Calcul Gravier au m² (FR)</a>
+      <a href="/fr/drain-francais">Drain Français (FR)</a>
+      <a href="/pea-gravel-calculator" class="lang-switch">🇬🇧 English</a>
+      <a href="/de/kies-rechner" class="lang-switch">🇩🇪 Deutsch</a>
+      <a href="/es/calculadora-de-grava" class="lang-switch">🇪🇸 Español</a>
+      <a href="/pt/calculadora-da-brita" class="lang-switch">🇧🇷 Português</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+
+    <p class="breadcrumbs">
+      <a href="/">GravelCalc</a><span class="sep">/</span>Calculateur Gravier
+    </p>
+
+    <section class="hero" style="padding-top:6px;">
+      <span class="eyebrow">Calculatrice gratuite</span>
+      <h1>Calculateur Gravier</h1>
+      <div class="trust-row">
+        <span>100&nbsp;% gratuit</span>
+        <span>Sans inscription</span>
+        <span>Résultat en temps réel</span>
+      </div>
+    </section>
+
+    <section class="calc-card" aria-label="Calculatrice gravier">
+      <div class="calc-grid">
+        <div>
+          <div class="field-row">
+            <div class="field">
+              <label for="surface">Surface <span class="unit-tag">(m²)</span></label>
+              <div class="input-wrap">
+                <input type="number" id="surface" inputmode="decimal" min="0" step="0.1" value="20">
+                <span class="suffix">m²</span>
+              </div>
+            </div>
+            <div class="field">
+              <label for="epaisseur">Épaisseur <span class="unit-tag">(cm)</span></label>
+              <div class="input-wrap">
+                <input type="number" id="epaisseur" inputmode="decimal" min="0" step="0.5" value="5">
+                <span class="suffix">cm</span>
+              </div>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="densite">Densité <span class="unit-tag">(t/m³)</span></label>
+              <div class="input-wrap">
+                <input type="number" id="densite" inputmode="decimal" min="0.1" step="0.05" value="1.6">
+                <span class="suffix">t/m³</span>
+              </div>
+            </div>
+            <div class="field">
+              <label for="marge">Marge <span class="unit-tag">(%)</span></label>
+              <div class="input-wrap">
+                <input type="number" id="marge" inputmode="decimal" min="0" step="1" value="10">
+                <span class="suffix">%</span>
+              </div>
+            </div>
+          </div>
+          <p class="help-text">Densité par défaut : 1,6 t/m³ (vérifiez auprès de votre fournisseur ; de 1,5 à 1,8 t/m³ selon le gravier). Sacs de 25 kg par défaut. Marge par défaut de 10 % (15 % sur un sol meuble ou une fondation profonde).</p>
+        </div>
+
+        <div class="results" aria-live="polite">
+          <div class="results-label">À commander (avec marge)</div>
+          <div class="result-stat primary">
+            <span class="rs-name">Volume</span>
+            <span><span class="rs-value" id="outVolume">0,00</span><span class="rs-unit">m³</span></span>
+          </div>
+          <div class="result-stat">
+            <span class="rs-name">Poids</span>
+            <span><span class="rs-value" id="outPoids">0,00</span><span class="rs-unit">t</span></span>
+          </div>
+          <div class="result-stat">
+            <span class="rs-name">Sacs de 25 kg</span>
+            <span><span class="rs-value" id="outSacs">0</span><span class="rs-unit">sacs</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <p class="lede" style="margin-top:14px;">Pour 20 m² de gravier à 5 cm d'épaisseur, il faut environ 1,0 m³, soit 1,6 tonne, à la densité de planification de 1,6 t/m³ utilisée par défaut ici. <strong>Volume (m³) = surface (m²) × épaisseur (m), puis poids (t) = volume × densité.</strong> Entrez votre propre surface et épaisseur ci-dessus pour obtenir le volume, le poids et le nombre de sacs de 25 kg à commander, marge de sécurité de 10 % déjà incluse.</p>
+
+    <section class="block tight">
+      <h2 class="section-title">La formule, en deux étapes</h2>
+      <div class="formula-box">
+        Volume (m³) = surface (m²) x épaisseur (m)
+      </div>
+      <p>Première étape : convertissez l'épaisseur de centimètres en mètres (divisez par 100 ; 8 cm devient 0,08 m), puis multipliez-la par la surface. Deuxième étape : multipliez ce volume par la densité du gravier (1,6 t/m³ en planification par défaut) pour obtenir le poids en tonnes, puis divisez le poids en kg par 25 et arrondissez au sac supérieur pour connaître le nombre de sacs. Pour une surface qui n'est ni un rectangle ni un cercle, découpez-la en formes simples, calculez chaque surface séparément, additionnez-les, puis multipliez le total par l'épaisseur.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Poids du gravier selon le matériau</h2>
+      <p>La densité change selon la nature et le calibre du gravier, ce qui fait varier le poids pour un même volume. Le tableau ci-dessous donne les repères de planification les plus courants ; demandez toujours la densité exacte à votre fournisseur avant de commander une grosse quantité.</p>
+      <div class="table-wrap">
+        <table class="guide-table">
+          <thead><tr><th>Type de gravier</th><th>Densité de planification</th></tr></thead>
+          <tbody>
+            <tr><td>Gravier roulé 6/10</td><td>1,5 t/m³</td></tr>
+            <tr><td>Concassé 10/20</td><td>1,6 t/m³</td></tr>
+            <tr><td>Gravier de drainage 20/40</td><td>1,6 t/m³</td></tr>
+            <tr><td>Galets 40/80</td><td>1,7 t/m³</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="help-text">Ces valeurs bougent avec l'humidité et le calibre réel livré : elles servent à planifier une commande, pas à la facturer au gramme près.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Combien de gravier par m², selon l'épaisseur ?</h2>
+      <p>Pour une densité de planification de 1,6 t/m³, chaque centimètre d'épaisseur ajoute environ 16 kg par mètre carré. Le tableau suivant détaille les épaisseurs les plus demandées ; le nombre de sacs n'est jamais arrondi colonne par colonne, seulement sur le total final, pour éviter de surestimer une grande surface.</p>
+      <div class="table-wrap">
+        <table class="guide-table">
+          <thead><tr><th>Épaisseur</th><th>kg par m²</th><th>Sacs de 25 kg par m² (indicatif)</th></tr></thead>
+          <tbody>
+            <tr><td>3 cm</td><td>48</td><td>1,92</td></tr>
+            <tr><td>5 cm</td><td>80</td><td>3,20</td></tr>
+            <tr><td>8 cm</td><td>128</td><td>5,12</td></tr>
+            <tr><td>10 cm</td><td>160</td><td>6,40</td></tr>
+            <tr><td>15 cm</td><td>240</td><td>9,60</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="help-text">Pour une densité différente de 1,6 t/m³, multipliez la colonne kg par le ratio entre votre densité et 1,6.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Quelle épaisseur selon l'usage ?</h2>
+      <p>L'épaisseur à prévoir dépend de ce que le gravier doit supporter, pas seulement de l'aspect recherché.</p>
+      <div class="table-wrap">
+        <table class="guide-table">
+          <thead><tr><th>Usage</th><th>Épaisseur courante</th></tr></thead>
+          <tbody>
+            <tr><td>Allée piétonne, chemin de jardin</td><td>5 à 7 cm</td></tr>
+            <tr><td>Terrasse, zone de repos</td><td>5 à 8 cm</td></tr>
+            <tr><td>Allée carrossable, entrée de garage</td><td>10 à 15 cm de finition, plus une fondation compactée en dessous</td></tr>
+            <tr><td>Tranchée de drainage</td><td>toute la profondeur de la tranchée</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="help-text">Ces chiffres sont des repères de planification courants, pas une règle de dimensionnement structurel ; un sol meuble ou un usage carrossable fréquent demandent souvent davantage, avec un avis local.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Pourquoi prévoir une marge de 10 % ou 15 %</h2>
+      <p>Le gravier se tasse une fois mis en place, et une partie se perd pendant l'épandage : un volume calculé « au plus juste » finit presque toujours insuffisant une fois livré. La marge par défaut de ce calculateur est 10 %, ce qui couvre la plupart des projets sur un sol ferme. Portez-la à 15 % sur un sol meuble, pour une fondation profonde, ou quand une seconde livraison serait compliquée à organiser.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Camion benne ou big bag : quelle livraison choisir ?</h2>
+      <p>Pour une petite quantité, un big bag (souvent autour d'une tonne, à vérifier sur l'étiquette) ou des sacs de 25 kg suffisent. Pour un gros volume, un camion benne devient plus économique : sa capacité exacte varie fortement selon le modèle et le transporteur, donc <em>note de planification</em> plutôt que chiffre fixe — comptez plusieurs m³ selon le gabarit du véhicule, et confirmez la capacité réelle et l'accès possible pour le camion directement avec votre fournisseur avant de commander.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Types de gravier : vue d'ensemble</h2>
+      <div class="table-wrap">
+        <table class="guide-table">
+          <thead><tr><th>Type de gravier</th><th>Densité de planification</th><th>Plutôt pour</th></tr></thead>
+          <tbody>
+            <tr><td>Gravier roulé 6/10</td><td>1,5 t/m³</td><td>Allées piétonnes, paillage décoratif</td></tr>
+            <tr><td>Concassé 10/20</td><td>1,6 t/m³</td><td>Fondations, allées carrossables</td></tr>
+            <tr><td>Gravier de drainage 20/40</td><td>1,6 t/m³</td><td>Tranchées et drains</td></tr>
+            <tr><td>Galets 40/80</td><td>1,7 t/m³</td><td>Bordures, massifs, zones décoratives</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Pour le détail du drainage (granulométrie, géotextile, pose complète), voir le <a href="/fr/drain-francais">guide du drain français</a>.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Combien coûte le gravier ?</h2>
+      <p>Le coût total dépend du prix à la tonne pratiqué localement, qui varie selon la région, le type de gravier et la distance de livraison, auquel s'ajoute le transport. <strong>Coût estimé = tonnes × prix au tonne + transport.</strong> Aucun prix générique trouvé en ligne n'est fiable pour votre projet : utilisez le poids calculé ici pour demander des devis comparables à plusieurs fournisseurs locaux.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Foire aux questions</h2>
+      <details class="faq-item">
+        <summary><h3>Comment calculer la quantité de gravier nécessaire ?</h3></summary>
+        <p class="faq-answer">Multipliez la surface en m² par l'épaisseur en mètres pour obtenir le volume en m³, puis multipliez ce volume par la densité du gravier pour obtenir le poids. Ajoutez ensuite une marge de sécurité avant de commander.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>Combien de kg y a-t-il dans 1 m³ de gravier ?</h3></summary>
+        <p class="faq-answer">Environ 1 600 kg à la densité de planification de 1,6 t/m³ utilisée par défaut sur cette page. Le poids réel varie de 1 500 à 1 800 kg selon le type de gravier.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>Combien coûte le gravier ?</h3></summary>
+        <p class="faq-answer">Le coût dépend du prix à la tonne pratiqué localement et du transport ; aucun prix générique ne peut être fiable, demandez un devis à votre fournisseur avec le volume ou le poids calculé ici.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>Quelle est la différence entre gravier, gravillon et concassé ?</h3></summary>
+        <p class="faq-answer">Le gravier et le gravillon désignent des grains arrondis ou de petit calibre, souvent d'origine alluvionnaire ; le concassé est obtenu en broyant la roche et a des faces anguleuses qui s'imbriquent mieux, ce qui le rend adapté aux fondations.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>Comment mesurer une surface irrégulière ?</h3></summary>
+        <p class="faq-answer">Découpez la surface en rectangles et en cercles (surface = π × rayon²), mesurez chaque partie séparément, additionnez les résultats, puis utilisez ce total comme surface dans le calculateur.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>Ce calculateur est-il gratuit ?</h3></summary>
+        <p class="faq-answer">Oui, il est entièrement gratuit et ne demande aucune inscription.</p>
+      </details>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Méthode et sources</h2>
+      <p>Volume = surface × épaisseur ; poids = volume × densité ; sacs = poids total ÷ 25, arrondi au sac supérieur sur le total final, jamais par mètre carré. La densité par défaut (1,6 t/m³), les épaisseurs par usage et la marge de sécurité indiquées ici sont des valeurs de planification courantes, pas une spécification technique : confirmez-les avec votre fournisseur, et demandez un avis local pour un usage carrossable ou un sol difficile.</p>
+      <p><em>Rédigé par [NOM À COMPLÉTER]. Relu par [NOM À COMPLÉTER]. Dernière mise à jour : [DATE À COMPLÉTER]. Sources : [SOURCE À COMPLÉTER].</em></p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Pages liées</h2>
+      <div class="related-grid">
+        <a class="related-card" href="/fr/calcul-gravier-au-m2">
+          <div class="rc-kicker">Calculator (FR)</div>
+          <h2>Calcul Gravier au m²</h2>
+          <p>Volume, poids et sacs par mètre carré, à partir d'une surface et d'une épaisseur.</p>
+        </a>
+        <a class="related-card" href="/fr/calcul-gravier-m3">
+          <div class="rc-kicker">Calculator (FR)</div>
+          <h2>Calcul Gravier m³</h2>
+          <p>Convertir directement un volume en m³ en poids et en sacs de 25 kg.</p>
+        </a>
+        <a class="related-card" href="/fr/drain-francais">
+          <div class="rc-kicker">Guide (FR)</div>
+          <h2>Drain Français</h2>
+          <p>Granulométrie et pose complète du drainage.</p>
+        </a>
+        <a class="related-card" href="/gravel-driveway-calculator">
+          <div class="rc-kicker">Calculator (EN)</div>
+          <h2>Gravel Driveway Calculator</h2>
+          <p>Fondation et couche de finition pour une allée carrossable.</p>
+        </a>
+        <a class="related-card" href="/river-rock-calculator">
+          <div class="rc-kicker">Calculator (EN)</div>
+          <h2>River Rock Calculator</h2>
+          <p>Même formule, adaptée aux galets de rivière.</p>
+        </a>
+        <a class="related-card" href="/gravel-cost-calculator">
+          <div class="rc-kicker">Calculator (EN)</div>
+          <h2>Gravel Cost Calculator</h2>
+          <p>Volume plus prix à la tonne pour estimer un coût total.</p>
+        </a>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="/" style="color:#fff;"><span class="logo-mark">G</span>GravelCalc</a>
+        <p>Free, fast gravel calculators. Estimates only — always confirm quantities with your supplier.</p>
+      </div>
+      <div>
+        <h4>Calculators</h4>
+        <ul>
+          <li><a href="/">Gravel Calculator</a></li>
+          <li><a href="/gravel-cost-calculator">Gravel Cost Calculator</a></li>
+          <li><a href="/gravel-driveway-calculator">Gravel Driveway Calculator</a></li>
+          <li><a href="/river-rock-calculator">River Rock Calculator</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Language</h4>
+        <ul>
+          <li><a href="/">🇬🇧 English</a></li>
+          <li><a href="/de/kies-rechner">🇩🇪 Deutsch</a></li>
+          <li><a href="/es/calculadora-de-grava">🇪🇸 Español</a></li>
+          <li><a href="/pt/calculadora-da-brita">🇧🇷 Português</a></li>
+          <li><a href="/fr/calculateur-gravier" aria-current="page">🇫🇷 Français</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/">GravelCalc Home</a></li>
+          <li><a href="/privacy-policy">Privacy Policy</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 GravelCalc. All figures are estimates.</span>
+      <span>Static HTML — no tracking, no accounts.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/main.js"></script>
+<script>
+(function () {
+  "use strict";
+
+  var SAC_POIDS = 25; // kg, taille de sac la plus courante
+
+  var surfaceIn = document.getElementById("surface");
+  var epaisseurIn = document.getElementById("epaisseur");
+  var densiteIn = document.getElementById("densite");
+  var margeIn = document.getElementById("marge");
+
+  var outVolume = document.getElementById("outVolume");
+  var outPoids = document.getElementById("outPoids");
+  var outSacs = document.getElementById("outSacs");
+
+  function fmt(n, decimals) {
+    if (!isFinite(n) || n < 0) n = 0;
+    return n.toLocaleString("fr-FR", { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
+  }
+
+  // Exact-enough rounding to avoid the classic float trap, e.g.
+  // 26.4 t (16.5 m3 x 1.6 t/m3) must give 1056 bags, not 1057.
+  function round2(n) {
+    return Math.round(n * 100) / 100;
+  }
+  function ceilSafe(x) {
+    return Math.ceil(Math.round(x * 1e6) / 1e6 - 1e-9);
+  }
+
+  function calc() {
+    var surface = Math.max(parseFloat(surfaceIn.value) || 0, 0);
+    var epaisseurM = (parseFloat(epaisseurIn.value) || 0) / 100;
+    var densite = parseFloat(densiteIn.value) || 0;
+    var marge = parseFloat(margeIn.value) || 0;
+
+    var volumeBrut = round2(surface * epaisseurM);
+    var poidsBrutKg = round2(volumeBrut * densite * 1000);
+
+    var facteurMarge = 1 + marge / 100;
+    var volumeMarge = round2(volumeBrut * facteurMarge);
+    var poidsMargeKg = round2(poidsBrutKg * facteurMarge);
+    var poidsMargeT = round2(poidsMargeKg / 1000);
+    var sacsMarge = ceilSafe(poidsMargeKg / SAC_POIDS);
+
+    outVolume.textContent = fmt(volumeMarge, 2);
+    outPoids.textContent = fmt(poidsMargeT, 2);
+    outSacs.textContent = fmt(sacsMarge, 0);
+  }
+
+  var debounced = typeof debounce === "function" ? debounce(calc, 50) : calc;
+  [surfaceIn, epaisseurIn, densiteIn, margeIn].forEach(function (el) {
+    el.addEventListener("input", debounced);
+    el.addEventListener("change", debounced);
+  });
+
+  calc();
+})();
+</script>
+</body>
+</html>
