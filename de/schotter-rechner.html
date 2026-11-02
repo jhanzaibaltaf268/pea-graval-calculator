@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#ff5a1f">
+<title>Schotter Rechner: Schottermenge berechnen (m³ und Tonnen)</title>
+<meta name="description" content="Kostenloser Schotter Rechner: Schottermenge für Tragschicht, Einfahrt und Pflaster in m³ und Tonnen berechnen. Mit Schüttdichte, Zuschlag und Beispiel.">
+<link rel="canonical" href="https://thegravelcalculators.com/de/schotter-rechner">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css?v=20261102d">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="GravelCalc">
+<meta property="og:locale" content="de_DE">
+<meta property="og:url" content="https://thegravelcalculators.com/de/schotter-rechner">
+<meta property="og:title" content="Schotter Rechner: Schottermenge berechnen (m³ und Tonnen)">
+<meta property="og:description" content="Kostenloser Schotter Rechner: Schottermenge für Tragschicht, Einfahrt und Pflaster in m³ und Tonnen berechnen. Mit Schüttdichte, Zuschlag und Beispiel.">
+<meta property="og:image" content="https://thegravelcalculators.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Schotter Rechner: Schottermenge berechnen (m³ und Tonnen)">
+<meta name="twitter:description" content="Kostenloser Schotter Rechner: Schottermenge für Tragschicht, Einfahrt und Pflaster in m³ und Tonnen berechnen. Mit Schüttdichte, Zuschlag und Beispiel.">
+<meta name="twitter:image" content="https://thegravelcalculators.com/og-image.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Schotter Rechner",
+  "url": "https://thegravelcalculators.com/de/schotter-rechner",
+  "inLanguage": "de",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "description": "Kostenloser Schotter Rechner: Schottermenge für Tragschicht, Einfahrt und Pflaster in m³ und Tonnen berechnen. Mit Schüttdichte, Zuschlag und Beispiel.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+  },
+  "dateModified": "2026-11-02"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "So berechnen Sie die Schottermenge",
+  "inLanguage": "de",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Fläche messen",
+      "text": "Länge und Breite in Metern messen."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Schichtdicke wählen",
+      "text": "Dicke der Tragschicht in cm festlegen."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Volumen berechnen",
+      "text": "Länge × Breite × Dicke in cm ÷ 100 ergibt Kubikmeter."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "In Tonnen umrechnen",
+      "text": "Mit der Schüttdichte multiplizieren, bei Schotter etwa 1,6 bis 1,8 t/m³."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Zuschlag addieren",
+      "text": "10 bis 15 % für Verdichtung aufschlagen."
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "de",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wie viel Schotter brauche ich pro m²?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bei 20 cm Dicke sind es 0,2 m³ pro m², also etwa 360 kg."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie viele Tonnen sind 1 m³ Schotter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Etwa 1,6 bis 1,8 Tonnen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie berechne ich die Schottermenge?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Länge mal Breite mal Dicke in Metern ergibt m³. Mit der Schüttdichte multipliziert erhalten Sie Tonnen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie viel Zuschlag ist sinnvoll?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Etwa 10 bis 15 % für Verdichtung und Verlust."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "GravelCalc",
+      "item": "https://thegravelcalculators.com/de/kies-rechner"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Schotter Rechner",
+      "item": "https://thegravelcalculators.com/de/schotter-rechner"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="/de/kies-rechner"><span class="logo-mark">G</span>GravelCalc</a>
+    <button class="nav-toggle" aria-label="Menü" aria-expanded="false" aria-controls="mainNav">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <nav class="main-nav" id="mainNav">
+      <a href="/de/kies-rechner">Kies Rechner</a>
+      <a href="/de/splitt-rechner">Splitt Rechner</a>
+      <a href="/de/schotter-rechner" aria-current="page">Schotter Rechner</a>
+      <a href="/de/sand-rechner">Sand Rechner</a>
+      <div class="has-dropdown">
+        <button type="button" class="dd-toggle" aria-expanded="false" aria-haspopup="true">Mehr Rechner<svg class="caret" viewBox="0 0 12 12" width="10" height="10" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="dropdown">
+          <a href="/de/mutterboden-rechner">Mutterboden Rechner</a>
+          <a href="/de/kies-gewicht-pro-m3">Kies Gewicht pro m³</a>
+          <a href="/de/aquarium-kies-rechner">Aquarium Kies Rechner</a>
+          <a href="/de/sandkasten-rechner">Sandkasten Rechner</a>
+        </div>
+      </div>
+      <div class="has-dropdown lang-dd">
+        <button type="button" class="dd-toggle lang-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Sprache: DE"><svg class="globe" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/></svg><span>DE</span><svg class="caret" viewBox="0 0 12 12" width="10" height="10" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="dropdown dropdown-right">
+          <a href="/" hreflang="en" lang="en"><span class="flag" aria-hidden="true">🇬🇧</span>English</a>
+          <a href="/de/kies-rechner" hreflang="de" lang="de" aria-current="true"><span class="flag" aria-hidden="true">🇩🇪</span>Deutsch</a>
+          <a href="/es/calculadora-de-grava" hreflang="es" lang="es"><span class="flag" aria-hidden="true">🇪🇸</span>Español</a>
+          <a href="/fr/calculateur-gravier" hreflang="fr" lang="fr"><span class="flag" aria-hidden="true">🇫🇷</span>Français</a>
+          <a href="/pt/calculadora-da-brita" hreflang="pt-BR" lang="pt-BR"><span class="flag" aria-hidden="true">🇧🇷</span>Português</a>
+          <a href="/nl/grind-rekenen" hreflang="nl" lang="nl"><span class="flag" aria-hidden="true">🇳🇱</span>Nederlands</a>
+          <a href="/it/peso-ghiaia-metro-cubo" hreflang="it" lang="it"><span class="flag" aria-hidden="true">🇮🇹</span>Italiano</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+
+    <p class="breadcrumbs">
+      <a href="/de/kies-rechner">GravelCalc</a><span class="sep">/</span>Schotter Rechner
+    </p>
+
+    <section class="hero" style="padding-top:6px;">
+      <span class="eyebrow">Kostenloser Rechner</span>
+      <h1>Schotter Rechner</h1>
+      <p class="lede">Für eine Einfahrt von 10 m × 3 m mit 20 cm Schotter-Tragschicht benötigen Sie 6 m³, das sind etwa 10,8 Tonnen. Dieser Schotter Rechner berechnet die Schottermenge für Tragschicht, Einfahrt, Terrasse oder Pflaster in Kubikmetern und Tonnen.</p>
+      <p class="updated">Zuletzt aktualisiert <time datetime="2026-11-02">2. November 2026</time>. Alle Werte sind Richtwerte; Menge und Schüttdichte bitte mit dem Lieferanten abstimmen.</p>
+    </section>
+
+    <section class="calc-card" aria-label="Schotter Rechner">
+      <div class="calc-grid">
+        <div>
+          <div class="field-row">
+            <div class="field">
+              <label for="length">Länge <span class="unit-tag">(m)</span></label>
+              <div class="input-wrap">
+                <input type="number" id="length" inputmode="decimal" min="0" step="0.1" value="10">
+                <span class="suffix">m</span>
+              </div>
+            </div>
+            <div class="field">
+              <label for="width">Breite <span class="unit-tag">(m)</span></label>
+              <div class="input-wrap">
+                <input type="number" id="width" inputmode="decimal" min="0" step="0.1" value="3">
+                <span class="suffix">m</span>
+              </div>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="depth">Schichtdicke <span class="unit-tag">(cm)</span></label>
+              <div class="input-wrap">
+                <input type="number" id="depth" inputmode="decimal" min="0" step="0.5" value="20">
+                <span class="suffix">cm</span>
+              </div>
+            </div>
+            <div class="field">
+              <label for="material">Material (Schüttdichte)</label>
+              <div class="input-wrap">
+                <select id="material" class="plain-select">
+                  <option value="1.8" selected>Schotter 0/32 (Tragschicht)</option>
+                  <option value="1.8">Schotter 0/45 (Frostschutz)</option>
+                  <option value="1.6">Schotter 32/56 (grob)</option>
+                  <option value="1.7">Recycling-Schotter 0/45</option>
+                  <option value="1.5">Splitt 8/16</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="extra">Zuschlag für Verdichtung und Verlust</label>
+              <div class="input-wrap">
+                <input type="number" id="extra" inputmode="decimal" min="0" step="1" value="10">
+                <span class="suffix">%</span>
+              </div>
+            </div>
+            <div></div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="bagKg">Gebindegröße</label>
+              <div class="input-wrap">
+                <select id="bagKg" class="plain-select">
+                  <option value="1000" selected>Big Bag 1.000 kg</option>
+                  <option value="25">Sack 25 kg</option>
+                  <option value="500">Big Bag 500 kg</option>
+                  <option value="40">Sack 40 kg</option>
+                </select>
+              </div>
+            </div>
+            <div></div>
+          </div>
+        </div>
+
+        <div class="results" aria-live="polite">
+          <div class="results-label">Ergebnis</div>
+          <div class="result-stat primary">
+            <span class="rs-name">Kubikmeter</span>
+            <span><span class="rs-value" id="outM3">0,00</span><span class="rs-unit">m³</span></span>
+          </div>
+          <div class="result-stat">
+            <span class="rs-name">Tonnen</span>
+            <span><span class="rs-value" id="outTons">0,00</span><span class="rs-unit">t</span></span>
+          </div>
+          <div class="result-stat">
+            <span class="rs-name">Kilogramm</span>
+            <span><span class="rs-value" id="outKg">0</span><span class="rs-unit">kg</span></span>
+          </div>
+          <div class="result-stat">
+            <span class="rs-name">Gebinde (aufgerundet)</span>
+            <span><span class="rs-value" id="outBags">0</span><span class="rs-unit">Stück</span></span>
+          </div>
+          <div class="result-stat order-line">
+            <span class="rs-name" id="extraLabel">Mit 10 % Zuschlag bestellen</span>
+            <span><span class="rs-value" id="outOrderM3">0,00</span><span class="rs-unit">m³</span><span class="rs-tons"><span id="outOrderTons">0,00</span> t</span></span>
+          </div>
+          <button type="button" class="copy-btn" id="copyOrder">Bestellmenge kopieren</button>
+          <p class="copy-status" id="copyStatus" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Berechnung Schotter: Schotter Menge berechnen</h2>
+      <p>Schotter wird nach Gewicht verkauft, berechnet wird aber zuerst das Volumen. Danach multiplizieren Sie mit der Schüttdichte.</p>
+      <div class="formula-box">m³ = Länge (m) × Breite (m) × Dicke (cm) ÷ 100<br>Tonnen = m³ × Schüttdichte (1,6 bis 1,8 t/m³)</div>
+      <p><strong>Beispiel:</strong> 10 m × 3 m × 20 cm = 6 m³. Bei 1,8 t/m³ sind das 10,8 Tonnen. Mit 10 % Zuschlag bestellen Sie etwa 6,6 m³ oder 11,9 Tonnen.</p>
+      <p>Wenn Sie die Menge Schotter berechnen, rechnen Sie immer mit der fertigen, verdichteten Schichtdicke und schlagen den Zuschlag erst danach auf.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Schichtdicke für Tragschichten</h2>
+      <div class="table-wrap">
+        <table class="guide-table">
+          <thead><tr><th>Verwendung</th><th>Übliche Schichtdicke (Richtwert)</th></tr></thead>
+          <tbody>
+            <tr><td>Gartenweg</td><td>10 bis 15 cm</td></tr>
+            <tr><td>Terrasse, Pflasterfläche</td><td>15 bis 25 cm</td></tr>
+            <tr><td>Einfahrt für Pkw</td><td>20 bis 30 cm</td></tr>
+            <tr><td>Stellplatz, schwerer Verkehr</td><td>30 cm und mehr</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Die nötige Dicke hängt vom Boden und von der Belastung ab. Bei Bauvorhaben gelten die Vorgaben des Herstellers und der örtlichen Vorschriften.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Wie viel wiegt 1 m³ Schotter?</h2>
+      <p>Loser Schotter wiegt etwa 1,6 bis 1,8 Tonnen pro Kubikmeter, also 1.600 bis 1.800 kg. Verdichtet liegt der Wert höher. Für das Bestellen zählt das Liefergewicht, deshalb lohnt sich die Frage nach der Schüttdichte beim Händler.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Schotter, Splitt oder Kies?</h2>
+      <p>Schotter ist gebrochenes Gestein mit kantigen Körnern, das sich verdichten lässt. Splitt ist feiner gebrochen, Kies ist rund. Für Tragschichten nimmt man Schotter. Rechner: <a href="/de/splitt-rechner">Splitt</a> und <a href="/de/kies-rechner">Kies</a>.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Häufige Fragen</h2>
+      <h3>Wie viel Schotter brauche ich pro m²?</h3>
+      <p>Bei 20 cm Dicke sind es 0,2 m³ pro m², also etwa 360 kg.</p>
+      <h3>Wie viele Tonnen sind 1 m³ Schotter?</h3>
+      <p>Etwa 1,6 bis 1,8 Tonnen.</p>
+      <h3>Wie berechne ich die Schottermenge?</h3>
+      <p>Länge mal Breite mal Dicke in Metern ergibt m³. Mit der Schüttdichte multipliziert erhalten Sie Tonnen.</p>
+      <h3>Wie viel Zuschlag ist sinnvoll?</h3>
+      <p>Etwa 10 bis 15 % für Verdichtung und Verlust.</p>
+    </section>
+
+    <section class="block">
+      <h2 class="section-title">Weitere Rechner</h2>
+      <div class="related-grid">
+        <a class="related-card" href="/de/kies-rechner">
+          <div class="rc-kicker">Rechner</div>
+          <h2>Kies Rechner</h2>
+          <p>Kubikmeter, Tonnen und Big Bags für Kies.</p>
+        </a>
+        <a class="related-card" href="/de/splitt-rechner">
+          <div class="rc-kicker">Rechner</div>
+          <h2>Splitt Rechner</h2>
+          <p>Menge Splitt in m³ und Tonnen.</p>
+        </a>
+        <a class="related-card" href="/de/sand-rechner">
+          <div class="rc-kicker">Rechner</div>
+          <h2>Sand Rechner</h2>
+          <p>Sand für Sandkasten, Pflaster und Aufschüttung.</p>
+        </a>
+        <a class="related-card" href="/de/mutterboden-rechner">
+          <div class="rc-kicker">Rechner</div>
+          <h2>Mutterboden Rechner</h2>
+          <p>Mutterboden für Rasen und Beet.</p>
+        </a>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="/de/kies-rechner" style="color:#fff;"><span class="logo-mark">G</span>GravelCalc</a>
+        <p>Nur Schätzwerte — Mengen bitte immer mit Ihrem Lieferanten abstimmen.</p>
+      </div>
+      <div>
+        <h4>Rechner</h4>
+        <ul>
+          <li><a href="/de/kies-rechner">Kies Rechner</a></li>
+          <li><a href="/de/splitt-rechner">Splitt Rechner</a></li>
+          <li><a href="/de/schotter-rechner">Schotter Rechner</a></li>
+          <li><a href="/de/sand-rechner">Sand Rechner</a></li>
+          <li><a href="/de/mutterboden-rechner">Mutterboden Rechner</a></li>
+          <li><a href="/de/kies-gewicht-pro-m3">Kies Gewicht pro m³</a></li>
+          <li><a href="/de/aquarium-kies-rechner">Aquarium Kies Rechner</a></li>
+          <li><a href="/de/sandkasten-rechner">Sandkasten Rechner</a></li>
+          <li><a href="/gravel-cost-calculator">Kosten (EN)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Sprache</h4>
+        <ul>
+          <li><a href="/" hreflang="en" lang="en">🇬🇧 English</a></li>
+          <li><a href="/de/kies-rechner" hreflang="de" lang="de" aria-current="true">🇩🇪 Deutsch</a></li>
+          <li><a href="/es/calculadora-de-grava" hreflang="es" lang="es">🇪🇸 Español</a></li>
+          <li><a href="/fr/calculateur-gravier" hreflang="fr" lang="fr">🇫🇷 Français</a></li>
+          <li><a href="/pt/calculadora-da-brita" hreflang="pt-BR" lang="pt-BR">🇧🇷 Português</a></li>
+          <li><a href="/nl/grind-rekenen" hreflang="nl" lang="nl">🇳🇱 Nederlands</a></li>
+          <li><a href="/it/peso-ghiaia-metro-cubo" hreflang="it" lang="it">🇮🇹 Italiano</a></li>
+          <li><a href="/de/kies-rechner" hreflang="de" lang="de" aria-current="true">🇩🇪 Deutsch</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Seite</h4>
+        <ul>
+          <li><a href="/">GravelCalc Home (EN)</a></li>
+          <li><a href="/about">About (EN)</a></li>
+          <li><a href="/privacy-policy">Privacy Policy (EN)</a></li>
+          <li><a href="/contact">Contact (EN)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 GravelCalc. Alle Angaben ohne Gewähr.</span>
+      <span>Statisches HTML — kein Tracking, keine Konten.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/main.js?v=20261102d"></script>
+<script src="/material-calc.js?v=20261102d"></script>
+<script>
+MaterialCalc.areaMetric({
+  locale: "de-DE",
+  t: {
+    order: "Mit %s % Zuschlag bestellen",
+    copied: "✓ Kopiert. Fügen Sie die Menge in eine Nachricht oder Anfrage ein.",
+    copyFail: "Kopieren fehlgeschlagen. Markieren Sie die Zahlen oben.",
+    summary: function (L, B, D, mat, d, last, f) { return '' + document.querySelector('h1').textContent + ': ' + L + ' m x ' + B + ' m x ' + D + ' cm, ' + mat + ' (Schüttdichte ' + f(d, 2) + ' t/m³).\nVolumen: ' + f(last.m3, 2) + ' m³ (' + f(last.t, 2) + ' t).\nMit ' + f(last.extra, 0) + ' % Zuschlag bestellen: ' + f(last.om3, 2) + ' m³ (' + f(last.ot, 2) + ' t).\nRichtwert von thegravelcalculators.com. Menge und Schüttdichte mit dem Lieferanten abstimmen.'; }
+  }
+});
+</script>
+</body>
+</html>

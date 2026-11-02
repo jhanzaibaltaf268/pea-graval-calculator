@@ -2,55 +2,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://thegravelcalculators.com/</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <priority>1.0</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://thegravelcalculators.com/pea-gravel-calculator</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://thegravelcalculators.com/gravel-driveway-calculator</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://thegravelcalculators.com/gravel-cost-calculator</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://thegravelcalculators.com/cubic-yards-calculator</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://thegravelcalculators.com/river-rock-calculator</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://thegravelcalculators.com/square-feet-to-cubic-yards</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://thegravelcalculators.com/de/kies-rechner</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://thegravelcalculators.com/fr/calculateur-gravier</loc>
+    <lastmod>2026-10-31</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://thegravelcalculators.com/fr/calcul-gravier-au-m2</loc>
+    <lastmod>2026-10-31</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://thegravelcalculators.com/fr/calcul-gravier-m3</loc>
+    <lastmod>2026-10-31</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://thegravelcalculators.com/fr/drain-francais</loc>
+    <lastmod>2026-10-31</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://thegravelcalculators.com/es/calculadora-de-grava</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
@@ -62,7 +86,7 @@
   </url>
   <url>
     <loc>https://thegravelcalculators.com/pt/calculadora-da-brita</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
@@ -96,4 +120,25 @@
     <priority>0.3</priority>
     <changefreq>yearly</changefreq>
   </url>
+  <url><loc>https://thegravelcalculators.com/stone-calculator</loc><lastmod>2026-11-02</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://thegravelcalculators.com/sand-calculator</loc><lastmod>2026-11-02</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://thegravelcalculators.com/topsoil-calculator</loc><lastmod>2026-11-02</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://thegravelcalculators.com/paver-base-calculator</loc><lastmod>2026-11-02</lastmod><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://thegravelcalculators.com/road-base-calculator</loc><lastmod>2026-11-02</lastmod><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://thegravelcalculators.com/french-drain-gravel-calculator</loc><lastmod>2026-11-02</lastmod><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://thegravelcalculators.com/aquarium-gravel-calculator</loc><lastmod>2026-11-02</lastmod><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://thegravelcalculators.com/de/splitt-rechner</loc><lastmod>2026-11-02</lastmod><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://thegravelcalculators.com/de/schotter-rechner</loc><lastmod>2026-11-02</lastmod><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://thegravelcalculators.com/de/sand-rechner</loc><lastmod>2026-11-02</lastmod><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://thegravelcalculators.com/de/mutterboden-rechner</loc><lastmod>2026-11-02</lastmod><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://thegravelcalculators.com/de/kies-gewicht-pro-m3</loc><lastmod>2026-11-02</lastmod><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://thegravelcalculators.com/pt/calculadora-de-areia</loc><lastmod>2026-11-02</lastmod><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://thegravelcalculators.com/de/aquarium-kies-rechner</loc><lastmod>2026-11-02</lastmod><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://thegravelcalculators.com/es/calculadora-de-arena</loc><lastmod>2026-11-02</lastmod><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://thegravelcalculators.com/fr/calcul-sable</loc><lastmod>2026-11-02</lastmod><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://thegravelcalculators.com/de/sandkasten-rechner</loc><lastmod>2026-11-02</lastmod><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://thegravelcalculators.com/nl/grind-rekenen</loc><lastmod>2026-11-02</lastmod><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://thegravelcalculators.com/nl/zand-rekenen</loc><lastmod>2026-11-02</lastmod><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://thegravelcalculators.com/it/peso-ghiaia-metro-cubo</loc><lastmod>2026-11-02</lastmod><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://thegravelcalculators.com/about</loc><lastmod>2026-11-02</lastmod><priority>0.4</priority><changefreq>yearly</changefreq></url>
 </urlset>
