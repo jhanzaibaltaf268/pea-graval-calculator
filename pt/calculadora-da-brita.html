@@ -14,13 +14,15 @@
 <link rel="alternate" hreflang="en" href="https://thegravelcalculators.com/">
 <link rel="alternate" hreflang="de" href="https://thegravelcalculators.com/de/kies-rechner">
 <link rel="alternate" hreflang="es" href="https://thegravelcalculators.com/es/calculadora-de-grava">
-<link rel="alternate" hreflang="pt-BR" href="https://thegravelcalculators.com/pt/calculadora-da-brita">
 <link rel="alternate" hreflang="fr" href="https://thegravelcalculators.com/fr/calculateur-gravier">
+<link rel="alternate" hreflang="pt-BR" href="https://thegravelcalculators.com/pt/calculadora-da-brita">
+<link rel="alternate" hreflang="nl" href="https://thegravelcalculators.com/nl/grind-rekenen">
+<link rel="alternate" hreflang="it" href="https://thegravelcalculators.com/it/peso-ghiaia-metro-cubo">
 <link rel="alternate" hreflang="x-default" href="https://thegravelcalculators.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css?v=20261102c">
+<link rel="stylesheet" href="/styles.css?v=20261102d">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="GravelCalc">
 <meta property="og:locale" content="pt_BR">
@@ -107,19 +109,22 @@
 <header class="site-header">
   <div class="container">
     <a class="logo" href="/pt/calculadora-da-brita"><span class="logo-mark">G</span>GravelCalc</a>
-    <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+    <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainNav">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </button>
-    <nav class="main-nav">
-      <a href="/pt/calculadora-da-brita" aria-current="page">Calculadora de Brita</a>
-      <a href="/">Todas as calculadoras (EN)</a>
-      <div class="has-dropdown">
-        <a href="/pea-gravel-calculator">Idioma</a>
+    <nav class="main-nav" id="mainNav">
+      <a href="/pt/calculadora-da-brita" aria-current="page">Brita</a>
+      <a href="/pt/calculadora-de-areia">Areia</a>
+      <div class="has-dropdown lang-dd">
+        <button type="button" class="dd-toggle lang-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Idioma: PT"><svg class="globe" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/></svg><span>PT</span><svg class="caret" viewBox="0 0 12 12" width="10" height="10" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
         <div class="dropdown dropdown-right">
-          <a href="/pea-gravel-calculator">🇬🇧 EN</a>
-          <a href="/de/kies-rechner">🇩🇪 DE</a>
-          <a href="/es/calculadora-de-grava">🇪🇸 ES</a>
-          <a href="/fr/calculateur-gravier">🇫🇷 Français</a>
+          <a href="/" hreflang="en" lang="en"><span class="flag" aria-hidden="true">🇬🇧</span>English</a>
+          <a href="/de/kies-rechner" hreflang="de" lang="de"><span class="flag" aria-hidden="true">🇩🇪</span>Deutsch</a>
+          <a href="/es/calculadora-de-grava" hreflang="es" lang="es"><span class="flag" aria-hidden="true">🇪🇸</span>Español</a>
+          <a href="/fr/calculateur-gravier" hreflang="fr" lang="fr"><span class="flag" aria-hidden="true">🇫🇷</span>Français</a>
+          <a href="/pt/calculadora-da-brita" hreflang="pt-BR" lang="pt-BR" aria-current="true"><span class="flag" aria-hidden="true">🇧🇷</span>Português</a>
+          <a href="/nl/grind-rekenen" hreflang="nl" lang="nl"><span class="flag" aria-hidden="true">🇳🇱</span>Nederlands</a>
+          <a href="/it/peso-ghiaia-metro-cubo" hreflang="it" lang="it"><span class="flag" aria-hidden="true">🇮🇹</span>Italiano</a>
         </div>
       </div>
     </nav>
@@ -433,17 +438,21 @@
       <div>
         <h4>Idioma</h4>
         <ul>
-          <li><a href="/pt/calculadora-da-brita">🇧🇷 Português</a></li>
-          <li><a href="/pea-gravel-calculator">🇬🇧 English</a></li>
-          <li><a href="/de/kies-rechner">🇩🇪 Deutsch</a></li>
-          <li><a href="/es/calculadora-de-grava">🇪🇸 Español</a></li>
-          <li><a href="/fr/calculateur-gravier">🇫🇷 Français</a></li>
+          <li><a href="/" hreflang="en" lang="en">🇬🇧 English</a></li>
+          <li><a href="/de/kies-rechner" hreflang="de" lang="de">🇩🇪 Deutsch</a></li>
+          <li><a href="/es/calculadora-de-grava" hreflang="es" lang="es">🇪🇸 Español</a></li>
+          <li><a href="/fr/calculateur-gravier" hreflang="fr" lang="fr">🇫🇷 Français</a></li>
+          <li><a href="/pt/calculadora-da-brita" hreflang="pt-BR" lang="pt-BR" aria-current="true">🇧🇷 Português</a></li>
+          <li><a href="/nl/grind-rekenen" hreflang="nl" lang="nl">🇳🇱 Nederlands</a></li>
+          <li><a href="/it/peso-ghiaia-metro-cubo" hreflang="it" lang="it">🇮🇹 Italiano</a></li>
+          <li><a href="/de/kies-rechner" hreflang="de" lang="de">🇩🇪 Deutsch</a></li>
         </ul>
       </div>
       <div>
         <h4>Site</h4>
         <ul>
           <li><a href="/">GravelCalc Home (EN)</a></li>
+          <li><a href="/about">About (EN)</a></li>
           <li><a href="/privacy-policy">Privacy Policy (EN)</a></li>
           <li><a href="/contact">Contact (EN)</a></li>
         </ul>
@@ -456,7 +465,7 @@
   </div>
 </footer>
 
-<script src="/main.js"></script>
+<script src="/main.js?v=20261102d"></script>
 <script>
 (function () {
   var unit = "metric";

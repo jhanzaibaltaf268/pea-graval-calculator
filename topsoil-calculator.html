@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css?v=20261102c">
+<link rel="stylesheet" href="/styles.css?v=20261102d">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="GravelCalc">
 <meta property="og:locale" content="en_US">
@@ -156,44 +156,47 @@
 <header class="site-header">
   <div class="container">
     <a class="logo" href="/"><span class="logo-mark">G</span>GravelCalc</a>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </button>
-    <nav class="main-nav">
+    <nav class="main-nav" id="mainNav">
       <a href="/">Home</a>
-      <a href="/pea-gravel-calculator">Pea Gravel</a>
       <a href="/gravel-driveway-calculator">Driveway</a>
       <a href="/gravel-cost-calculator">Cost</a>
       <a href="/cubic-yards-calculator">Cubic Yards</a>
-      <a href="/river-rock-calculator">River Rock</a>
-      <a href="/square-feet-to-cubic-yards">Sq Ft → CY</a>
-      <div class="has-dropdown">
-        <a href="/stone-calculator" aria-current="page">More</a>
+      <div class="has-dropdown is-current">
+        <button type="button" class="dd-toggle" aria-expanded="false" aria-haspopup="true">Calculators<svg class="caret" viewBox="0 0 12 12" width="10" height="10" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
         <div class="dropdown">
-          <a href="/stone-calculator">Stone Calculator</a>
-          <a href="/sand-calculator">Sand Calculator</a>
-          <a href="/topsoil-calculator" aria-current="page">Topsoil Calculator</a>
-          <a href="/paver-base-calculator">Paver Base Calculator</a>
-          <a href="/road-base-calculator">Road Base Calculator</a>
+          <a href="/pea-gravel-calculator">Pea Gravel</a>
+          <a href="/river-rock-calculator">River Rock</a>
+          <a href="/stone-calculator">Stone</a>
+          <a href="/sand-calculator">Sand</a>
+          <a href="/topsoil-calculator" aria-current="page">Topsoil</a>
+          <a href="/paver-base-calculator">Paver Base</a>
+          <a href="/road-base-calculator">Road Base</a>
           <a href="/french-drain-gravel-calculator">French Drain Gravel</a>
           <a href="/aquarium-gravel-calculator">Aquarium Gravel</a>
+          <a href="/square-feet-to-cubic-yards">Sq Ft → Cubic Yards</a>
         </div>
       </div>
       <div class="has-dropdown">
-        <a href="/how-much-gravel-do-i-need">Guides</a>
+        <button type="button" class="dd-toggle" aria-expanded="false" aria-haspopup="true">Guides<svg class="caret" viewBox="0 0 12 12" width="10" height="10" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
         <div class="dropdown">
           <a href="/how-much-gravel-do-i-need">How Much Do I Need</a>
           <a href="/types-of-gravel">Types of Gravel</a>
           <a href="/gravel-depth-guide">Gravel Depth Guide</a>
         </div>
       </div>
-      <div class="has-dropdown">
-        <a href="/de/kies-rechner">Language</a>
+      <div class="has-dropdown lang-dd">
+        <button type="button" class="dd-toggle lang-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Language: EN"><svg class="globe" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/></svg><span>EN</span><svg class="caret" viewBox="0 0 12 12" width="10" height="10" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
         <div class="dropdown dropdown-right">
-          <a href="/de/kies-rechner">🇩🇪 DE</a>
-          <a href="/es/calculadora-de-grava">🇪🇸 ES</a>
-          <a href="/pt/calculadora-da-brita">🇧🇷 PT</a>
-          <a href="/fr/calculateur-gravier">🇫🇷 Français</a>
+          <a href="/" hreflang="en" lang="en" aria-current="true"><span class="flag" aria-hidden="true">🇬🇧</span>English</a>
+          <a href="/de/kies-rechner" hreflang="de" lang="de"><span class="flag" aria-hidden="true">🇩🇪</span>Deutsch</a>
+          <a href="/es/calculadora-de-grava" hreflang="es" lang="es"><span class="flag" aria-hidden="true">🇪🇸</span>Español</a>
+          <a href="/fr/calculateur-gravier" hreflang="fr" lang="fr"><span class="flag" aria-hidden="true">🇫🇷</span>Français</a>
+          <a href="/pt/calculadora-da-brita" hreflang="pt-BR" lang="pt-BR"><span class="flag" aria-hidden="true">🇧🇷</span>Português</a>
+          <a href="/nl/grind-rekenen" hreflang="nl" lang="nl"><span class="flag" aria-hidden="true">🇳🇱</span>Nederlands</a>
+          <a href="/it/peso-ghiaia-metro-cubo" hreflang="it" lang="it"><span class="flag" aria-hidden="true">🇮🇹</span>Italiano</a>
         </div>
       </div>
     </nav>
@@ -421,12 +424,17 @@
         <h4>Site</h4>
         <ul>
           <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
           <li><a href="/privacy-policy">Privacy Policy</a></li>
           <li><a href="/contact">Contact</a></li>
-          <li><a href="/de/kies-rechner">🇩🇪 Deutsch</a></li>
-          <li><a href="/es/calculadora-de-grava">🇪🇸 Español</a></li>
-          <li><a href="/pt/calculadora-da-brita">🇧🇷 Português</a></li>
-          <li><a href="/fr/calculateur-gravier">🇫🇷 Français</a></li>
+          <li><a href="/" hreflang="en" lang="en" aria-current="true">🇬🇧 English</a></li>
+          <li><a href="/de/kies-rechner" hreflang="de" lang="de">🇩🇪 Deutsch</a></li>
+          <li><a href="/es/calculadora-de-grava" hreflang="es" lang="es">🇪🇸 Español</a></li>
+          <li><a href="/fr/calculateur-gravier" hreflang="fr" lang="fr">🇫🇷 Français</a></li>
+          <li><a href="/pt/calculadora-da-brita" hreflang="pt-BR" lang="pt-BR">🇧🇷 Português</a></li>
+          <li><a href="/nl/grind-rekenen" hreflang="nl" lang="nl">🇳🇱 Nederlands</a></li>
+          <li><a href="/it/peso-ghiaia-metro-cubo" hreflang="it" lang="it">🇮🇹 Italiano</a></li>
+          <li><a href="/de/kies-rechner" hreflang="de" lang="de">🇩🇪 Deutsch</a></li>
         </ul>
       </div>
     </div>
@@ -437,8 +445,8 @@
   </div>
 </footer>
 
-<script src="/main.js"></script>
-<script src="/material-calc.js"></script>
+<script src="/main.js?v=20261102d"></script>
+<script src="/material-calc.js?v=20261102d"></script>
 <script>MaterialCalc.area();</script>
 </body>
 </html>

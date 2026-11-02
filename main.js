@@ -9,6 +9,40 @@
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
     });
   }
+
+  /* Dropdown menus: click/tap/keyboard toggles, Escape and outside click close */
+  var menus = document.querySelectorAll(".has-dropdown");
+  function closeAll(except) {
+    for (var i = 0; i < menus.length; i++) {
+      if (menus[i] === except) continue;
+      menus[i].classList.remove("open");
+      var b = menus[i].querySelector(".dd-toggle");
+      if (b) b.setAttribute("aria-expanded", "false");
+    }
+  }
+  Array.prototype.forEach.call(menus, function (m) {
+    var btn = m.querySelector(".dd-toggle");
+    if (!btn) return;
+    btn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      var open = m.classList.toggle("open");
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+      closeAll(m);
+    });
+  });
+  document.addEventListener("click", function (e) {
+    if (!e.target.closest || !e.target.closest(".has-dropdown")) closeAll();
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      closeAll();
+      if (nav && nav.classList.contains("open") && toggle) {
+        nav.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+        toggle.focus();
+      }
+    }
+  });
 })();
 
 /* Debounce so rapid keystrokes don't trigger a re-render on every input (protects INP) */
