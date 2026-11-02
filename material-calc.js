@@ -233,7 +233,7 @@
   /* ---------- Metric pages in other languages: m x m x cm, density in t per m3 ---------- */
   function areaMetric(cfg) {
     var T = cfg.t;
-    function fmt(n, d) { if (!isFinite(n) || n < 0) n = 0; return n.toLocaleString(cfg.locale, { minimumFractionDigits: d, maximumFractionDigits: d }); }
+    function fmt(n, d) { if (!isFinite(n) || n < 0) n = 0; return n.toLocaleString(cfg.locale, { minimumFractionDigits: d, maximumFractionDigits: d, useGrouping: cfg.locale && cfg.locale.indexOf("it") === 0 ? "always" : true }); }
     var last = { m3: 0, t: 0, kg: 0, om3: 0, ot: 0, extra: 0, bags: 0, obags: 0 };
     var copy;
     function dens() { return parseFloat(el("material").value) || 0; }
@@ -263,7 +263,7 @@
   /* ---------- Aquarium / container substrate, metric: cm x cm x cm -> kg ---------- */
   function tankMetric(cfg) {
     var T = cfg.t;
-    function fmt(n, d) { if (!isFinite(n) || n < 0) n = 0; return n.toLocaleString(cfg.locale, { minimumFractionDigits: d, maximumFractionDigits: d }); }
+    function fmt(n, d) { if (!isFinite(n) || n < 0) n = 0; return n.toLocaleString(cfg.locale, { minimumFractionDigits: d, maximumFractionDigits: d, useGrouping: cfg.locale && cfg.locale.indexOf("it") === 0 ? "always" : true }); }
     var last = { l: 0, kg: 0, okg: 0, bags: 0, obags: 0, extra: 0 };
     var copy;
     function dens() { return parseFloat(el("material").value) || 0; }
