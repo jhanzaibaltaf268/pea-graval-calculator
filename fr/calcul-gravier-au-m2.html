@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/styles.css?v=20261102c">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="GravelCalc">
 <meta property="og:locale" content="fr_FR">
@@ -114,10 +114,15 @@
     <nav class="main-nav">
       <a href="/fr/calcul-gravier-au-m2" aria-current="page">Calcul Gravier au m² (FR)</a>
       <a href="/fr/calculateur-gravier">Calculateur Gravier</a>
-      <a href="/pea-gravel-calculator" class="lang-switch">🇬🇧 English</a>
-      <a href="/de/kies-rechner" class="lang-switch">🇩🇪 Deutsch</a>
-      <a href="/es/calculadora-de-grava" class="lang-switch">🇪🇸 Español</a>
-      <a href="/pt/calculadora-da-brita" class="lang-switch">🇧🇷 Português</a>
+      <div class="has-dropdown">
+        <a href="/pea-gravel-calculator">Langue</a>
+        <div class="dropdown dropdown-right">
+          <a href="/pea-gravel-calculator">🇬🇧 English</a>
+          <a href="/de/kies-rechner">🇩🇪 Deutsch</a>
+          <a href="/es/calculadora-de-grava">🇪🇸 Español</a>
+          <a href="/pt/calculadora-da-brita">🇧🇷 Português</a>
+        </div>
+      </div>
     </nav>
   </div>
 </header>
@@ -358,6 +363,11 @@
     <section class="block tight">
       <h2 class="section-title">Pages liées</h2>
       <div class="related-grid">
+        <a class="related-card" href="/fr/calcul-sable">
+          <div class="rc-kicker">Calculateur</div>
+          <h2>Calcul Sable</h2>
+          <p>Volume, tonnes et sacs de sable.</p>
+        </a>
         <a class="related-card" href="/">
           <div class="rc-kicker">Calculator (EN)</div>
           <h2>Gravel Calculator</h2>
@@ -408,6 +418,7 @@
           <li><a href="/gravel-cost-calculator">Gravel Cost Calculator</a></li>
           <li><a href="/gravel-driveway-calculator">Gravel Driveway Calculator</a></li>
           <li><a href="/river-rock-calculator">River Rock Calculator</a></li>
+          <li><a href="/fr/calcul-sable">Calcul Sable (FR)</a></li>
         </ul>
       </div>
       <div>

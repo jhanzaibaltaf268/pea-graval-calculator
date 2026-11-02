@@ -26,13 +26,14 @@
   }
 
   /* Copy-summary button. getText() must return the current summary. */
-  function bindCopy(recalc, getText) {
+  function bindCopy(recalc, getText, msgs) {
+    msgs = msgs || { ok: "\u2713 Copied. Paste it into a message or quote request.", fail: "Copy failed. Select the numbers above instead." };
     var btn = el("copyOrder"), status = el("copyStatus");
     if (!btn || !status) return { clearIfChanged: function () {} };
     var copied = "";
     function done(ok, text) {
       copied = ok ? text : "";
-      status.textContent = ok ? "✓ Copied. Paste it into a message or quote request." : "Copy failed. Select the numbers above instead.";
+      status.textContent = ok ? msgs.ok : msgs.fail;
     }
     btn.addEventListener("click", function () {
       recalc();
@@ -228,5 +229,67 @@
     calc();
   }
 
-  window.MaterialCalc = { area: area, drain: drain, paver: paver, tank: tank };
+
+  /* ---------- Metric pages in other languages: m x m x cm, density in t per m3 ---------- */
+  function areaMetric(cfg) {
+    var T = cfg.t;
+    function fmt(n, d) { if (!isFinite(n) || n < 0) n = 0; return n.toLocaleString(cfg.locale, { minimumFractionDigits: d, maximumFractionDigits: d }); }
+    var last = { m3: 0, t: 0, kg: 0, om3: 0, ot: 0, extra: 0, bags: 0, obags: 0 };
+    var copy;
+    function dens() { return parseFloat(el("material").value) || 0; }
+    function summary() {
+      var m = el("material"); var opt = m.options[m.selectedIndex];
+      return T.summary(el("length").value, el("width").value, el("depth").value, opt.textContent, dens(), last, fmt);
+    }
+    function calc() {
+      var m3 = Math.max(val("length"), 0) * Math.max(val("width"), 0) * Math.max(val("depth"), 0) / 100;
+      var extra = Math.max(val("extra"), 0), k = 1 + extra / 100;
+      var t = m3 * dens();
+      var bagKg = el("bagKg") ? (parseFloat(el("bagKg").value) || 0) : 0;
+      var bags = bagKg ? t * 1000 / bagKg : 0;
+      last = { m3: m3, t: t, kg: t * 1000, om3: m3 * k, ot: t * k, extra: extra, bags: bags, obags: bags * k };
+      setText("outM3", fmt(m3, 2)); setText("outTons", fmt(t, 2)); setText("outKg", fmt(t * 1000, 0));
+      setText("outOrderM3", fmt(last.om3, 2)); setText("outOrderTons", fmt(last.ot, 2));
+      setText("outBags", fmt(Math.ceil(bags), 0)); setText("outOrderBags", fmt(Math.ceil(last.obags), 0));
+      setText("extraLabel", T.order.replace("%s", fmt(extra, 0)));
+      if (copy) copy.clearIfChanged();
+    }
+    copy = bindCopy(calc, summary, { ok: T.copied, fail: T.copyFail });
+    wire(["length", "width", "depth", "material", "extra", "bagKg"], calc);
+    calc();
+  }
+
+
+  /* ---------- Aquarium / container substrate, metric: cm x cm x cm -> kg ---------- */
+  function tankMetric(cfg) {
+    var T = cfg.t;
+    function fmt(n, d) { if (!isFinite(n) || n < 0) n = 0; return n.toLocaleString(cfg.locale, { minimumFractionDigits: d, maximumFractionDigits: d }); }
+    var last = { l: 0, kg: 0, okg: 0, bags: 0, obags: 0, extra: 0 };
+    var copy;
+    function dens() { return parseFloat(el("material").value) || 0; }
+    function summary() {
+      var m = el("material"); var opt = m.options[m.selectedIndex];
+      return T.summary(el("length").value, el("width").value, el("depth").value, opt.textContent, dens(), last, fmt);
+    }
+    function calc() {
+      var cm3 = Math.max(val("length"), 0) * Math.max(val("width"), 0) * Math.max(val("depth"), 0);
+      var litres = cm3 / 1000;
+      var kg = litres * dens();
+      var extra = Math.max(val("extra"), 0), k = 1 + extra / 100;
+      var bagKg = el("bagKg") ? (parseFloat(el("bagKg").value) || 0) : 0;
+      var bags = bagKg ? kg / bagKg : 0;
+      last = { l: litres, kg: kg, okg: kg * k, bags: bags, obags: bags * k, extra: extra };
+      setText("outLitres", fmt(litres, 1));
+      setText("outKg", fmt(kg, 1));
+      setText("outOrderKg", fmt(last.okg, 1));
+      setText("outBags", fmt(Math.ceil(bags) || 0, 0));
+      setText("extraLabel", T.order.replace("%s", fmt(extra, 0)));
+      if (copy) copy.clearIfChanged();
+    }
+    copy = bindCopy(calc, summary, { ok: T.copied, fail: T.copyFail });
+    wire(["length", "width", "depth", "material", "extra", "bagKg"], calc);
+    calc();
+  }
+
+  window.MaterialCalc = { area: area, drain: drain, paver: paver, tank: tank, areaMetric: areaMetric, tankMetric: tankMetric };
 })();

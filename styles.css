@@ -660,3 +660,9 @@ footer.site-footer a:hover { color: var(--white); }
 .copy-btn:hover { background: var(--yellow); border-color: var(--yellow); color: var(--stone-900); }
 .copy-btn:focus-visible { outline: 3px solid var(--white); outline-offset: 2px; }
 .copy-status { margin: 0; min-height: 1.3em; font-size: 0.9rem; font-weight: 600; color: #b7ecc9; }
+
+/* ---------- Header nav: keep the bar inside the viewport ---------- */
+.dropdown.dropdown-right { left: auto; right: 0; }
+@media (min-width: 881px) {
+  nav.main-nav { min-width: 0; flex-wrap: wrap; justify-content: flex-end; row-gap: 2px; }
+}
