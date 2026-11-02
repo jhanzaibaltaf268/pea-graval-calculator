@@ -20,7 +20,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/styles.css?v=20261102b">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="GravelCalc">
 <meta property="og:locale" content="en_US">
@@ -206,7 +206,7 @@
           </div>
           <div class="result-stat order-line">
             <span class="rs-name">Order with 10% extra</span>
-            <span><span class="rs-value" id="outOrderYards">0.00</span><span class="rs-unit">yd³</span> <span class="rs-sub">/ <span id="outOrderTons">0.00</span> tons</span></span>
+            <span><span class="rs-value" id="outOrderYards">0.00</span><span class="rs-unit">yd³</span><span class="rs-tons"><span id="outOrderTons">0.00</span> tons</span></span>
           </div>
           <button type="button" class="copy-btn" id="copyOrder">Copy order summary</button>
           <p class="copy-status" id="copyStatus" role="status" aria-live="polite"></p>
@@ -464,6 +464,7 @@
   var copyBtn = document.getElementById("copyOrder");
   var copyStatus = document.getElementById("copyStatus");
   var last = { yards: 0, tons: 0, orderYards: 0, orderTons: 0 };
+  var copiedText = "";
 
   function setUnit(u) {
     unit = u;
@@ -493,7 +494,7 @@
     last = { yards: vol.cubicYards, tons: tons, orderYards: vol.cubicYards * 1.1, orderTons: tons * 1.1 };
     outOrderYards.textContent = GRAVEL.fmt(last.orderYards, 2);
     outOrderTons.textContent = GRAVEL.fmt(last.orderTons, 2);
-    copyStatus.textContent = "";
+    if (copiedText && summaryText() !== copiedText) { copyStatus.textContent = ""; copiedText = ""; }
   }
 
   function summaryText() {
@@ -507,8 +508,9 @@
   }
 
   function copyOrder() {
+    calc();
     var text = summaryText();
-    function done(ok) { copyStatus.textContent = ok ? "Copied. Paste it into a message or quote request." : "Copy failed. Select the numbers above instead."; }
+    function done(ok) { copiedText = ok ? text : ""; copyStatus.textContent = ok ? "\u2713 Copied. Paste it into a message or quote request." : "Copy failed. Select the numbers above instead."; }
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(false); });
       return;
