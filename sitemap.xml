@@ -120,4 +120,11 @@
     <priority>0.3</priority>
     <changefreq>yearly</changefreq>
   </url>
+  <url><loc>https://thegravelcalculators.com/stone-calculator</loc><lastmod>2026-11-02</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://thegravelcalculators.com/sand-calculator</loc><lastmod>2026-11-02</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://thegravelcalculators.com/topsoil-calculator</loc><lastmod>2026-11-02</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://thegravelcalculators.com/paver-base-calculator</loc><lastmod>2026-11-02</lastmod><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://thegravelcalculators.com/road-base-calculator</loc><lastmod>2026-11-02</lastmod><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://thegravelcalculators.com/french-drain-gravel-calculator</loc><lastmod>2026-11-02</lastmod><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://thegravelcalculators.com/aquarium-gravel-calculator</loc><lastmod>2026-11-02</lastmod><priority>0.6</priority><changefreq>monthly</changefreq></url>
 </urlset>

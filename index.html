@@ -20,7 +20,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/styles.css?v=20261102b">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="GravelCalc">
 <meta property="og:locale" content="en_US">
@@ -117,6 +117,18 @@
       <a href="/river-rock-calculator">River Rock</a>
       <a href="/square-feet-to-cubic-yards">Sq Ft → CY</a>
       <div class="has-dropdown">
+        <a href="/stone-calculator">More</a>
+        <div class="dropdown">
+          <a href="/stone-calculator">Stone Calculator</a>
+          <a href="/sand-calculator">Sand Calculator</a>
+          <a href="/topsoil-calculator">Topsoil Calculator</a>
+          <a href="/paver-base-calculator">Paver Base Calculator</a>
+          <a href="/road-base-calculator">Road Base Calculator</a>
+          <a href="/french-drain-gravel-calculator">French Drain Gravel</a>
+          <a href="/aquarium-gravel-calculator">Aquarium Gravel</a>
+        </div>
+      </div>
+      <div class="has-dropdown">
         <a href="/how-much-gravel-do-i-need">Guides</a>
         <div class="dropdown">
           <a href="/how-much-gravel-do-i-need">How Much Do I Need</a>
@@ -183,6 +195,7 @@
                   <option value="1.5">Crushed Stone</option>
                   <option value="1.5">Road Base / Crush &amp; Run</option>
                   <option value="1.4">Decorative Gravel</option>
+                  <option value="1.4">3/4 Inch Gravel / Crushed Stone</option>
                 </select>
               </div>
             </div>
@@ -206,7 +219,7 @@
           </div>
           <div class="result-stat order-line">
             <span class="rs-name">Order with 10% extra</span>
-            <span><span class="rs-value" id="outOrderYards">0.00</span><span class="rs-unit">yd³</span> <span class="rs-sub">/ <span id="outOrderTons">0.00</span> tons</span></span>
+            <span><span class="rs-value" id="outOrderYards">0.00</span><span class="rs-unit">yd³</span><span class="rs-tons"><span id="outOrderTons">0.00</span> tons</span></span>
           </div>
           <button type="button" class="copy-btn" id="copyOrder">Copy order summary</button>
           <p class="copy-status" id="copyStatus" role="status" aria-live="polite"></p>
@@ -221,6 +234,9 @@
         cubic yards = length (ft) × width (ft) × depth (in) ÷ 324
       </div>
       <p>Then multiply by the material's density to get tons. Add 10% for compaction and waste.</p>
+
+      <h3>Gravel tonnage calculator: from yards to tons</h3>
+      <p>Quarries sell by the ton, so the tonnage is the number to order. Multiply cubic yards by about 1.4 tons per cubic yard. This yard of gravel calculator does both steps for you: enter the area above and read the cubic yards and the tons together. If you already know the area, the <a href="/square-feet-to-cubic-yards">gravel square foot calculator</a> starts from square feet.</p>
 
       <h3>Worked examples</h3>
       <ul>
@@ -244,6 +260,42 @@
             <tr><td>2</td><td>2.8</td><td>10</td><td>14.0</td></tr>
             <tr><td>3</td><td>4.2</td><td>15</td><td>21.0</td></tr>
             <tr><td>5</td><td>7.0</td><td>20</td><td>28.0</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">How much is 1, 2, 5 or 6 tons of gravel?</h2>
+      <p>One ton of gravel is about 0.71 cubic yards (at 1.4 tons per cubic yard), enough to cover about 77 square feet at 3 inches deep. The price depends on your supplier: multiply the tons by their price per ton, or the cubic yards by their price per yard. One cubic yard of gravel is 27 cubic feet and weighs about 1.4 tons.</p>
+      <div class="formula-box">
+        cost = tons × price per ton &nbsp;or&nbsp; cost = cubic yards × price per cubic yard
+      </div>
+      <div class="table-wrap">
+        <table class="guide-table">
+          <thead><tr><th>Gravel</th><th>Cubic yards</th><th>Covers at 3 in</th><th>Covers at 4 in</th></tr></thead>
+          <tbody>
+            <tr><td>1 cubic yard</td><td>1.00 (1.4 tons)</td><td>108 sq ft</td><td>81 sq ft</td></tr>
+            <tr><td>1 ton</td><td>0.71</td><td>77 sq ft</td><td>58 sq ft</td></tr>
+            <tr><td>2 tons</td><td>1.43</td><td>154 sq ft</td><td>116 sq ft</td></tr>
+            <tr><td>5 tons</td><td>3.57</td><td>386 sq ft</td><td>289 sq ft</td></tr>
+            <tr><td>6 tons</td><td>4.29</td><td>463 sq ft</td><td>347 sq ft</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="help-text">Based on 1.4 tons per cubic yard. Confirm the density with your supplier.</p>
+
+      <h3>Convert square yards to tons</h3>
+      <p>A square yard is 9 square feet. Tons per square yard depend on the depth: tons = depth in inches ÷ 36 × 1.4. For example, 1 square yard at 3 inches deep holds about 0.16 tons.</p>
+      <div class="table-wrap">
+        <table class="guide-table">
+          <thead><tr><th>Depth</th><th>Tons per square yard</th><th>Square yards per ton</th></tr></thead>
+          <tbody>
+            <tr><td>1 inch</td><td>0.05</td><td>18.5</td></tr>
+            <tr><td>2 inches</td><td>0.11</td><td>9.3</td></tr>
+            <tr><td>3 inches</td><td>0.16</td><td>6.2</td></tr>
+            <tr><td>4 inches</td><td>0.22</td><td>4.6</td></tr>
+            <tr><td>6 inches</td><td>0.33</td><td>3.1</td></tr>
           </tbody>
         </table>
       </div>
@@ -378,6 +430,41 @@
           <h2>Square Feet to Cubic Yards Calculator</h2>
           <p>Already know the area? Start here.</p>
         </a>
+        <a class="related-card" href="/stone-calculator">
+          <div class="rc-kicker">Calculator</div>
+          <h2>Stone Calculator</h2>
+          <p>Tons and cubic yards of crushed stone and landscape rock.</p>
+        </a>
+        <a class="related-card" href="/sand-calculator">
+          <div class="rc-kicker">Calculator</div>
+          <h2>Sand Calculator</h2>
+          <p>Sand for sandboxes, pavers and arenas.</p>
+        </a>
+        <a class="related-card" href="/topsoil-calculator">
+          <div class="rc-kicker">Calculator</div>
+          <h2>Topsoil Calculator</h2>
+          <p>Cubic yards of topsoil by depth.</p>
+        </a>
+        <a class="related-card" href="/paver-base-calculator">
+          <div class="rc-kicker">Calculator</div>
+          <h2>Paver Base Calculator</h2>
+          <p>Base stone and bedding sand for pavers.</p>
+        </a>
+        <a class="related-card" href="/road-base-calculator">
+          <div class="rc-kicker">Calculator</div>
+          <h2>Road Base Calculator</h2>
+          <p>Base course tons with a compaction allowance.</p>
+        </a>
+        <a class="related-card" href="/french-drain-gravel-calculator">
+          <div class="rc-kicker">Calculator</div>
+          <h2>French Drain Gravel Calculator</h2>
+          <p>Drain rock and filter fabric for a trench.</p>
+        </a>
+        <a class="related-card" href="/aquarium-gravel-calculator">
+          <div class="rc-kicker">Calculator</div>
+          <h2>Fish Tank Gravel Calculator</h2>
+          <p>Pounds of gravel or sand for an aquarium.</p>
+        </a>
         <a class="related-card" href="/how-much-gravel-do-i-need">
           <div class="rc-kicker">Guide</div>
           <h2>How Much Gravel Do I Need?</h2>
@@ -415,6 +502,13 @@
           <li><a href="/cubic-yards-calculator">Cubic Yards</a></li>
           <li><a href="/river-rock-calculator">River Rock</a></li>
           <li><a href="/square-feet-to-cubic-yards">Sq Ft → Cubic Yards</a></li>
+          <li><a href="/stone-calculator">Stone Calculator</a></li>
+          <li><a href="/sand-calculator">Sand Calculator</a></li>
+          <li><a href="/topsoil-calculator">Topsoil Calculator</a></li>
+          <li><a href="/paver-base-calculator">Paver Base Calculator</a></li>
+          <li><a href="/road-base-calculator">Road Base Calculator</a></li>
+          <li><a href="/french-drain-gravel-calculator">French Drain Gravel</a></li>
+          <li><a href="/aquarium-gravel-calculator">Aquarium Gravel</a></li>
           <li><a href="/es/calculadora-de-concreto">Concrete Calculator (ES)</a></li>
         </ul>
       </div>
@@ -464,6 +558,7 @@
   var copyBtn = document.getElementById("copyOrder");
   var copyStatus = document.getElementById("copyStatus");
   var last = { yards: 0, tons: 0, orderYards: 0, orderTons: 0 };
+  var copiedText = "";
 
   function setUnit(u) {
     unit = u;
@@ -493,7 +588,7 @@
     last = { yards: vol.cubicYards, tons: tons, orderYards: vol.cubicYards * 1.1, orderTons: tons * 1.1 };
     outOrderYards.textContent = GRAVEL.fmt(last.orderYards, 2);
     outOrderTons.textContent = GRAVEL.fmt(last.orderTons, 2);
-    copyStatus.textContent = "";
+    if (copiedText && summaryText() !== copiedText) { copyStatus.textContent = ""; copiedText = ""; }
   }
 
   function summaryText() {
@@ -507,8 +602,9 @@
   }
 
   function copyOrder() {
+    calc();
     var text = summaryText();
-    function done(ok) { copyStatus.textContent = ok ? "Copied. Paste it into a message or quote request." : "Copy failed. Select the numbers above instead."; }
+    function done(ok) { copiedText = ok ? text : ""; copyStatus.textContent = ok ? "\u2713 Copied. Paste it into a message or quote request." : "Copy failed. Select the numbers above instead."; }
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(false); });
       return;
