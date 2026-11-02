@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#ff5a1f">
+<title>Splitt Rechner: Menge in m³ und Tonnen berechnen</title>
+<meta name="description" content="Kostenloser Splitt Rechner: Länge, Breite und Schütthöhe eingeben und die Menge Splitt in Kubikmetern und Tonnen berechnen, mit Zuschlag für Verdichtung.">
+<link rel="canonical" href="https://thegravelcalculators.com/de/splitt-rechner">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css?v=20261102b">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="GravelCalc">
+<meta property="og:locale" content="de_DE">
+<meta property="og:url" content="https://thegravelcalculators.com/de/splitt-rechner">
+<meta property="og:title" content="Splitt Rechner: Menge in m³ und Tonnen berechnen">
+<meta property="og:description" content="Kostenloser Splitt Rechner: Länge, Breite und Schütthöhe eingeben und die Menge Splitt in Kubikmetern und Tonnen berechnen, mit Zuschlag für Verdichtung.">
+<meta property="og:image" content="https://thegravelcalculators.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Splitt Rechner: Menge in m³ und Tonnen berechnen">
+<meta name="twitter:description" content="Kostenloser Splitt Rechner: Länge, Breite und Schütthöhe eingeben und die Menge Splitt in Kubikmetern und Tonnen berechnen, mit Zuschlag für Verdichtung.">
+<meta name="twitter:image" content="https://thegravelcalculators.com/og-image.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Splitt Rechner",
+  "url": "https://thegravelcalculators.com/de/splitt-rechner",
+  "inLanguage": "de",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "description": "Kostenloser Splitt Rechner: Länge, Breite und Schütthöhe eingeben und die Menge Splitt in Kubikmetern und Tonnen berechnen, mit Zuschlag für Verdichtung.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+  },
+  "dateModified": "2026-11-02"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "So berechnen Sie die Menge Splitt",
+  "inLanguage": "de",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Fläche messen",
+      "text": "Länge und Breite in Metern messen."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Schütthöhe wählen",
+      "text": "Die Schütthöhe in Zentimetern festlegen."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Volumen berechnen",
+      "text": "Länge × Breite × Höhe in cm ÷ 100 ergibt Kubikmeter."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "In Tonnen umrechnen",
+      "text": "Kubikmeter mit der Schüttdichte (etwa 1,5 t/m³) multiplizieren."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Zuschlag addieren",
+      "text": "10 % für Verdichtung und Verlust aufschlagen."
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "de",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wie viel Splitt brauche ich pro m²?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bei 5 cm Schütthöhe sind es 0,05 m³ pro m², also etwa 75 kg."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie viele Tonnen sind 1 m³ Splitt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Etwa 1,4 bis 1,6 Tonnen, im Mittel 1,5 Tonnen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie viel Zuschlag sollte ich einplanen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Etwa 10 % für Verdichtung und Verlust, bei weichem Untergrund bis 15 %."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ist der Rechner genau?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nein, es sind Richtwerte. Menge und Schüttdichte bitte mit dem Lieferanten abstimmen."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "GravelCalc",
+      "item": "https://thegravelcalculators.com/de/kies-rechner"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Splitt Rechner",
+      "item": "https://thegravelcalculators.com/de/splitt-rechner"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="/de/kies-rechner"><span class="logo-mark">G</span>GravelCalc</a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <nav class="main-nav">
+      <a href="/de/kies-rechner">Kies Rechner</a>
+      <a href="/de/splitt-rechner" aria-current="page">Splitt Rechner</a>
+      <a href="/de/schotter-rechner">Schotter Rechner</a>
+      <a href="/de/sand-rechner">Sand Rechner</a>
+      <a href="/de/mutterboden-rechner">Mutterboden Rechner</a>
+      <a href="/de/kies-gewicht-pro-m3">Kies Gewicht</a>
+      <a href="/" >English</a>
+      <a href="/pea-gravel-calculator" class="lang-switch">🇬🇧 English</a>
+      <a href="/es/calculadora-de-grava" class="lang-switch">🇪🇸 Español</a>
+      <a href="/pt/calculadora-da-brita" class="lang-switch">🇧🇷 Português</a>
+      <a href="/fr/calculateur-gravier" class="lang-switch">🇫🇷 Français</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+
+    <p class="breadcrumbs">
+      <a href="/de/kies-rechner">GravelCalc</a><span class="sep">/</span>Splitt Rechner
+    </p>
+
+    <section class="hero" style="padding-top:6px;">
+      <span class="eyebrow">Kostenloser Rechner</span>
+      <h1>Splitt Rechner</h1>
+      <p class="lede">Für 5 m × 3 m Splitt mit 5 cm Schütthöhe brauchen Sie 0,75 m³, das sind etwa 1,1 Tonnen. Mit dem Splitt Rechner berechnen Sie die Menge für Einfahrt, Gartenweg oder Pflasterbett in Kubikmetern und Tonnen, auf Wunsch mit 10 % Zuschlag.</p>
+      <p class="updated">Zuletzt aktualisiert <time datetime="2026-11-02">2. November 2026</time>. Alle Werte sind Richtwerte; Menge und Schüttdichte bitte mit dem Lieferanten abstimmen.</p>
+    </section>
+
+    <section class="calc-card" aria-label="Splitt Rechner">
+      <div class="calc-grid">
+        <div>
+          <div class="field-row">
+            <div class="field">
+              <label for="length">Länge <span class="unit-tag">(m)</span></label>
+              <div class="input-wrap">
+                <input type="number" id="length" inputmode="decimal" min="0" step="0.1" value="5">
+                <span class="suffix">m</span>
+              </div>
+            </div>
+            <div class="field">
+              <label for="width">Breite <span class="unit-tag">(m)</span></label>
+              <div class="input-wrap">
+                <input type="number" id="width" inputmode="decimal" min="0" step="0.1" value="3">
+                <span class="suffix">m</span>
+              </div>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="depth">Schütthöhe <span class="unit-tag">(cm)</span></label>
+              <div class="input-wrap">
+                <input type="number" id="depth" inputmode="decimal" min="0" step="0.5" value="5">
+                <span class="suffix">cm</span>
+              </div>
+            </div>
+            <div class="field">
+              <label for="material">Material (Schüttdichte)</label>
+              <div class="input-wrap">
+                <select id="material" class="plain-select">
+                  <option value="1.5" selected>Splitt 2/5 mm</option>
+                  <option value="1.5">Splitt 5/8 mm</option>
+                  <option value="1.5">Splitt 8/16 mm</option>
+                  <option value="1.5">Splitt 16/32 mm</option>
+                  <option value="1.45">Edelsplitt (Granit, Basalt)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="extra">Zuschlag für Verdichtung und Verlust</label>
+              <div class="input-wrap">
+                <input type="number" id="extra" inputmode="decimal" min="0" step="1" value="10">
+                <span class="suffix">%</span>
+              </div>
+            </div>
+            <div></div>
+          </div>
+        </div>
+
+        <div class="results" aria-live="polite">
+          <div class="results-label">Ergebnis</div>
+          <div class="result-stat primary">
+            <span class="rs-name">Kubikmeter</span>
+            <span><span class="rs-value" id="outM3">0,00</span><span class="rs-unit">m³</span></span>
+          </div>
+          <div class="result-stat">
+            <span class="rs-name">Tonnen</span>
+            <span><span class="rs-value" id="outTons">0,00</span><span class="rs-unit">t</span></span>
+          </div>
+          <div class="result-stat">
+            <span class="rs-name">Kilogramm</span>
+            <span><span class="rs-value" id="outKg">0</span><span class="rs-unit">kg</span></span>
+          </div>
+          <div class="result-stat order-line">
+            <span class="rs-name" id="extraLabel">Mit 10 % Zuschlag bestellen</span>
+            <span><span class="rs-value" id="outOrderM3">0,00</span><span class="rs-unit">m³</span><span class="rs-tons"><span id="outOrderTons">0,00</span> t</span></span>
+          </div>
+          <button type="button" class="copy-btn" id="copyOrder">Bestellmenge kopieren</button>
+          <p class="copy-status" id="copyStatus" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Berechnung der Splittmenge</h2>
+      <p>Das Volumen ergibt sich aus Fläche mal Schütthöhe. Die Tonnen erhalten Sie über die Schüttdichte, denn Splitt wird meist nach Gewicht verkauft.</p>
+      <div class="formula-box">m³ = Länge (m) × Breite (m) × Höhe (cm) ÷ 100<br>Tonnen = m³ × Schüttdichte (etwa 1,5 t/m³)</div>
+      <p><strong>Beispiel:</strong> 5 m × 3 m × 5 cm = 0,75 m³. Bei 1,5 t/m³ sind das 1,13 Tonnen, mit 10 % Zuschlag etwa 0,83 m³ oder 1,24 Tonnen.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Wie viel Fläche deckt 1 m³ Splitt ab?</h2>
+      <div class="table-wrap">
+        <table class="guide-table">
+          <thead><tr><th>Schütthöhe</th><th>Fläche pro m³</th><th>Typische Verwendung</th></tr></thead>
+          <tbody>
+            <tr><td>2 cm</td><td>50 m²</td><td>Dünne Deckschicht</td></tr>
+            <tr><td>3 cm</td><td>33 m²</td><td>Pflasterbett (Splitt 2/5)</td></tr>
+            <tr><td>5 cm</td><td>20 m²</td><td>Gartenweg, Beetabdeckung</td></tr>
+            <tr><td>10 cm</td><td>10 m²</td><td>Tragschicht Weg</td></tr>
+            <tr><td>20 cm</td><td>5 m²</td><td>Tragschicht Einfahrt</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Welcher Splitt wofür?</h2>
+      <div class="table-wrap">
+        <table class="guide-table">
+          <thead><tr><th>Körnung</th><th>Verwendung</th></tr></thead>
+          <tbody>
+            <tr><td>2/5 mm</td><td>Bettung unter Pflaster und Platten, Fugen</td></tr>
+            <tr><td>5/8 mm</td><td>Bettung, Deckschicht für Wege</td></tr>
+            <tr><td>8/16 mm</td><td>Zierflächen, Drainage, Wege</td></tr>
+            <tr><td>16/32 mm</td><td>Drainage und grobe Tragschicht</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Für die Tragschicht unter Einfahrten ist meist Schotter üblich, siehe den <a href="/de/schotter-rechner">Schotter Rechner</a>.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Wie viel wiegt 1 m³ Splitt?</h2>
+      <p>Je nach Gesteinsart und Körnung wiegt ein Kubikmeter loser Splitt etwa 1,4 bis 1,6 Tonnen, also 1.400 bis 1.600 kg. Verdichteter Splitt wiegt mehr. Fragen Sie Ihren Lieferanten nach der genauen Schüttdichte.</p>
+    </section>
+
+    <section class="block tight">
+      <h2 class="section-title">Häufige Fragen</h2>
+      <h3>Wie viel Splitt brauche ich pro m²?</h3>
+      <p>Bei 5 cm Schütthöhe sind es 0,05 m³ pro m², also etwa 75 kg.</p>
+      <h3>Wie viele Tonnen sind 1 m³ Splitt?</h3>
+      <p>Etwa 1,4 bis 1,6 Tonnen, im Mittel 1,5 Tonnen.</p>
+      <h3>Wie viel Zuschlag sollte ich einplanen?</h3>
+      <p>Etwa 10 % für Verdichtung und Verlust, bei weichem Untergrund bis 15 %.</p>
+      <h3>Ist der Rechner genau?</h3>
+      <p>Nein, es sind Richtwerte. Menge und Schüttdichte bitte mit dem Lieferanten abstimmen.</p>
+    </section>
+
+    <section class="block">
+      <h2 class="section-title">Weitere Rechner</h2>
+      <div class="related-grid">
+        <a class="related-card" href="/de/kies-rechner">
+          <div class="rc-kicker">Rechner</div>
+          <h2>Kies Rechner</h2>
+          <p>Kubikmeter, Tonnen und Big Bags für Kies.</p>
+        </a>
+        <a class="related-card" href="/de/schotter-rechner">
+          <div class="rc-kicker">Rechner</div>
+          <h2>Schotter Rechner</h2>
+          <p>Schotter für Tragschicht und Einfahrt.</p>
+        </a>
+        <a class="related-card" href="/de/sand-rechner">
+          <div class="rc-kicker">Rechner</div>
+          <h2>Sand Rechner</h2>
+          <p>Sand für Sandkasten, Pflaster und Aufschüttung.</p>
+        </a>
+        <a class="related-card" href="/de/mutterboden-rechner">
+          <div class="rc-kicker">Rechner</div>
+          <h2>Mutterboden Rechner</h2>
+          <p>Mutterboden für Rasen und Beet.</p>
+        </a>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="/de/kies-rechner" style="color:#fff;"><span class="logo-mark">G</span>GravelCalc</a>
+        <p>Nur Schätzwerte — Mengen bitte immer mit Ihrem Lieferanten abstimmen.</p>
+      </div>
+      <div>
+        <h4>Rechner</h4>
+        <ul>
+          <li><a href="/de/kies-rechner">Kies Rechner</a></li>
+          <li><a href="/de/splitt-rechner">Splitt Rechner</a></li>
+          <li><a href="/de/schotter-rechner">Schotter Rechner</a></li>
+          <li><a href="/de/sand-rechner">Sand Rechner</a></li>
+          <li><a href="/de/mutterboden-rechner">Mutterboden Rechner</a></li>
+          <li><a href="/de/kies-gewicht-pro-m3">Kies Gewicht pro m³</a></li>
+          <li><a href="/gravel-cost-calculator">Kosten (EN)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Sprache</h4>
+        <ul>
+          <li><a href="/de/kies-rechner">🇩🇪 Deutsch</a></li>
+          <li><a href="/pea-gravel-calculator">🇬🇧 English</a></li>
+          <li><a href="/es/calculadora-de-grava">🇪🇸 Español</a></li>
+          <li><a href="/pt/calculadora-da-brita">🇧🇷 Português</a></li>
+          <li><a href="/fr/calculateur-gravier">🇫🇷 Français</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Seite</h4>
+        <ul>
+          <li><a href="/">GravelCalc Home (EN)</a></li>
+          <li><a href="/privacy-policy">Privacy Policy (EN)</a></li>
+          <li><a href="/contact">Contact (EN)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 GravelCalc. Alle Angaben ohne Gewähr.</span>
+      <span>Statisches HTML — kein Tracking, keine Konten.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/main.js"></script>
+<script src="/material-calc.js"></script>
+<script>
+MaterialCalc.areaMetric({
+  locale: "de-DE",
+  t: {
+    order: "Mit %s % Zuschlag bestellen",
+    copied: "✓ Kopiert. Fügen Sie die Menge in eine Nachricht oder Anfrage ein.",
+    copyFail: "Kopieren fehlgeschlagen. Markieren Sie die Zahlen oben.",
+    summary: function (L, B, D, mat, d, last, f) { return '' + document.querySelector('h1').textContent + ': ' + L + ' m x ' + B + ' m x ' + D + ' cm, ' + mat + ' (Schüttdichte ' + f(d, 2) + ' t/m³).\nVolumen: ' + f(last.m3, 2) + ' m³ (' + f(last.t, 2) + ' t).\nMit ' + f(last.extra, 0) + ' % Zuschlag bestellen: ' + f(last.om3, 2) + ' m³ (' + f(last.ot, 2) + ' t).\nRichtwert von thegravelcalculators.com. Menge und Schüttdichte mit dem Lieferanten abstimmen.'; }
+  }
+});
+</script>
+</body>
+</html>
