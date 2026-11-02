@@ -250,7 +250,7 @@
       last = { m3: m3, t: t, kg: t * 1000, om3: m3 * k, ot: t * k, extra: extra, bags: bags, obags: bags * k };
       setText("outM3", fmt(m3, 2)); setText("outTons", fmt(t, 2)); setText("outKg", fmt(t * 1000, 0));
       setText("outOrderM3", fmt(last.om3, 2)); setText("outOrderTons", fmt(last.ot, 2));
-      setText("outBags", fmt(bags, 0)); setText("outOrderBags", fmt(last.obags, 0));
+      setText("outBags", fmt(Math.ceil(bags), 0)); setText("outOrderBags", fmt(Math.ceil(last.obags), 0));
       setText("extraLabel", T.order.replace("%s", fmt(extra, 0)));
       if (copy) copy.clearIfChanged();
     }
@@ -282,7 +282,7 @@
       setText("outLitres", fmt(litres, 1));
       setText("outKg", fmt(kg, 1));
       setText("outOrderKg", fmt(last.okg, 1));
-      setText("outBags", fmt(Math.ceil(last.obags) || 0, 0));
+      setText("outBags", fmt(Math.ceil(bags) || 0, 0));
       setText("extraLabel", T.order.replace("%s", fmt(extra, 0)));
       if (copy) copy.clearIfChanged();
     }

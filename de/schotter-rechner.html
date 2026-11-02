@@ -161,6 +161,7 @@
       <a href="/de/mutterboden-rechner">Mutterboden Rechner</a>
       <a href="/de/kies-gewicht-pro-m3">Kies Gewicht</a>
       <a href="/de/aquarium-kies-rechner">Aquarium Kies</a>
+      <a href="/de/sandkasten-rechner">Sandkasten</a>
       <a href="/" >English</a>
       <a href="/pea-gravel-calculator" class="lang-switch">🇬🇧 English</a>
       <a href="/es/calculadora-de-grava" class="lang-switch">🇪🇸 Español</a>
@@ -234,6 +235,20 @@
             </div>
             <div></div>
           </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="bagKg">Gebindegröße</label>
+              <div class="input-wrap">
+                <select id="bagKg" class="plain-select">
+                  <option value="1000" selected>Big Bag 1.000 kg</option>
+                  <option value="25">Sack 25 kg</option>
+                  <option value="500">Big Bag 500 kg</option>
+                  <option value="40">Sack 40 kg</option>
+                </select>
+              </div>
+            </div>
+            <div></div>
+          </div>
         </div>
 
         <div class="results" aria-live="polite">
@@ -249,6 +264,10 @@
           <div class="result-stat">
             <span class="rs-name">Kilogramm</span>
             <span><span class="rs-value" id="outKg">0</span><span class="rs-unit">kg</span></span>
+          </div>
+          <div class="result-stat">
+            <span class="rs-name">Gebinde (aufgerundet)</span>
+            <span><span class="rs-value" id="outBags">0</span><span class="rs-unit">Stück</span></span>
           </div>
           <div class="result-stat order-line">
             <span class="rs-name" id="extraLabel">Mit 10 % Zuschlag bestellen</span>
@@ -352,6 +371,7 @@
           <li><a href="/de/mutterboden-rechner">Mutterboden Rechner</a></li>
           <li><a href="/de/kies-gewicht-pro-m3">Kies Gewicht pro m³</a></li>
           <li><a href="/de/aquarium-kies-rechner">Aquarium Kies Rechner</a></li>
+          <li><a href="/de/sandkasten-rechner">Sandkasten Rechner</a></li>
           <li><a href="/gravel-cost-calculator">Kosten (EN)</a></li>
         </ul>
       </div>
