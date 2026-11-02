@@ -139,6 +139,7 @@
       <span class="eyebrow">Free calculator hub</span>
       <h1>Gravel Calculator</h1>
       <p class="lede">A cubic yard of gravel covers about 108 square feet at 3 inches deep and weighs roughly 1.4 tons. Enter your length, width and depth below to see how many cubic yards and tons of gravel you need, with an optional cost estimate and a 10% allowance for compaction and waste.</p>
+      <p class="updated">Last updated <time datetime="2026-11-02">November 2, 2026</time>. Figures are planning estimates; confirm density and quantity with your supplier.</p>
     </section>
 
     <section class="calc-card" aria-label="Gravel calculator">
@@ -203,6 +204,12 @@
             <span class="rs-name">Cubic feet</span>
             <span><span class="rs-value" id="outFeet">0.00</span><span class="rs-unit">ft³</span></span>
           </div>
+          <div class="result-stat order-line">
+            <span class="rs-name">Order with 10% extra</span>
+            <span><span class="rs-value" id="outOrderYards">0.00</span><span class="rs-unit">yd³</span> <span class="rs-sub">/ <span id="outOrderTons">0.00</span> tons</span></span>
+          </div>
+          <button type="button" class="copy-btn" id="copyOrder">Copy order summary</button>
+          <p class="copy-status" id="copyStatus" role="status" aria-live="polite"></p>
         </div>
       </div>
     </section>
@@ -328,6 +335,12 @@
     </section>
 
     <section class="block tight">
+      <h2 class="section-title">About GravelCalc</h2>
+      <p>GravelCalc is a set of free, no-signup calculators for gravel, stone and other bulk aggregate. Each page uses the same volume formula and the same stated densities, so the numbers agree from one calculator to the next. Nothing here is sponsored by a quarry or supplier, and the calculators do not ask for or store personal details.</p>
+      <p>The planning densities on this page are typical values, not measurements of your delivery. If a figure here does not match what your supplier quotes, trust the supplier and <a href="/contact">tell us through the contact page</a> so we can check it.</p>
+    </section>
+
+    <section class="block tight">
       <h2 class="section-title">Method and sources</h2>
       <p>Volume = length × width × depth, converted to cubic yards (27 cubic feet per cubic yard, or 324 for depth in inches). Weight = volume × density. Stone size numbers follow ASTM D448. Figures are planning estimates; confirm density and quantity with your supplier.</p>
     </section>
@@ -446,6 +459,11 @@
   var outYards = document.getElementById("outYards");
   var outTons = document.getElementById("outTons");
   var outFeet = document.getElementById("outFeet");
+  var outOrderYards = document.getElementById("outOrderYards");
+  var outOrderTons = document.getElementById("outOrderTons");
+  var copyBtn = document.getElementById("copyOrder");
+  var copyStatus = document.getElementById("copyStatus");
+  var last = { yards: 0, tons: 0, orderYards: 0, orderTons: 0 };
 
   function setUnit(u) {
     unit = u;
@@ -471,7 +489,39 @@
     outYards.textContent = GRAVEL.fmt(vol.cubicYards, 2);
     outTons.textContent = GRAVEL.fmt(tons, 2);
     outFeet.textContent = GRAVEL.fmt(vol.cubicFeet, 2);
+
+    last = { yards: vol.cubicYards, tons: tons, orderYards: vol.cubicYards * 1.1, orderTons: tons * 1.1 };
+    outOrderYards.textContent = GRAVEL.fmt(last.orderYards, 2);
+    outOrderTons.textContent = GRAVEL.fmt(last.orderTons, 2);
+    copyStatus.textContent = "";
   }
+
+  function summaryText() {
+    var m = materialSel.options[materialSel.selectedIndex];
+    var u = unit === "imperial" ? { l: "ft", d: "in" } : { l: "m", d: "cm" };
+    return "Gravel estimate: " + lenIn.value + " " + u.l + " x " + widIn.value + " " + u.l + " x " + depIn.value + " " + u.d +
+      " deep, " + m.textContent + " (about " + materialSel.value + " tons per cubic yard).\n" +
+      "Volume: " + GRAVEL.fmt(last.yards, 2) + " cubic yards (" + GRAVEL.fmt(last.tons, 2) + " tons).\n" +
+      "Order with 10% extra: " + GRAVEL.fmt(last.orderYards, 2) + " cubic yards (" + GRAVEL.fmt(last.orderTons, 2) + " tons).\n" +
+      "Planning estimate from thegravelcalculators.com. Confirm density and quantity with your supplier.";
+  }
+
+  function copyOrder() {
+    var text = summaryText();
+    function done(ok) { copyStatus.textContent = ok ? "Copied. Paste it into a message or quote request." : "Copy failed. Select the numbers above instead."; }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(false); });
+      return;
+    }
+    var ta = document.createElement("textarea");
+    ta.value = text; ta.setAttribute("readonly", ""); ta.style.position = "fixed"; ta.style.opacity = "0";
+    document.body.appendChild(ta); ta.select();
+    var ok = false;
+    try { ok = document.execCommand("copy"); } catch (e) {}
+    document.body.removeChild(ta);
+    done(ok);
+  }
+  copyBtn.addEventListener("click", copyOrder);
 
   var debounced = debounce(calc, 50);
   [lenIn, widIn, depIn, materialSel].forEach(function (el) {

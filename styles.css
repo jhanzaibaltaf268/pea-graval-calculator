@@ -621,3 +621,22 @@ footer.site-footer a:hover { color: var(--white); }
 @media (max-width: 500px) {
   .field-row { grid-template-columns: 1fr; }
 }
+
+/* ---------- Homepage: updated note, order line, copy button ---------- */
+.hero .updated { font-size: 0.85rem; color: var(--stone-600); margin: 4px 0 0; max-width: 62ch; }
+.result-stat .rs-sub { font-size: 0.85rem; color: var(--stone-300); font-weight: 600; white-space: nowrap; }
+.result-stat.order-line .rs-value { font-size: 1.4rem; }
+.copy-btn {
+  align-self: flex-start;
+  background: transparent;
+  color: var(--white);
+  border: 1px solid rgba(255,255,255,0.35);
+  border-radius: 999px;
+  padding: 8px 16px;
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.copy-btn:hover { border-color: var(--accent); color: var(--accent); }
+.copy-status { margin: 0; min-height: 1.2em; font-size: 0.8rem; color: var(--stone-300); }
