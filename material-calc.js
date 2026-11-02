@@ -259,5 +259,37 @@
     calc();
   }
 
-  window.MaterialCalc = { area: area, drain: drain, paver: paver, tank: tank, areaMetric: areaMetric };
+
+  /* ---------- Aquarium / container substrate, metric: cm x cm x cm -> kg ---------- */
+  function tankMetric(cfg) {
+    var T = cfg.t;
+    function fmt(n, d) { if (!isFinite(n) || n < 0) n = 0; return n.toLocaleString(cfg.locale, { minimumFractionDigits: d, maximumFractionDigits: d }); }
+    var last = { l: 0, kg: 0, okg: 0, bags: 0, obags: 0, extra: 0 };
+    var copy;
+    function dens() { return parseFloat(el("material").value) || 0; }
+    function summary() {
+      var m = el("material"); var opt = m.options[m.selectedIndex];
+      return T.summary(el("length").value, el("width").value, el("depth").value, opt.textContent, dens(), last, fmt);
+    }
+    function calc() {
+      var cm3 = Math.max(val("length"), 0) * Math.max(val("width"), 0) * Math.max(val("depth"), 0);
+      var litres = cm3 / 1000;
+      var kg = litres * dens();
+      var extra = Math.max(val("extra"), 0), k = 1 + extra / 100;
+      var bagKg = el("bagKg") ? (parseFloat(el("bagKg").value) || 0) : 0;
+      var bags = bagKg ? kg / bagKg : 0;
+      last = { l: litres, kg: kg, okg: kg * k, bags: bags, obags: bags * k, extra: extra };
+      setText("outLitres", fmt(litres, 1));
+      setText("outKg", fmt(kg, 1));
+      setText("outOrderKg", fmt(last.okg, 1));
+      setText("outBags", fmt(Math.ceil(last.obags) || 0, 0));
+      setText("extraLabel", T.order.replace("%s", fmt(extra, 0)));
+      if (copy) copy.clearIfChanged();
+    }
+    copy = bindCopy(calc, summary, { ok: T.copied, fail: T.copyFail });
+    wire(["length", "width", "depth", "material", "extra", "bagKg"], calc);
+    calc();
+  }
+
+  window.MaterialCalc = { area: area, drain: drain, paver: paver, tank: tank, areaMetric: areaMetric, tankMetric: tankMetric };
 })();
