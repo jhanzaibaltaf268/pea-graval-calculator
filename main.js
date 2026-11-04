@@ -94,3 +94,60 @@ var GRAVEL = {
     });
   }
 };
+
+
+/* Language suggestion banner (English pages only).
+   If the visitor's browser prefers another language we offer a link to that
+   version. It never redirects automatically (good for SEO and for users who
+   want English), and once dismissed it stays hidden. */
+(function () {
+  try {
+    if (document.documentElement.lang !== "en") return;
+    var LANGS = {
+      de: { url: "/de/kies-rechner", text: "Diese Seite auf Deutsch ansehen", btn: "Zum deutschen Rechner" },
+      es: { url: "/es/calculadora-de-grava", text: "Ver esta página en español", btn: "Ir a la calculadora" },
+      fr: { url: "/fr/calculateur-gravier", text: "Voir cette page en français", btn: "Aller au calculateur" },
+      pt: { url: "/pt/calculadora-da-brita", text: "Ver esta página em português", btn: "Ir para a calculadora" },
+      nl: { url: "/nl/grind-rekenen", text: "Bekijk deze pagina in het Nederlands", btn: "Naar de rekenmachine" },
+      it: { url: "/it/peso-ghiaia-metro-cubo", text: "Vedi questa pagina in italiano", btn: "Vai al calcolatore" }
+    };
+    var prefs = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || "en"]);
+    var code = null;
+    for (var i = 0; i < prefs.length; i++) {
+      var c = String(prefs[i]).toLowerCase().split("-")[0];
+      if (c === "en") return;
+      if (LANGS[c]) { code = c; break; }
+    }
+    if (!code) return;
+    try { if (localStorage.getItem("gc-lang-dismissed")) return; } catch (e) {}
+
+    var L = LANGS[code];
+    var bar = document.createElement("div");
+    bar.setAttribute("role", "region");
+    bar.setAttribute("lang", code);
+    bar.style.cssText = "position:fixed;left:0;right:0;bottom:0;z-index:9999;background:#1a1a1a;color:#fff;padding:12px 16px;display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap;font:500 15px/1.4 Inter,system-ui,sans-serif;box-shadow:0 -2px 12px rgba(0,0,0,.25)";
+    var span = document.createElement("span");
+    span.textContent = L.text;
+    var a = document.createElement("a");
+    a.href = L.url;
+    a.textContent = L.btn;
+    a.style.cssText = "background:#ff5a1f;color:#fff;padding:8px 14px;border-radius:8px;text-decoration:none;font-weight:600";
+    var x = document.createElement("button");
+    x.type = "button";
+    x.setAttribute("aria-label", "Close");
+    x.textContent = "×";
+    x.style.cssText = "background:none;border:0;color:#fff;font-size:24px;line-height:1;cursor:pointer;padding:0 6px";
+    function dismiss() {
+      try { localStorage.setItem("gc-lang-dismissed", "1"); } catch (e) {}
+      bar.remove();
+    }
+    x.addEventListener("click", dismiss);
+    a.addEventListener("click", function () {
+      try { localStorage.setItem("gc-lang-dismissed", "1"); } catch (e) {}
+    });
+    bar.appendChild(span);
+    bar.appendChild(a);
+    bar.appendChild(x);
+    document.body.appendChild(bar);
+  } catch (e) { /* never break the calculator */ }
+})();
