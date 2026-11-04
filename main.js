@@ -131,7 +131,7 @@ var GRAVEL = {
     var a = document.createElement("a");
     a.href = L.url;
     a.textContent = L.btn;
-    a.style.cssText = "background:#ff5a1f;color:#fff;padding:8px 14px;border-radius:8px;text-decoration:none;font-weight:600";
+    a.style.cssText = "background:#c2410c;color:#fff;padding:8px 14px;border-radius:8px;text-decoration:none;font-weight:600";
     var x = document.createElement("button");
     x.type = "button";
     x.setAttribute("aria-label", "Close");
